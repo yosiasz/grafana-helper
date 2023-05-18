@@ -1,0 +1,10 @@
+[
+  {
+    "login": "admin",
+    "name": "Leanne Graham",
+    "age": 38,
+    "country": "USA",
+    "occupation": "Devops Engineer",
+    "salary": 3000
+  }
+]

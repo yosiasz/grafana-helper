@@ -1,0 +1,210 @@
+{
+    "annotations": {
+      "list": [
+        {
+          "builtIn": 1,
+          "datasource": {
+            "type": "grafana",
+            "uid": "-- Grafana --"
+          },
+          "enable": true,
+          "hide": true,
+          "iconColor": "rgba(0, 211, 255, 1)",
+          "name": "Annotations & Alerts",
+          "target": {
+            "limit": 100,
+            "matchAny": false,
+            "tags": [],
+            "type": "dashboard"
+          },
+          "type": "dashboard"
+        }
+      ]
+    },
+    "editable": true,
+    "fiscalYearStartMonth": 0,
+    "graphTooltip": 0,
+    "id": 35,
+    "links": [],
+    "liveNow": false,
+    "panels": [
+      {
+        "datasource": {
+          "type": "datasource",
+          "uid": "-- Mixed --"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              }
+            },
+            "mappings": []
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 9,
+          "w": 12,
+          "x": 0,
+          "y": 0
+        },
+        "id": 2,
+        "options": {
+          "displayLabels": [
+            "percent",
+            "value",
+            "name"
+          ],
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "pieType": "pie",
+          "reduceOptions": {
+            "calcs": [
+              "diff"
+            ],
+            "fields": "/.*/",
+            "values": true
+          },
+          "tooltip": {
+            "mode": "single",
+            "sort": "none"
+          }
+        },
+        "targets": [
+          {
+            "cacheDurationSeconds": 300,
+            "columns": [
+              {
+                "selector": "",
+                "text": "",
+                "type": "string"
+              }
+            ],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "9DfwD8R4k"
+            },
+            "fields": [
+              {
+                "jsonPath": ""
+              }
+            ],
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "hide": false,
+            "method": "GET",
+            "queryParams": "",
+            "refId": "A",
+            "root_selector": "",
+            "source": "url",
+            "type": "uql",
+            "uql": "parse-json\r\n| project kv()\r\n| jsonata \"value\"\r\n| summarize \"tot_a\"=sum(\"value\") by \"x\"",
+            "url": "http://localhost:5000/a",
+            "urlPath": "",
+            "url_options": {
+              "data": "",
+              "method": "GET"
+            }
+          },
+          {
+            "cacheDurationSeconds": 300,
+            "columns": [],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "9DfwD8R4k"
+            },
+            "fields": [
+              {
+                "jsonPath": ""
+              }
+            ],
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "hide": false,
+            "method": "GET",
+            "queryParams": "",
+            "refId": "B",
+            "root_selector": "",
+            "source": "url",
+            "type": "uql",
+            "uql": "parse-json\r\n| project kv()\r\n| jsonata \"value\"\r\n| summarize \"tot_b\"=sum(\"value\") by \"x\"",
+            "url": "http://localhost:5000/b",
+            "urlPath": "",
+            "url_options": {
+              "data": "",
+              "method": "GET"
+            }
+          }
+        ],
+        "title": "Moto Moto - Infinity",
+        "transformations": [
+          {
+            "id": "merge",
+            "options": {}
+          },
+          {
+            "id": "organize",
+            "options": {
+              "excludeByName": {
+                "x": true
+              },
+              "indexByName": {},
+              "renameByName": {
+                "tot_a": "Fat Cows",
+                "tot_b": "Skinny Cows"
+              }
+            }
+          },
+          {
+            "id": "calculateField",
+            "options": {
+              "alias": "Difference",
+              "binary": {
+                "left": "Fat Cows",
+                "operator": "-",
+                "reducer": "sum",
+                "right": "Skinny Cows"
+              },
+              "mode": "binary",
+              "reduce": {
+                "include": [
+                  "A",
+                  "B"
+                ],
+                "reducer": "diff"
+              },
+              "replaceFields": false
+            }
+          }
+        ],
+        "type": "piechart"
+      }
+    ],
+    "schemaVersion": 36,
+    "style": "dark",
+    "tags": [],
+    "templating": {
+      "list": []
+    },
+    "time": {
+      "from": "now-6h",
+      "to": "now"
+    },
+    "timepicker": {},
+    "timezone": "",
+    "title": "MoDoMoDo",
+    "uid": "STTpHcm4k",
+    "version": 4,
+    "weekStart": ""
+  }

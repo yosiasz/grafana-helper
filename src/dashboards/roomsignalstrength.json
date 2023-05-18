@@ -1,0 +1,805 @@
+{
+    "annotations": {
+      "list": [
+        {
+          "builtIn": 1,
+          "datasource": {
+            "type": "grafana",
+            "uid": "-- Grafana --"
+          },
+          "enable": true,
+          "hide": true,
+          "iconColor": "rgba(0, 211, 255, 1)",
+          "name": "Annotations & Alerts",
+          "target": {
+            "limit": 100,
+            "matchAny": false,
+            "tags": [],
+            "type": "dashboard"
+          },
+          "type": "dashboard"
+        }
+      ]
+    },
+    "editable": true,
+    "fiscalYearStartMonth": 0,
+    "graphTooltip": 0,
+    "id": 5,
+    "links": [],
+    "liveNow": false,
+    "panels": [
+      {
+        "aliasColors": {},
+        "datasource": {
+          "type": "yesoreyeram-infinity-datasource",
+          "uid": "9DfwD8R4k"
+        },
+        "doInit": {},
+        "format": "short",
+        "gridPos": {
+          "h": 14,
+          "w": 18,
+          "x": 0,
+          "y": 0
+        },
+        "handleMetric": {},
+        "id": 2,
+        "js_code": "var s = Snap(svgnode);\r\nconst rows = ctrl.data[0].rows[0];\r\nconst locationid = rows.locationid\r\nconst signalstrength = rows.signalstrength\r\n\r\n\r\nbuildSignalStrength();\r\n\r\n      \r\nfunction buildSignalStrength() {\r\n    var bigCircle = s.circle(181, 80, 15);\r\n    bigCircle.attr({\r\n        fill: \"#FFFFFF\",\r\n        stroke: \"#0000FF\",\r\n        strokeWidth: 2\r\n    });\r\n    const text = s.text(170, 85, signalstrength)\r\n    text.attr({\r\n          'font-size':10,\r\n          'fill': \"#FF0000\"\r\n      });\r\n}",
+        "js_init_code": "",
+        "links": [],
+        "maxDataPoints": 3,
+        "nullPointMode": "connected",
+        "repositories": {
+          "rtmaster": {
+            "description": "simple examples",
+            "items": [
+              {
+                "category": "arrows",
+                "description": "Arrow facing up",
+                "name": "arrow-up",
+                "path": "rtmaster/arrows/arrow-up.svg"
+              },
+              {
+                "category": "arrows",
+                "description": "Arrow facing down",
+                "name": "arrow-down",
+                "path": "rtmaster/arrows/arrow-down.svg"
+              },
+              {
+                "category": "arrows",
+                "description": "Arrow facing right",
+                "name": "arrow-right",
+                "path": "rtmaster/arrows/arrow-right.svg"
+              },
+              {
+                "category": "arrows",
+                "description": "Arrow facing left",
+                "name": "arrow-left",
+                "path": "rtmaster/arrows/arrow-left.svg"
+              },
+              {
+                "category": "arrows",
+                "description": "Arrow facing up right",
+                "name": "arrow-up-right",
+                "path": "rtmaster/arrows/arrow-up-right.svg"
+              },
+              {
+                "category": "arrows",
+                "description": "Arrow facing up left",
+                "name": "arrow-up-left",
+                "path": "rtmaster/arrows/arrow-up-left.svg"
+              },
+              {
+                "category": "arrows",
+                "description": "Arrow facing down left",
+                "name": "arrow-down-left",
+                "path": "rtmaster/arrows/arrow-down-left.svg"
+              },
+              {
+                "category": "arrows",
+                "description": "Arrow facing down right",
+                "name": "arrow-down-right",
+                "path": "rtmaster/arrows/arrow-down-right.svg"
+              },
+              {
+                "category": "arrows",
+                "description": "Arrow facing left right",
+                "name": "arrow-left-right",
+                "path": "rtmaster/arrows/arrow-left-right.svg"
+              },
+              {
+                "category": "arrows",
+                "description": "Arrow facing up down",
+                "name": "arrow-up-down",
+                "path": "rtmaster/arrows/arrow-up-down.svg"
+              },
+              {
+                "category": "arrows",
+                "description": "Arrow facing up down left right",
+                "name": "arrow-up-down-left-right",
+                "path": "rtmaster/arrows/arrow-up-down-left-right.svg"
+              },
+              {
+                "category": "facilities",
+                "description": "Factory",
+                "name": "factory",
+                "path": "rtmaster/facilities/factory.svg"
+              },
+              {
+                "category": "facilities",
+                "description": "Jackup",
+                "name": "jackup",
+                "path": "rtmaster/facilities/jackup.svg"
+              },
+              {
+                "category": "facilities",
+                "description": "Plant",
+                "name": "plant",
+                "path": "rtmaster/facilities/plant.svg"
+              },
+              {
+                "category": "facilities",
+                "description": "Semisub",
+                "name": "semisub",
+                "path": "rtmaster/facilities/semisub.svg"
+              },
+              {
+                "category": "facilities",
+                "description": "Ship",
+                "name": "ship",
+                "path": "rtmaster/facilities/ship.svg"
+              },
+              {
+                "category": "facilities",
+                "description": "Truck",
+                "name": "truck",
+                "path": "rtmaster/facilities/truck.svg"
+              },
+              {
+                "category": "indicators",
+                "description": "Light Bulb",
+                "name": "light-bulb",
+                "path": "rtmaster/indicators/light-bulb.svg"
+              },
+              {
+                "category": "indicators",
+                "description": "Green Light Indicator",
+                "name": "light-green",
+                "path": "rtmaster/indicators/light-green.svg"
+              },
+              {
+                "category": "indicators",
+                "description": "Orange Light Indicator",
+                "name": "light-orange",
+                "path": "rtmaster/indicators/light-orange.svg"
+              },
+              {
+                "category": "indicators",
+                "description": "Red Light Indicator",
+                "name": "light-red",
+                "path": "rtmaster/indicators/light-red.svg"
+              },
+              {
+                "category": "industrial",
+                "description": "Compressor",
+                "name": "compressor",
+                "path": "rtmaster/industrial/compressor.svg"
+              },
+              {
+                "category": "industrial",
+                "description": "Derrick",
+                "name": "derrick",
+                "path": "rtmaster/industrial/derrick.svg"
+              },
+              {
+                "category": "industrial",
+                "description": "Heat Exchanger",
+                "name": "heatexchanger",
+                "path": "rtmaster/industrial/heatexchanger.svg"
+              },
+              {
+                "category": "industrial",
+                "description": "Motor",
+                "name": "motor",
+                "path": "rtmaster/industrial/motor.svg"
+              },
+              {
+                "category": "industrial",
+                "description": "Pump",
+                "name": "pump",
+                "path": "rtmaster/industrial/pump.svg"
+              },
+              {
+                "category": "industrial",
+                "description": "Horizontal Tank",
+                "name": "tank-horizontal",
+                "path": "rtmaster/industrial/tank-horizontal.svg"
+              },
+              {
+                "category": "industrial",
+                "description": "Vertical Tank",
+                "name": "tank-vertical",
+                "path": "rtmaster/industrial/tank-vertical.svg"
+              },
+              {
+                "category": "industrial",
+                "description": "Turbine",
+                "name": "turbine",
+                "path": "rtmaster/industrial/turbine.svg"
+              },
+              {
+                "category": "industrial",
+                "description": "Horizontal Vessel",
+                "name": "vessel-horizontal",
+                "path": "rtmaster/industrial/vessel-horizontal.svg"
+              },
+              {
+                "category": "industrial",
+                "description": "Vertical Vessel",
+                "name": "vessel-vertical",
+                "path": "rtmaster/industrial/vessel-vertical.svg"
+              },
+              {
+                "category": "letters",
+                "description": "A",
+                "name": "A",
+                "path": "rtmaster/letters/letter-a.svg"
+              },
+              {
+                "category": "letters",
+                "description": "B",
+                "name": "B",
+                "path": "rtmaster/letters/letter-b.svg"
+              },
+              {
+                "category": "letters",
+                "description": "C",
+                "name": "C",
+                "path": "rtmaster/letters/letter-c.svg"
+              },
+              {
+                "category": "letters",
+                "description": "D",
+                "name": "D",
+                "path": "rtmaster/letters/letter-d.svg"
+              },
+              {
+                "category": "letters",
+                "description": "E",
+                "name": "E",
+                "path": "rtmaster/letters/letter-e.svg"
+              },
+              {
+                "category": "letters",
+                "description": "F",
+                "name": "F",
+                "path": "rtmaster/letters/letter-f.svg"
+              },
+              {
+                "category": "letters",
+                "description": "G",
+                "name": "G",
+                "path": "rtmaster/letters/letter-g.svg"
+              },
+              {
+                "category": "letters",
+                "description": "H",
+                "name": "H",
+                "path": "rtmaster/letters/letter-h.svg"
+              },
+              {
+                "category": "letters",
+                "description": "I",
+                "name": "I",
+                "path": "rtmaster/letters/letter-i.svg"
+              },
+              {
+                "category": "letters",
+                "description": "J",
+                "name": "J",
+                "path": "rtmaster/letters/letter-j.svg"
+              },
+              {
+                "category": "letters",
+                "description": "K",
+                "name": "K",
+                "path": "rtmaster/letters/letter-k.svg"
+              },
+              {
+                "category": "letters",
+                "description": "L",
+                "name": "L",
+                "path": "rtmaster/letters/letter-l.svg"
+              },
+              {
+                "category": "letters",
+                "description": "M",
+                "name": "M",
+                "path": "rtmaster/letters/letter-m.svg"
+              },
+              {
+                "category": "letters",
+                "description": "N",
+                "name": "N",
+                "path": "rtmaster/letters/letter-n.svg"
+              },
+              {
+                "category": "letters",
+                "description": "O",
+                "name": "O",
+                "path": "rtmaster/letters/letter-o.svg"
+              },
+              {
+                "category": "letters",
+                "description": "P",
+                "name": "P",
+                "path": "rtmaster/letters/letter-p.svg"
+              },
+              {
+                "category": "letters",
+                "description": "Q",
+                "name": "Q",
+                "path": "rtmaster/letters/letter-q.svg"
+              },
+              {
+                "category": "letters",
+                "description": "R",
+                "name": "R",
+                "path": "rtmaster/letters-letter-r.svg"
+              },
+              {
+                "category": "letters",
+                "description": "S",
+                "name": "S",
+                "path": "rtmaster/letters/letter-s.svg"
+              },
+              {
+                "category": "letters",
+                "description": "T",
+                "name": "T",
+                "path": "rtmaster/letters/letter-t.svg"
+              },
+              {
+                "category": "letters",
+                "description": "U",
+                "name": "U",
+                "path": "rtmaster/letters/letter-u.svg"
+              },
+              {
+                "category": "letters",
+                "description": "V",
+                "name": "V",
+                "path": "rtmaster/letters/letter-v.svg"
+              },
+              {
+                "category": "letters",
+                "description": "W",
+                "name": "W",
+                "path": "rtmaster/letters/letter-w.svg"
+              },
+              {
+                "category": "letters",
+                "description": "X",
+                "name": "X",
+                "path": "rtmaster/letters/letter-x.svg"
+              },
+              {
+                "category": "letters",
+                "description": "Y",
+                "name": "Y",
+                "path": "rtmaster/letters/letter-y.svg"
+              },
+              {
+                "category": "letters",
+                "description": "Z",
+                "name": "Z",
+                "path": "rtmaster/letters/letter-z.svg"
+              },
+              {
+                "category": "meters",
+                "description": "Laboratory Flask",
+                "name": "flask",
+                "path": "rtmaster/meters/flask.svg"
+              },
+              {
+                "category": "meters",
+                "description": "Flowmeter",
+                "name": "flowmeter",
+                "path": "rtmaster/meters/flowmeter.svg"
+              },
+              {
+                "category": "meters",
+                "description": "Gauge",
+                "name": "gauge",
+                "path": "rtmaster/meters/gauge.svg"
+              },
+              {
+                "category": "numbers",
+                "description": "0",
+                "name": "0",
+                "path": "rtmaster/numbers/number-0.svg"
+              },
+              {
+                "category": "numbers",
+                "description": "1",
+                "name": "1",
+                "path": "rtmaster/numbers/number-1.svg"
+              },
+              {
+                "category": "numbers",
+                "description": "2",
+                "name": "2",
+                "path": "rtmaster/numbers/number-2.svg"
+              },
+              {
+                "category": "numbers",
+                "description": "3",
+                "name": "3",
+                "path": "rtmaster/numbers/number-3.svg"
+              },
+              {
+                "category": "numbers",
+                "description": "4",
+                "name": "4",
+                "path": "rtmaster/numbers/number-4.svg"
+              },
+              {
+                "category": "numbers",
+                "description": "5",
+                "name": "5",
+                "path": "rtmaster/numbers/number-5.svg"
+              },
+              {
+                "category": "numbers",
+                "description": "6",
+                "name": "6",
+                "path": "rtmaster/numbers/number-6.svg"
+              },
+              {
+                "category": "numbers",
+                "description": "7",
+                "name": "7",
+                "path": "rtmaster/numbers/number-7.svg"
+              },
+              {
+                "category": "numbers",
+                "description": "8",
+                "name": "8",
+                "path": "rtmaster/numbers/number-8.svg"
+              },
+              {
+                "category": "numbers",
+                "description": "9",
+                "name": "9",
+                "path": "rtmaster/numbers/number-9.svg"
+              },
+              {
+                "category": "pipes",
+                "description": "Pipe curve down",
+                "name": "pipe-curve-down",
+                "path": "rtmaster/pipes/pipe-curve-down.svg"
+              },
+              {
+                "category": "pipes",
+                "description": "Pipe curve down left",
+                "name": "pipe-curve-down-left",
+                "path": "rtmaster/pipes/pipe-curve-down-left.svg"
+              },
+              {
+                "category": "pipes",
+                "description": "Pipe curve down right",
+                "name": "pipe-curve-down-right",
+                "path": "rtmaster/pipes/pipe-curve-down-right.svg"
+              },
+              {
+                "category": "pipes",
+                "description": "Pipe curve left",
+                "name": "pipe-curve-left",
+                "path": "rtmaster/pipes/pipe-curve-left.svg"
+              },
+              {
+                "category": "pipes",
+                "description": "Pipe curve right",
+                "name": "pipe-curve-right",
+                "path": "rtmaster/pipes/pipe-curve-right.svg"
+              },
+              {
+                "category": "pipes",
+                "description": "Pipe curve up",
+                "name": "pipe-curve-up",
+                "path": "rtmaster/pipes/pipe-curve-up.svg"
+              },
+              {
+                "category": "pipes",
+                "description": "Pipe curve up left",
+                "name": "pipe-curve-up-left",
+                "path": "rtmaster/pipes/pipe-curve-up-left.svg"
+              },
+              {
+                "category": "pipes",
+                "description": "Pipe curve up right",
+                "name": "pipe-curve-up-right",
+                "path": "rtmaster/pipes/pipe-curve-up-right.svg"
+              },
+              {
+                "category": "pipes",
+                "description": "Pipe diagonal left",
+                "name": "pipe-diagonal-left",
+                "path": "rtmaster/pipes/pipe-diagonal-left.svg"
+              },
+              {
+                "category": "pipes",
+                "description": "Pipe diagonal right",
+                "name": "pipe-diagonal-right",
+                "path": "rtmaster/pipes/pipe-diagonal-right.svg"
+              },
+              {
+                "category": "pipes",
+                "description": "Pipe flange horizontal",
+                "name": "pipe-flange-horizontal",
+                "path": "rtmaster/pipes/pipe-flange-horizontal.svg"
+              },
+              {
+                "category": "pipes",
+                "description": "Pipe flange intersection",
+                "name": "pipe-flange-intersection",
+                "path": "rtmaster/pipes/pipe-flange-intersection.svg"
+              },
+              {
+                "category": "pipes",
+                "description": "Pipe flange vertical",
+                "name": "pipe-flange-vertical",
+                "path": "rtmaster/pipes/pipe-flange-vertical.svg"
+              },
+              {
+                "category": "pipes",
+                "description": "Pipe horizontal",
+                "name": "pipe-horizontal",
+                "path": "rtmaster/pipes/pipe-horizontal.svg"
+              },
+              {
+                "category": "pipes",
+                "description": "Pipe tee down",
+                "name": "pipe-tee-down",
+                "path": "rtmaster/pipes/pipe-tee-down.svg"
+              },
+              {
+                "category": "pipes",
+                "description": "Pipe tee left",
+                "name": "pipe-tee-left",
+                "path": "rtmaster/pipes/pipe-tee-left.svg"
+              },
+              {
+                "category": "pipes",
+                "description": "Pipe tee right",
+                "name": "pipe-tee-right",
+                "path": "rtmaster/pipes/pipe-tee-right.svg"
+              },
+              {
+                "category": "pipes",
+                "description": "Pipe tee up",
+                "name": "pipe-tee-up",
+                "path": "rtmaster/pipes/pipe-tee-up"
+              },
+              {
+                "category": "pipes",
+                "description": "Pipe vertical",
+                "name": "pipe-vertical",
+                "path": "rtmaster/pipes/pipe-vertical.svg"
+              },
+              {
+                "category": "shapes",
+                "description": "Circle",
+                "name": "circle",
+                "path": "rtmaster/shapes/circle.svg"
+              },
+              {
+                "category": "shapes",
+                "description": "Gear",
+                "name": "gear",
+                "path": "rtmaster/shapes/gear.svg"
+              },
+              {
+                "category": "shapes",
+                "description": "Line horizontal",
+                "name": "line-horizontal",
+                "path": "rtmaster/shapes/line-horizontal.svg"
+              },
+              {
+                "category": "shapes",
+                "description": "Line horizontal arrow left",
+                "name": "line-horizontal-arrow-left",
+                "path": "rtmaster/shapes/line-horizontal-arrow-left.svg"
+              },
+              {
+                "category": "shapes",
+                "description": "Line horizontal arrow right",
+                "name": "line-horizontal-arrow-right",
+                "path": "rtmaster/shapes/line-horizontal-arrow-right.svg"
+              },
+              {
+                "category": "shapes",
+                "description": "Line vertical",
+                "name": "line-vertical",
+                "path": "rtmaster/shapes/line-vertical.svg"
+              },
+              {
+                "category": "shapes",
+                "description": "Line vertical arrow down",
+                "name": "line-vertical-arrow-down",
+                "path": "rtmaster/shapes/line-vertical-arrow-down.svg"
+              },
+              {
+                "category": "shapes",
+                "description": "Line vertical arrow up",
+                "name": "line-vertical-arrow-up",
+                "path": "rtmaster/shapes/line-vertical-arrow-up.svg"
+              },
+              {
+                "category": "shapes",
+                "description": "Square",
+                "name": "square",
+                "path": "rtmaster/shapes/square.svg"
+              },
+              {
+                "category": "shapes",
+                "description": "Triangle down",
+                "name": "triangle-down",
+                "path": "rtmaster/shapes/triangle-down.svg"
+              },
+              {
+                "category": "shapes",
+                "description": "Triangle left",
+                "name": "triangle-left",
+                "path": "rtmaster/shapes/triangle-left.svg"
+              },
+              {
+                "category": "shapes",
+                "description": "Triangle right",
+                "name": "triangle-right",
+                "path": "rtmaster/shapes/triangle-right.svg"
+              },
+              {
+                "category": "shapes",
+                "description": "Triangle-up",
+                "name": "triangle-up",
+                "path": "rtmaster/shapes/triangle-up.svg"
+              },
+              {
+                "category": "valves",
+                "description": "Valve Horizontal",
+                "name": "valve-horizontal",
+                "path": "rtmaster/valves/valve-horizontal.svg"
+              },
+              {
+                "category": "valves",
+                "description": "Valve left right",
+                "name": "valve-left-right",
+                "path": "rtmaster/valves/valve-left-right.svg"
+              },
+              {
+                "category": "valves",
+                "description": "Valve round down",
+                "name": "valve-round-down",
+                "path": "rtmaster/valves/valve-round-down.svg"
+              },
+              {
+                "category": "valves",
+                "description": "Valve round left",
+                "name": "valve-round-left",
+                "path": "rtmaster/valves/valve-round-left.svg"
+              },
+              {
+                "category": "valves",
+                "description": "Valve round right",
+                "name": "valve-round-right",
+                "path": "rtmaster/valves/valve-round-right.svg"
+              },
+              {
+                "category": "valves",
+                "description": "Valve round up",
+                "name": "valve-round-up",
+                "path": "rtmaster/valves/valve-round-up.svg"
+              },
+              {
+                "category": "valves",
+                "description": "Valve square down",
+                "name": "valve-square-down",
+                "path": "rtmaster/valves/valve-square-down.svg"
+              },
+              {
+                "category": "valves",
+                "description": "Valve square left",
+                "name": "valve-square-left",
+                "path": "rtmaster/valves/valve-square-left.svg"
+              },
+              {
+                "category": "valves",
+                "description": "Valve square right",
+                "name": "valve-square-right",
+                "path": "rtmaster/valves/valve-square-right.svg"
+              },
+              {
+                "category": "valves",
+                "description": "Valve square up",
+                "name": "valve-square-up",
+                "path": "rtmaster/valves/valve-square-up.svg"
+              },
+              {
+                "category": "valves",
+                "description": "Valve vertical",
+                "name": "valve-vertical",
+                "path": "rtmaster/valves/valve-vertical"
+              }
+            ],
+            "license": "Apache 2.0",
+            "url": "https://github.com/rtmaster"
+          }
+        },
+        "svgBuilderData": {
+          "elements": [],
+          "height": "100%",
+          "viewport": {
+            "height": 1000,
+            "width": 1000,
+            "x": 0,
+            "y": 0
+          },
+          "width": "100%"
+        },
+        "svg_data": "\r\n<svg version=\"1.1\" id=\"Layer_2\" xmlns:x=\"&ns_extend;\" xmlns:i=\"&ns_ai;\" xmlns:graph=\"&ns_graphs;\"\r\n\t xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" width=\"1159.44238px\"\r\n\t height=\"971.95166px\" viewBox=\"0 0 1159.44238 971.95166\" enable-background=\"new 0 0 1159.44238 971.95166\" xml:space=\"preserve\">\r\n<metadata>\r\n\t<sfw  xmlns=\"&ns_sfw;\">\r\n\t\t<slices></slices>\r\n\t\t<sliceSourceBounds  x=\"-142.37891\" y=\"-330.06152\" width=\"1313.93457\" height=\"1115.94385\" bottomLeftOrigin=\"true\">\r\n\t\t\t</sliceSourceBounds>\r\n\t</sfw>\r\n</metadata>\r\n<symbol  id=\"Compass_Rose\" viewBox=\"-25.5759 -30.32089 51.15146 60.64022\">\r\n\t<g>\r\n\t\t<path fill=\"none\" stroke=\"#231F20\" d=\"M5.19336,4.04102c3.00098-1.77637,5.01074-5.04688,5.01074-8.78516\r\n\t\t\tc0-5.63574-4.56836-10.20313-10.2041-10.20313c-5.63428,0-10.20215,4.56738-10.20215,10.20313\r\n\t\t\tc0,3.74023,2.01123,7.00977,5.01123,8.78613C-4.5332,4.43164-3.83008,4.74805-3.08789,4.9834\r\n\t\t\tC-2.11279,5.29297-1.07471,5.45996,0,5.45996C1.89648,5.45996,3.67236,4.94238,5.19336,4.04102z\"/>\r\n\t\t<g>\r\n\t\t\t<path fill=\"none\" stroke=\"#231F20\" d=\"M-5.19092,4.04199C-4.5332,4.43164-3.83008,4.74805-3.08789,4.9834\r\n\t\t\t\tC-2.11279,5.29297-1.07471,5.45996,0,5.45996c1.89648,0,3.67236-0.51758,5.19336-1.41895l-5.2998,15.24023L-5.19092,4.04199z\"/>\r\n\t\t\t<path fill=\"#231F20\" stroke=\"#231F20\" d=\"M0,5.45996c1.89648,0,3.67236-0.51758,5.19336-1.41895l-5.2998,15.24023V5.45508\r\n\t\t\t\tL0,5.45996z\"/>\r\n\t\t</g>\r\n\t\t<g>\r\n\t\t\t<path fill=\"none\" stroke=\"#231F20\" d=\"M-8.78613-9.93555C-9.1748-9.2793-9.49072-8.57422-9.72754-7.83398\r\n\t\t\t\tc-0.30908,0.97559-0.47461,2.01367-0.47461,3.08984c0,1.89453,0.51563,3.66992,1.41699,5.19238l-15.24023-5.29883\r\n\t\t\t\tL-8.78613-9.93555z\"/>\r\n\t\t\t<path fill=\"#231F20\" stroke=\"#231F20\" d=\"M-10.20215-4.74414c0,1.89453,0.51563,3.66992,1.41699,5.19238l-15.24023-5.29883\r\n\t\t\t\th13.82715L-10.20215-4.74414z\"/>\r\n\t\t</g>\r\n\t\t<g>\r\n\t\t\t<path fill=\"none\" stroke=\"#231F20\" d=\"M5.19336-13.53125c-0.65869-0.38867-1.36328-0.70508-2.10205-0.94141\r\n\t\t\t\tC2.11426-14.78125,1.07666-14.94727,0-14.94727c-1.89453,0-3.66992,0.51465-5.19141,1.41699l5.29834-15.24023L5.19336-13.53125z\"\r\n\t\t\t\t/>\r\n\t\t\t<path fill=\"#231F20\" stroke=\"#231F20\" d=\"M0-14.94727c-1.89453,0-3.66992,0.51465-5.19141,1.41699l5.29834-15.24023v13.82715\r\n\t\t\t\tL0-14.94727z\"/>\r\n\t\t</g>\r\n\t\t<g>\r\n\t\t\t<path fill=\"none\" stroke=\"#231F20\" d=\"M8.7876,0.44824C9.17676-0.20898,9.49414-0.91504,9.72998-1.6543\r\n\t\t\t\tc0.30811-0.97461,0.4751-2.01367,0.4751-3.08984c0-1.89648-0.51758-3.6709-1.41943-5.19336l15.23975,5.2998L8.7876,0.44824z\"/>\r\n\t\t\t<path fill=\"#231F20\" stroke=\"#231F20\" d=\"M10.20508-4.74414c0-1.89648-0.51758-3.6709-1.41943-5.19336l15.23975,5.2998H10.19922\r\n\t\t\t\tL10.20508-4.74414z\"/>\r\n\t\t</g>\r\n\t\t<g>\r\n\t\t\t<path fill=\"#231F20\" d=\"M3.72949,30.0957c-0.67188-0.08203-1.0127-0.13086-1.0127-1.51563v-6.22656H2.53516l-4.68799,6.4873\r\n\t\t\t\th-0.021v-4.61719c0-1.21973,0.22412-1.47949,1.00244-1.51465v-0.22461h-2.50488v0.22461\r\n\t\t\t\tc0.81055,0.05859,1.03467,0.23633,1.03467,1.51465v5.22168C-3.0791,30.03613-3.25,30.0957-3.67627,30.0957v0.22363h1.82275\r\n\t\t\t\tl4.08008-5.69238h0.02197v3.95313c0,1.36133-0.29883,1.45605-1.02295,1.51563v0.22363h2.50391V30.0957z\"/>\r\n\t\t</g>\r\n\t</g>\r\n</symbol>\r\n<rect x=\"-38.49414\" y=\"-53.99316\" fill=\"#FFFFFF\" width=\"1313.93457\" height=\"1115.94385\"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" points=\"215.15576,610.67139 44.2998,609.15283 26.0752,578.77881 105.04883,60.13574 \r\n\t101.25146,51.78271 124.7915,35.07715 141.49805,51.02393 289.81348,54.82031 \"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" points=\"212.87695,629.65479 13.92529,629.65479 13.92529,798.99268 56.44971,798.99268 \r\n\t56.44971,790.64014 75.43359,790.64014 75.43359,800.51123 148.33252,800.51123 148.33252,793.67725 170.35254,793.67725 \r\n\t170.35254,802.03076 223.50781,802.03076 223.50781,795.1958 244.01172,795.1958 244.01172,804.30811 304.00049,804.30811 \r\n\t304.00049,798.23291 315.39111,798.23291 332.09717,798.23291 332.09717,775.4585 304.25342,774.94873 304.25342,712.17627 \"/>\r\n<rect x=\"93.6582\" y=\"688.88525\" fill=\"none\" stroke=\"#000000\" width=\"117.70117\" height=\"56.95215\"/>\r\n<path fill=\"none\" stroke=\"#000000\" d=\"M139.47168,674.45752H79.98975v88.08594H222.75v-88.08594h-62.77295v-10.63086\r\n\tC159.97705,663.82666,139.47168,665.09033,139.47168,674.45752z\"/>\r\n<rect x=\"139.72656\" y=\"709.64307\" fill=\"none\" stroke=\"#000000\" width=\"21.26318\" height=\"15.1875\"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" points=\"280.46094,653.45166 280.46094,711.6665 333.10791,711.6665 \"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"311.3418\" y1=\"775.45264\" x2=\"311.3418\" y2=\"798.74365\"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" points=\"311.84619,785.07471 323.49219,785.07471 323.49219,774.94873 \"/>\r\n<path fill=\"none\" stroke=\"#000000\" d=\"M33.21826,533.22217l50.82031,11.38477l4.05225-12.14941l43.02783,5.06641l8.10107-106.82031\r\n\tl16.70557,1.01465l17.71729-103.78027l-37.96777-7.08594l28.35156-167.06006l-62.7749-13.16357l11.64307-69.86182h10.63086\r\n\tl-12.14941-16.70508l9.11182-7.08691c0,0,7.08936-5.57031,4.05176,5.56787l6.0752,10.12695l10.8833-11.64551\"/>\r\n<rect x=\"65.48166\" y=\"327.60229\" transform=\"matrix(0.98619 0.16563 -0.16563 0.98619 63.22025 -13.13458)\" fill=\"none\" stroke=\"#000000\" width=\"89.75935\" height=\"89.76224\"/>\r\n<circle fill=\"none\" stroke=\"#000000\" cx=\"123.52539\" cy=\"175.55811\" r=\"26.57764\"/>\r\n<circle fill=\"none\" stroke=\"#000000\" cx=\"114.4126\" cy=\"233.77783\" r=\"26.57764\"/>\r\n<circle fill=\"none\" stroke=\"#000000\" cx=\"104.28906\" cy=\"291.48877\" r=\"26.57764\"/>\r\n<ellipse fill=\"none\" stroke=\"#000000\" cx=\"110.36426\" cy=\"372.48096\" rx=\"42.52441\" ry=\"43.02832\"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" points=\"72.55127,412.05566 70.37012,427.6665 119.47607,435.76611 120.99512,420.07275 \"/>\r\n<ellipse fill=\"none\" stroke=\"#000000\" cx=\"88.59473\" cy=\"470.69775\" rx=\"32.90479\" ry=\"31.38672\"/>\r\n<path fill=\"none\" stroke=\"#000000\" d=\"M186.80762,609.91162l-1.01514-91.62695c0,0-1.0083-42.52441,2.53271-75.93555\r\n\tl3.03857-33.91895v-45.5625h41.50879v3.03809h-35.94189v42.0166c0,0-1.02002,28.4502-2.02637,33.41211\r\n\tc-8.42969,41.55859-5.56934,13.16406-3.03662,169.59277\"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" points=\"189.55127,491.88916 240.4668,495.50342 240.4668,504.11279 253.63086,505.12061 \r\n\t254.64307,497.52686 276.41211,498.5415 275.90381,506.13428 283.49805,506.13428 284.51025,499.04541 308.80908,500.56494 \"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" points=\"201.21826,207.72266 201.48779,272.25244 213.63672,272.25244 \"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" points=\"214.21826,222.05566 214.14453,359.7749 258.71826,354.72266 \"/>\r\n<path fill=\"none\" stroke=\"#000000\" d=\"M214.14453,249.47119h100.10742v-68.97705c0,0-7.59277,1.51904-7.21338-6.07373\r\n\tc0.37988-7.59424,6.45361-4.9375,6.45361-4.9375v-16.70459h2.6582v14.04785c0,0,7.09619,2.5249,8.23438,5.56299\r\n\tc1.13916,3.03711-0.26172,6.58691-3.29834,9.24414v71.38037\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"214.14453\" y1=\"308.70166\" x2=\"318.80762\" y2=\"308.70166\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"247.04883\" y1=\"308.70166\" x2=\"246.88477\" y2=\"356.22266\"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" points=\"310.32813,308.19482 310.32813,324.39307 262.23584,324.39307 262.23584,308.70166 \r\n\t\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"275.39697\" y1=\"324.39307\" x2=\"275.38477\" y2=\"350.88916\"/>\r\n<polygon fill=\"none\" stroke=\"#000000\" points=\"222.75,625.60986 212.62549,625.60986 212.62549,652.43604 331.59033,652.43604 \r\n\t331.59033,645.85693 223.76074,644.33838 \"/>\r\n<path fill=\"none\" stroke=\"#000000\" d=\"M941.6084,317.81641c0-19.57031,15.8623-35.43701,35.43945-35.43701\r\n\tc19.57129,0,35.43555,15.8667,35.43555,35.43701c0,19.57178-15.86426,35.43848-35.43555,35.43848\r\n\tC957.4707,353.25488,941.6084,337.38818,941.6084,317.81641z\"/>\r\n<path fill=\"none\" stroke=\"#000000\" d=\"M1019.3877,428.68311c0-21.62988,17.53809-39.16016,39.16699-39.16016\r\n\tc21.62402,0,39.15527,17.53027,39.15527,39.16016c0,21.63086-17.53125,39.16113-39.15527,39.16113\r\n\tC1036.92578,467.84424,1019.3877,450.31396,1019.3877,428.68311z\"/>\r\n<path fill=\"none\" stroke=\"#000000\" d=\"M969.8457,184.17041c0-22.71387,18.41406-41.11865,41.125-41.11865\r\n\tc22.7041,0,41.11133,18.40479,41.11133,41.11865c0,22.71191-18.40723,41.1167-41.11133,41.1167\r\n\tC988.25977,225.28711,969.8457,206.88232,969.8457,184.17041z\"/>\r\n<polygon fill=\"none\" stroke=\"#000000\" points=\"1052.47461,490.94971 1002.10059,454.32275 1008.63867,392.38525 \r\n\t1065.54883,367.07959 1115.92285,403.70752 1109.38477,465.646 \"/>\r\n<polygon fill=\"none\" stroke=\"#000000\" points=\"1053.51855,481.03955 1011.20703,450.2749 1016.69531,398.24658 \r\n\t1064.50488,376.98975 1106.81641,407.75635 1101.32813,459.78467 \"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" points=\"904.65332,630.67041 927.93848,630.67041 927.93848,400.33252 864.15234,372.49072 \r\n\t878.83496,257.06836 924.90234,265.16553 914.27051,348.69189 928.44922,368.43604 1006.4082,380.58447 1026.15137,367.42432 \r\n\t1038.30078,284.90674 1024.63281,267.18848 944.14648,253.01367 \"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" points=\"927.93848,630.67041 981.60547,630.67041 981.60547,591.69385 927.43457,591.69385 \r\n\t\"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" points=\"981.60547,617.51221 1031.72168,617.51221 1031.72168,536.51025 \r\n\t1003.37109,536.51025 1003.37109,568.9126 1032.22559,568.40283 \"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"981.60547\" y1=\"604.34814\" x2=\"1031.72168\" y2=\"604.34814\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"1032.22559\" y1=\"543.59814\" x2=\"1125.88281\" y2=\"543.59814\"/>\r\n<path fill=\"none\" stroke=\"#000000\" d=\"M1081.83398,602.32471c0-6.99512,5.66602-12.66016,12.66016-12.66016\r\n\tc6.98828,0,12.65332,5.66504,12.65332,12.66016c0,6.98828-5.66504,12.6543-12.65332,12.6543\r\n\tC1087.5,614.979,1081.83398,609.31299,1081.83398,602.32471z\"/>\r\n<rect x=\"1072.21777\" y=\"580.55127\" fill=\"none\" stroke=\"#000000\" width=\"45.56055\" height=\"43.03516\"/>\r\n<rect x=\"1063.61523\" y=\"573.97217\" fill=\"none\" stroke=\"#000000\" width=\"59.23047\" height=\"56.19434\"/>\r\n<path fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" stroke-dasharray=\"3,3\" d=\"M430.81348,386.65967\r\n\tc0-54.24023,43.96875-98.20898,98.20996-98.20898c54.24316,0,98.20898,43.96875,98.20898,98.20898\r\n\tc0,54.24121-43.96582,98.20996-98.20898,98.20996C474.78223,484.86963,430.81348,440.90088,430.81348,386.65967z\"/>\r\n<g>\r\n\t<path fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" stroke-dasharray=\"1,1\" d=\"M448.67676,221.63037\r\n\t\tc0-9.7085,7.86914-17.58057,17.5752-17.58057c9.70508,0,17.57715,7.87207,17.57715,17.58057\r\n\t\tc0,9.70264-7.87207,17.57471-17.57715,17.57471C456.5459,239.20508,448.67676,231.33301,448.67676,221.63037z\"/>\r\n\t<path fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" stroke-dasharray=\"1,1\" d=\"M441.64648,221.63281\r\n\t\tc0-13.59326,11.01563-24.61377,24.60547-24.61377c13.58789,0,24.60352,11.02051,24.60352,24.61377\r\n\t\tc0,13.58252-11.01563,24.60303-24.60352,24.60303C452.66211,246.23584,441.64648,235.21533,441.64648,221.63281z\"/>\r\n</g>\r\n<polygon fill=\"none\" stroke=\"#000000\" points=\"1052.47461,490.94971 1002.10059,454.32275 1008.63867,392.38525 \r\n\t1065.54883,367.07959 1115.92285,403.70752 1109.38477,465.646 \"/>\r\n<path fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" stroke-dasharray=\"1,1\" d=\"M452.0752,193.2793\r\n\tc0,0-31.38574-9.11328-48.59863,22.27295c0,0-15.18994,19.23633,7.08691,52.64844\"/>\r\n<path fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" stroke-dasharray=\"1,1\" d=\"M613.06055,199.8584\r\n\tc0,0,62.26758,1.51807,41.00488,73.40527\"/>\r\n<path fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" stroke-dasharray=\"1,1\" d=\"M613.06055,208.97021\r\n\tc0,0,48.10059,9.1123,30.88379,59.23047\"/>\r\n<path fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" stroke-dasharray=\"1,1\" d=\"M417.65234,260.60645\r\n\tc0,0-25.8208-46.06494,26.83008-53.65918\"/>\r\n<path fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" stroke-dasharray=\"1,1\" d=\"M633.31348,509.67627\r\n\tc0,0,23.28516,43.02832-23.79492,60.75\"/>\r\n<path fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" stroke-dasharray=\"1,1\" d=\"M641.41113,508.15771\r\n\tc0,0,17.20996,24.2998,1.51953,51.13184c-15.69141,26.83301-38.9834,20.24805-38.9834,20.24805\"/>\r\n<path fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" stroke-dasharray=\"1,1\" d=\"M409.04736,492.46631\r\n\tc0,0-16.70605,21.77148-6.0752,54.1709c10.63135,32.39648,48.09229,25.30664,48.09229,25.30664\"/>\r\n<path fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" stroke-dasharray=\"1,1\" d=\"M416.1333,501.57861\r\n\tc0,0-19.23877,52.64551,29.86768,58.2168\"/>\r\n<circle fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" cx=\"230.34277\" cy=\"331.48291\" r=\"15.18701\"/>\r\n<rect x=\"357.91504\" y=\"596.24463\" width=\"24.29932\" height=\"11.38867\"/>\r\n<rect x=\"397.40283\" y=\"361.60107\" width=\"11.38916\" height=\"11.39063\"/>\r\n<rect x=\"415.62646\" y=\"361.60107\" width=\"11.39063\" height=\"11.39063\"/>\r\n<rect x=\"415.62646\" y=\"385.90088\" width=\"11.39063\" height=\"11.39063\"/>\r\n<rect x=\"397.40283\" y=\"385.90088\" width=\"11.38916\" height=\"11.39063\"/>\r\n<rect x=\"436.50879\" y=\"376.02881\" width=\"11.39063\" height=\"11.39063\"/>\r\n<rect x=\"419.04297\" y=\"335.02393\" width=\"11.39063\" height=\"11.39063\"/>\r\n<rect x=\"418.66357\" y=\"173.66064\" width=\"11.39014\" height=\"11.38916\"/>\r\n<rect x=\"401.57861\" y=\"172.52148\" width=\"11.39063\" height=\"11.39063\"/>\r\n<rect x=\"383.35352\" y=\"172.1416\" width=\"11.39063\" height=\"11.39063\"/>\r\n<rect x=\"354.49854\" y=\"170.62256\" width=\"11.38916\" height=\"11.39063\"/>\r\n<rect x=\"395.75928\" y=\"571.31006\" width=\"11.38916\" height=\"11.38867\"/>\r\n<rect x=\"643.81445\" y=\"581.43604\" width=\"11.39063\" height=\"11.38965\"/>\r\n<rect x=\"705.57715\" y=\"586.49658\" width=\"11.39063\" height=\"11.39063\"/>\r\n<rect x=\"417.90527\" y=\"415.51611\" width=\"11.38916\" height=\"11.39063\"/>\r\n<rect x=\"645.71191\" y=\"373.75146\" width=\"11.39063\" height=\"11.39063\"/>\r\n<rect x=\"645.71191\" y=\"398.05029\" width=\"11.39063\" height=\"11.39063\"/>\r\n<polygon points=\"641.15625,409.44092 629.7666,409.44092 630.52441,398.62061 641.15625,398.05029 \"/>\r\n<rect x=\"627.1084\" y=\"343.37646\" width=\"11.39063\" height=\"11.39063\"/>\r\n<rect x=\"649.12988\" y=\"189.60742\" width=\"11.39063\" height=\"11.38916\"/>\r\n<rect x=\"703.80273\" y=\"189.60742\" width=\"11.39063\" height=\"11.38916\"/>\r\n<rect x=\"628.24707\" y=\"373.75146\" width=\"11.39063\" height=\"11.39063\"/>\r\n<rect x=\"835.55176\" y=\"271.23779\" width=\"11.39063\" height=\"11.39063\"/>\r\n<circle fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" cx=\"861.12109\" cy=\"551.69678\" r=\"34.42578\"/>\r\n<ellipse fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" cx=\"784.1709\" cy=\"353.24902\" rx=\"18.22559\" ry=\"17.21436\"/>\r\n<path fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" stroke-dasharray=\"1,1\" d=\"M904.65332,741.02588\r\n\tc0-25.16504,20.39648-45.56152,45.5625-45.56152c25.16504,0,45.56152,20.39648,45.56152,45.56152\r\n\tc0,25.16602-20.39648,45.5625-45.56152,45.5625C925.0498,786.58838,904.65332,766.19189,904.65332,741.02588z\"/>\r\n<circle fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" cx=\"1036.78809\" cy=\"730.90576\" r=\"18.22461\"/>\r\n<ellipse fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" cx=\"1001.34717\" cy=\"483.85889\" rx=\"10.12061\" ry=\"9.1123\"/>\r\n<polygon fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" points=\"989.19727,232.7627 962.37109,202.38867 961.86035,160.87793 \r\n\t989.70898,135.06006 1033.24121,135.56396 1059.05957,167.45703 1058.55469,207.45117 1030.20313,234.78857 \"/>\r\n<path fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" d=\"M949.71191,250.98779l-0.50586-9.61719l83.53125,2.52979\r\n\tl34.92969-30.37402l1.51953-48.09082l-33.41309-37.96826H986.6709l-32.90723,28.85449v48.09277l25.31445,28.85498l-39.99707-2.02588\r\n\tv-17.22412h-8.60254v20.26221c0,0,1.00781,3.54785,5.56445,4.05176c4.55566,0.50391,8.10352,1.01074,8.10352,1.01074v13.66943\r\n\tL949.71191,250.98779z\"/>\r\n<circle fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" cx=\"573.5752\" cy=\"353.24902\" r=\"9.62109\"/>\r\n<rect x=\"553.32324\" y=\"334.01318\" fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" width=\"38.47559\" height=\"36.44922\"/>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-width=\"2\" stroke-miterlimit=\"2\" x1=\"860.10742\" y1=\"821.01416\" x2=\"1121.83008\" y2=\"822.87158\"/>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-width=\"2\" stroke-miterlimit=\"2\" x1=\"1122.33594\" y1=\"704.57666\" x2=\"1121.83008\" y2=\"822.87158\"/>\r\n<path fill=\"none\" stroke=\"#000000\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"2\" d=\"\r\n\tM1125.37305,642.81982V169.99121l-12.92773-10.16016c5.61719-2.99512,9.48633-8.84521,9.48633-15.65771\r\n\tc0-9.84521-7.97852-17.82227-17.82129-17.82227c-5.36914,0-10.12109,2.42383-13.38965,6.17627l-50.00293,0.0293\"/>\r\n<rect x=\"1017.03906\" y=\"709.64307\" fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"2\" width=\"39.99121\" height=\"39.99219\"/>\r\n<rect x=\"1016.53516\" y=\"756.21436\" fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"2\" width=\"41.00488\" height=\"14.17676\"/>\r\n<rect x=\"1009.9502\" y=\"703.56787\" fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"2\" width=\"53.66504\" height=\"71.38086\"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"2\" points=\"\r\n\t915.28418,335.53076 897.56445,334.01318 897.88477,317.38965 \"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"2\" points=\"\r\n\t916.80371,320.34375 888.96191,315.28076 890.48145,291.48877 920.3457,296.54883 \"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"2\" points=\"\r\n\t922.375,280.34961 905.15918,278.32373 902.55176,293.22314 \"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"924.90234\" y1=\"265.16553\" x2=\"944.14648\" y2=\"253.01367\"/>\r\n<polygon fill=\"none\" stroke=\"#000000\" points=\"937.56152,266.68164 925.91602,355.2749 1013.49805,368.43604 1025.1377,280.34961 \r\n\t\"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" points=\"1007.88477,395.38965 980.08594,394.76123 979.07031,407.41553 968.94336,407.41553 \r\n\t967.93555,432.729 974.51465,433.23291 974.01074,451.4585 1002.35645,451.4585 \"/>\r\n<path fill=\"none\" stroke=\"#000000\" d=\"M985.14551,128.47803\"/>\r\n<path fill=\"none\" stroke=\"#000000\" d=\"M994.25781,457.28076h-9.1123c0,0-4.5498,8.60547-5.05957,11.39063h-8.10352\r\n\tc0,0-5.81445,16.95996-6.32422,23.54004v15.94629h47.08008l13.1582-13.1582v-22.53125\"/>\r\n<path fill=\"none\" stroke=\"#000000\" d=\"M1014.00195,464.11572h-19.48828c0,0-9.1123,8.85645-12.4043,16.95703\r\n\tc0,0-2.65527,10.24902,8.47949,15.82031l-0.12793,7.21289h19.48926v-6.83398h9.87207v-22.77832h-4.30273L1014.00195,464.11572z\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"1009.9502\" y1=\"497.27197\" x2=\"990.58887\" y2=\"496.89307\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"1015.01563\" y1=\"470.18896\" x2=\"988.94336\" y2=\"470.18896\"/>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"bevel\" x1=\"1015.51953\" y1=\"474.49365\" x2=\"1015.26563\" y2=\"496.76709\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"932.75\" y1=\"356.53857\" x2=\"931.23145\" y2=\"368.18311\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"946.67383\" y1=\"358.31201\" x2=\"945.4043\" y2=\"370.71338\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"951.7334\" y1=\"359.32275\" x2=\"950.21582\" y2=\"371.97998\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"965.90723\" y1=\"361.34912\" x2=\"964.55176\" y2=\"374.05664\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"972.2373\" y1=\"362.36084\" x2=\"970.97363\" y2=\"374.76221\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"984.8916\" y1=\"364.38721\" x2=\"983.37305\" y2=\"377.0415\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"989.19727\" y1=\"364.89111\" x2=\"987.67871\" y2=\"377.29541\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"1005.05176\" y1=\"367.22314\" x2=\"1002.35645\" y2=\"379.82666\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"1014.76172\" y1=\"361.60107\" x2=\"1026.40625\" y2=\"363.62744\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"1016.2793\" y1=\"347.17432\" x2=\"1028.93359\" y2=\"348.69189\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"1017.03906\" y1=\"341.09912\" x2=\"1029.88477\" y2=\"342.05664\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"1018.55859\" y1=\"327.93799\" x2=\"1031.21289\" y2=\"329.45557\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"1020.07715\" y1=\"321.60742\" x2=\"1032.22559\" y2=\"322.87354\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"1021.34082\" y1=\"305.66064\" x2=\"1034.75977\" y2=\"307.17969\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"1022.09863\" y1=\"301.10498\" x2=\"1035.76855\" y2=\"302.62402\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"1024.12891\" y1=\"290.22217\" x2=\"1037.79688\" y2=\"289.96973\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"1018.05176\" y1=\"279.22314\" x2=\"1017.79883\" y2=\"266.1748\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"1004.13086\" y1=\"276.55322\" x2=\"1003.88477\" y2=\"263.88965\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"997.7998\" y1=\"275.79346\" x2=\"997.55176\" y2=\"262.12549\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"985.40137\" y1=\"273.76758\" x2=\"985.90527\" y2=\"259.84717\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"980.21777\" y1=\"273.22314\" x2=\"980.08594\" y2=\"258.83594\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"965.21777\" y1=\"270.72314\" x2=\"964.64355\" y2=\"256.30322\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"960.38477\" y1=\"270.38965\" x2=\"959.83203\" y2=\"255.79785\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"946.16406\" y1=\"267.44141\" x2=\"945.91406\" y2=\"253.52051\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"936.05176\" y1=\"274.55664\" x2=\"924.21777\" y2=\"272.72314\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"934.01367\" y1=\"290.22217\" x2=\"922.11914\" y2=\"288.19629\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"933.50977\" y1=\"293.25928\" x2=\"921.88477\" y2=\"291.38965\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"931.48633\" y1=\"308.19482\" x2=\"919.58594\" y2=\"306.67578\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"930.47266\" y1=\"312.24268\" x2=\"919.33594\" y2=\"310.47217\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"928.9541\" y1=\"326.41895\" x2=\"917.30762\" y2=\"324.1416\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"928.44922\" y1=\"330.97461\" x2=\"916.80371\" y2=\"328.94873\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"927.05176\" y1=\"345.88965\" x2=\"915.03027\" y2=\"344.89551\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"921.10547\" y1=\"357.80518\" x2=\"925.91602\" y2=\"355.2749\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"985.90527\" y1=\"127.71826\" x2=\"937.05176\" y2=\"127.71826\"/>\r\n<ellipse fill=\"#FFFFFF\" stroke=\"#000000\" cx=\"933.76465\" cy=\"126.70752\" rx=\"5.06641\" ry=\"5.31543\"/>\r\n<line fill=\"#FFFFFF\" stroke=\"#000000\" x1=\"967.50879\" y1=\"485.81494\" x2=\"982.05176\" y2=\"486.05615\"/>\r\n<line fill=\"#FFFFFF\" stroke=\"#000000\" x1=\"965.6582\" y1=\"492.21143\" x2=\"983.05176\" y2=\"490.39014\"/>\r\n<line fill=\"#FFFFFF\" stroke=\"#000000\" stroke-linecap=\"round\" x1=\"982.10938\" y1=\"481.07275\" x2=\"980.08594\" y2=\"468.67139\"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" points=\"742.53027,418.55322 826.43945,418.55322 \r\n\t826.43945,334.26416 810.49316,334.26416 810.49316,338.82031 805.55762,338.82031 805.55762,333.88477 763.79297,333.88477 \r\n\t763.79297,336.54297 758.09766,336.54297 758.09766,332.74658 743.66992,332.74658 \"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" points=\"742.91016,373.75146 756.58008,373.75146 \r\n\t756.58008,369.95361 764.17285,369.95361 764.17285,373.75146 803.66016,373.75146 803.66016,369.57568 810.11328,369.57568 \r\n\t810.11328,374.51123 826.05957,374.51123 \"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" points=\"819.22656,333.88477 819.22656,275.79346 \r\n\t772.9043,275.79346 772.9043,279.59131 767.20898,279.59131 767.20898,275.41357 744.42969,275.41357 \"/>\r\n<path fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" d=\"M907.31152,508.15771v-81.25098\r\n\tc0,0-3.41602-12.90918-49.3584-23.54102c0,0,2.71094,28.02832,0,36.8291c-0.84277,2.74414-6.45313,9.49219-6.45313,9.49219\"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" points=\"742.66211,224.66406 778.0957,224.66406 778.0957,253.52051 \r\n\t784.1709,253.52051 784.1709,224.66406 824.16211,224.66406 824.16211,252.50537 829.73242,252.50537 829.73242,225.16846 \r\n\t844.91992,225.16846 844.91992,175.05127 744.68359,175.05127 \"/>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" x1=\"829.73242\" y1=\"225.16846\" x2=\"844.41504\" y2=\"211.50049\"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" points=\"844.91992,225.16846 844.91992,238.8374 876.81348,238.8374 \r\n\t876.81348,216.05664 \"/>\r\n<g>\r\n\t<polyline fill=\"none\" stroke=\"#000000\" points=\"700.6416,114.08154 700.6416,113.29102 704.69336,101.64844 697.60352,101.64844 \r\n\t\t697.60352,92.02881 756.33008,92.02881 \t\"/>\r\n\t<line fill=\"none\" stroke=\"#000000\" x1=\"700.6416\" y1=\"123.63281\" x2=\"700.6416\" y2=\"167.96533\"/>\r\n\t<path fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M700.6416,114.08154\r\n\t\tc-4.41602,0.27344-7.84277,2.30566-7.84277,4.77783c0,2.46826,3.42676,4.5,7.84277,4.77344\"/>\r\n\t<path fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M700.6416,114.08154\r\n\t\tc0.33301-0.02051,0.66992-0.03369,1.01367-0.03369c4.89453,0,8.8584,2.15283,8.8584,4.81152\r\n\t\tc0,2.6543-3.96387,4.80713-8.8584,4.80713c-0.34375,0-0.68066-0.01318-1.01367-0.03369\"/>\r\n</g>\r\n<g>\r\n\t<path fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M761.35938,122.91113\"/>\r\n\t<polyline fill=\"none\" stroke=\"#000000\" points=\"845.4248,215.55225 901.1123,215.55225 901.1123,122.91113 761.35938,122.91113 \t\r\n\t\t\"/>\r\n\t<path fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M756.77539,128.88721\"/>\r\n\t<line fill=\"none\" stroke=\"#000000\" x1=\"756.77539\" y1=\"128.88721\" x2=\"756.33008\" y2=\"174.63916\"/>\r\n\t<polyline fill=\"none\" stroke=\"#000000\" points=\"756.83398,115.84912 756.83398,83.42383 702.66504,83.42383 702.66504,91.88916 \t\r\n\t\t\"/>\r\n\t<path fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M756.83398,115.84912\"/>\r\n\t<path fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M756.83398,115.84912\r\n\t\tc0.16309-0.03223,0.32813-0.0542,0.49609-0.0542c2.23047,0,4.0459,2.9458,4.0459,6.58203c0,0.18018-0.00781,0.35742-0.0166,0.53418\r\n\t\t\"/>\r\n\t<path fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M756.83398,115.84912\r\n\t\tc-2.00195,0.39844-3.55664,3.16504-3.55664,6.52783c0,3.32715,1.52441,6.07031,3.49805,6.51025\"/>\r\n\t<path fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M761.35938,122.91113\r\n\t\tc-0.16797,3.38281-1.90918,6.04492-4.0293,6.04492c-0.18848,0-0.37305-0.02832-0.55469-0.06885\"/>\r\n</g>\r\n<polyline fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" points=\"901.1123,133.54199 911.23926,133.54199 \r\n\t911.23926,124.93311 921.35938,124.93311 921.35938,133.03418 933.28125,133.04541 933.28125,133.04541 933.00586,169.99121 \"/>\r\n<ellipse fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" cx=\"780.62939\" cy=\"263.89893\" rx=\"3.0376\" ry=\"5.31543\"/>\r\n<path fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" d=\"M961.60645,176.82471\"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" points=\"961.60645,176.82471 936.29297,176.82471 \r\n\t936.29297,169.99121 928.9541,169.99121 928.9541,190.99805 932.49512,190.99805 932.49512,204.16162 926.4209,204.16162 \r\n\t926.4209,214.0332 936.04297,214.0332 936.04297,204.66602 953.76367,204.41455 \"/>\r\n<path fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" d=\"M962.11035,186.69727\"/>\r\n<rect x=\"937.05762\" y=\"188.71924\" fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" width=\"11.13477\" height=\"8.10107\"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" points=\"936.29297,169.99121 936.29297,163.91602 \r\n\t953.25781,163.91602 \"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" points=\"953.25781,158.34521 937.56152,158.34521 \r\n\t937.55176,130.38965 \"/>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" x1=\"928.95898\" y1=\"184.67139\" x2=\"961.86035\" y2=\"184.67139\"/>\r\n<rect x=\"815.05566\" y=\"663.57178\" fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" width=\"47.58496\" height=\"7.59375\"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" points=\"862.64063,663.57178 881.87891,663.57178 \r\n\t881.87891,718.75537 792.7793,718.75537 792.7793,775.45264 711.39746,776.2124 \"/>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" x1=\"876.30859\" y1=\"664.08252\" x2=\"876.30859\" y2=\"718.75537\"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" points=\"862.64063,671.16553 862.64063,705.0874 777.5918,705.0874 \r\n\t777.5918,775.45264 \"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" points=\"772.02051,775.45264 772.02051,694.45654 \r\n\t857.58008,694.45654 857.58008,689.64502 \"/>\r\n<path fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" d=\"M862.64063,689.38916H761.90039c0,0-4.5625-1.51758-5.06641,6.0752\"/>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" x1=\"852.51367\" y1=\"671.67529\" x2=\"852.51367\" y2=\"689.38916\"/>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" x1=\"856.81348\" y1=\"712.80615\" x2=\"856.81348\" y2=\"717.93115\"/>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" x1=\"838.58984\" y1=\"712.80615\" x2=\"838.58984\" y2=\"717.93115\"/>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" x1=\"820.36426\" y1=\"712.80615\" x2=\"820.36426\" y2=\"717.93115\"/>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" x1=\"802.14063\" y1=\"712.80615\" x2=\"802.14063\" y2=\"717.93115\"/>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" x1=\"787.33398\" y1=\"726.854\" x2=\"792.0791\" y2=\"726.854\"/>\r\n<path fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" d=\"M609.7666,552.71045c0-3.49902,2.83105-6.3291,6.33105-6.3291\r\n\tc3.48828,0,6.32324,2.83008,6.32324,6.3291c0,3.48828-2.83496,6.3252-6.32324,6.3252\r\n\tC612.59766,559.03564,609.7666,556.19873,609.7666,552.71045z\"/>\r\n<polygon fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" points=\"922.87305,730.90576 938.45801,715.55127 960.33594,715.71143 \r\n\t975.69043,731.29639 975.53027,753.17529 959.94531,768.52979 938.06543,768.36963 922.71289,752.78467 \"/>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" x1=\"234.89844\" y1=\"417.03564\" x2=\"235.05127\" y2=\"357.38916\"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" points=\"258.43945,419.69287 258.43945,391.9751 306.65918,391.5957 307.29004,424.12451 \r\n\t196.42383,412.98584 \"/>\r\n<path fill=\"none\" stroke=\"#000000\" d=\"M281.2207,391.59619v-26.19824h-22.40137c0,0-6.0752,0-6.45508,6.45508\r\n\ts0.76514,8.33301,3.03711,9.11133c2.875,0.98535,12.1499,0,12.1499,0v11.39063\"/>\r\n<path fill=\"none\" stroke=\"#000000\" d=\"M281.2207,380.96436h36.44922c0,0,4.93555,0.37988,4.93555-4.93555\r\n\ts2.27734-7.97266-7.97412-7.97266c-10.25098,0-33.03223,0-33.03223,0\"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" points=\"258.81934,365.39795 258.81934,350.9707 310.45508,350.9707 310.45508,367.67627 \"/>\r\n<polygon fill=\"none\" stroke=\"#000000\" points=\"318.80762,308.44629 318.80762,354.76709 335.89355,354.76709 335.89355,364.63818 \r\n\t346.9043,364.63818 346.9043,355.14648 354.49854,355.14648 354.49854,308.82617 \"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"310.45508\" y1=\"352.10986\" x2=\"319.1875\" y2=\"352.10986\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"314.25195\" y1=\"190.36523\" x2=\"320.70654\" y2=\"190.36523\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"314.25195\" y1=\"196.44043\" x2=\"320.70654\" y2=\"196.44043\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"314.25195\" y1=\"202.51563\" x2=\"320.70654\" y2=\"202.51563\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"314.25195\" y1=\"208.59082\" x2=\"320.70654\" y2=\"208.59082\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"314.25195\" y1=\"214.66553\" x2=\"320.70654\" y2=\"214.66553\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"314.25195\" y1=\"220.74072\" x2=\"320.70654\" y2=\"220.74072\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"314.25195\" y1=\"226.81592\" x2=\"320.70654\" y2=\"226.81592\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"314.25195\" y1=\"232.88965\" x2=\"320.70654\" y2=\"232.88965\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"314.25195\" y1=\"238.96484\" x2=\"320.70654\" y2=\"238.96484\"/>\r\n<path stroke=\"#000000\" d=\"M392.84521,302.75098v9.87158h25.06006v8.7334h14.80713v-31.13379h4.93555v-23.92041\r\n\tc0,0-12.52979-1.13916-18.98438-12.52979c0,0-8.35254,6.45459-17.08496,5.31543v8.7334h-9.49268v11.77051h7.97363v22.77979\r\n\tL392.84521,302.75098z\"/>\r\n<path stroke=\"#000000\" d=\"M357.15576,275.79346v-11.01074h-7.59277v-11.01074h-11.77051v10.25244h-8.7334v-15.18799\r\n\tl-19.74316,0.37939v59.99023h45.18262v-9.87158h-7.97363v-23.54102H357.15576z M326.02197,293.06982\r\n\tc-8.80664,0-15.94629-2.63477-15.94629-5.88574s7.13965-5.88428,15.94629-5.88428c8.80713,0,15.94678,2.6333,15.94678,5.88428\r\n\tS334.8291,293.06982,326.02197,293.06982z\"/>\r\n<polygon stroke=\"#000000\" points=\"212.87695,618.64404 223.50781,618.26416 223.50781,608.39307 251.2251,608.39307 \r\n\t251.2251,597.76221 245.90967,597.76221 245.90967,576.49951 309.6958,576.49951 309.6958,592.82568 304.76025,592.82568 \r\n\t304.76025,604.97607 299.82422,604.97607 299.82422,599.66064 258.43945,599.66064 258.43945,608.77295 327.16162,608.77295 \r\n\t331.71729,787.60205 343.10791,787.60205 342.34863,693.06201 334.37451,693.06201 334.37451,678.25439 341.58887,678.25439 \r\n\t341.58887,666.104 350.70068,666.104 341.58887,656.99268 341.58887,607.25537 351.46045,607.25537 340.82959,591.30811 \r\n\t328.30078,591.30811 328.30078,594.7251 319.56738,594.7251 319.56738,577.63916 345.00537,577.63916 345.00537,568.90674 \r\n\t332.85693,568.90674 332.85693,573.84229 323.36377,573.84229 323.36377,569.28662 318.04932,569.28662 318.04932,563.21143 \r\n\t310.07568,563.21143 310.07568,568.14697 238.31689,568.14697 238.31689,598.90088 212.49854,598.90088 \"/>\r\n<rect x=\"332.09717\" y=\"619.78369\" fill=\"#FFFFFF\" stroke=\"#000000\" width=\"6.0752\" height=\"18.60449\"/>\r\n<rect x=\"318.80762\" y=\"602.31787\" fill=\"#FFFFFF\" stroke=\"#000000\" width=\"9.11328\" height=\"5.31543\"/>\r\n<rect x=\"254.26318\" y=\"585.23291\" stroke=\"#000000\" width=\"43.66211\" height=\"6.45508\"/>\r\n<polygon fill=\"none\" stroke=\"#000000\" points=\"329.05908,798.99268 329.05908,808.10596 351.08057,808.10596 351.08057,800.51123 \r\n\t340.06982,800.51123 340.06982,797.85303 \"/>\r\n<polygon fill=\"none\" stroke=\"#000000\" points=\"359.81396,801.271 359.81396,808.86377 382.97363,808.86377 382.97363,748.11572 \r\n\t389.42871,748.11572 389.42871,738.24463 382.21436,738.24463 382.21436,711.6665 368.54639,711.6665 368.54639,801.65088 \"/>\r\n<path stroke=\"#000000\" d=\"M364.37012,663.82666v13.66797h65.68359v-9.87109c0,0-4.17578-3.41699-9.11182-4.17676V659.271h-10.25098\r\n\tv7.59277h-28.85645v-8.35254h-11.76904v4.55566L364.37012,663.82666z\"/>\r\n<path stroke=\"#000000\" d=\"M447.51953,664.96631h4.93555v-3.79785h10.63184v6.83496h33.79199v-7.21484h9.11133v3.41797\r\n\tc0,0,10.25195,2.65723,11.39063,5.31543v9.1123h-70.24121L447.51953,664.96631z\"/>\r\n<path stroke=\"#000000\" d=\"M533.70703,666.48389c0,0,4.17676-0.75977,6.0752-4.55566h9.49219v7.21387h26.19727v-7.97363h17.08594\r\n\tc0,0,6.07422,5.31543,8.35254,9.11328v9.87109h-67.20313V666.48389z\"/>\r\n<path stroke=\"#000000\" d=\"M617.23633,667.24365c0,0,3.03711,0.75977,6.83496-3.79688h9.49219v6.83496h27.71484v-7.59375h8.35449\r\n\tc0,0,3.03613,4.55566,11.01074,8.73145v8.7334l-63.40723,0.37988V667.24365z\"/>\r\n<line stroke=\"#000000\" x1=\"338.17236\" y1=\"707.11084\" x2=\"665.20605\" y2=\"707.11084\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"338.6792\" y1=\"714.19971\" x2=\"664.69629\" y2=\"714.19971\"/>\r\n<rect x=\"370.06543\" y=\"698.50244\" stroke=\"#000000\" width=\"13.66797\" height=\"16.20117\"/>\r\n<rect x=\"411.57715\" y=\"699.01221\" stroke=\"#000000\" width=\"11.64355\" height=\"15.1875\"/>\r\n<rect x=\"452.58203\" y=\"699.51611\" stroke=\"#000000\" width=\"10.63184\" height=\"14.17383\"/>\r\n<rect x=\"498.14453\" y=\"700.53174\" stroke=\"#000000\" width=\"9.1123\" height=\"13.1582\"/>\r\n<rect x=\"540.16113\" y=\"700.53174\" stroke=\"#000000\" width=\"8.60938\" height=\"13.1582\"/>\r\n<rect x=\"577.12109\" y=\"701.03564\" stroke=\"#000000\" width=\"15.18652\" height=\"12.14844\"/>\r\n<rect x=\"624.20117\" y=\"700.53174\" stroke=\"#000000\" width=\"10.12109\" height=\"13.1582\"/>\r\n<rect x=\"452.58203\" y=\"713.68994\" fill=\"none\" stroke=\"#000000\" width=\"15.18848\" height=\"22.7793\"/>\r\n<rect x=\"498.14453\" y=\"713.68994\" fill=\"none\" stroke=\"#000000\" width=\"9.1123\" height=\"23.79492\"/>\r\n<rect x=\"540.16113\" y=\"713.68994\" fill=\"none\" stroke=\"#000000\" width=\"8.60938\" height=\"23.79492\"/>\r\n<rect x=\"577.12109\" y=\"713.18408\" fill=\"none\" stroke=\"#000000\" width=\"14.17285\" height=\"24.30078\"/>\r\n<polygon stroke=\"#000000\" points=\"661.1543,701.53955 671.28125,701.53955 671.28125,708.62842 681.40234,708.62842 \r\n\t681.40234,717.23584 661.55176,717.22217 \"/>\r\n<polygon stroke=\"#000000\" points=\"395.8833,595.229 395.8833,609.91162 426.25781,609.91162 426.25781,599.78467 \r\n\t406.01074,599.78467 406.01074,594.7251 \"/>\r\n<polygon stroke=\"#000000\" points=\"441.44434,604.85205 449.5459,604.85205 449.5459,597.76221 481.43848,597.76221 \r\n\t481.43848,612.94873 441.44434,612.94873 \"/>\r\n<polygon stroke=\"#000000\" points=\"566.99414,601.3042 566.99414,615.98682 606.48145,615.98682 606.48145,608.39307 \r\n\t598.38281,608.39307 598.38281,601.3042 \"/>\r\n<polygon stroke=\"#000000\" points=\"623.69141,608.39307 641.91504,608.39307 641.91504,603.8374 652.04199,603.8374 \r\n\t652.04199,619.02393 623.1875,619.02393 \"/>\r\n<rect x=\"665.20605\" y=\"611.43115\" stroke=\"#000000\" width=\"19.74414\" height=\"8.60742\"/>\r\n<path stroke=\"#000000\" d=\"M416.1333,506.64014c0,0,2.02588-10.12695,16.70605-14.17676v-17.7168h-3.54492v-31.38672h-38.979\r\n\tv12.15039h6.58154v21.2627h-8.10107v11.13477h8.60693v8.60547L416.1333,506.64014z\"/>\r\n<path stroke=\"#000000\" d=\"M619.64551,482.84619v15.18457c0,0,7.58691,1.51855,14.67676,15.18848l11.64453-2.02344\r\n\tc0,0,2.53516-8.60254,8.6084-8.09863c6.0752,0.50488,6.0752,0.50488,6.0752,0.50488v-11.13867h-4.05176v-25.31055h7.59375v-12.15039\r\n\th-36.44922v27.33691L619.64551,482.84619z\"/>\r\n<rect x=\"629.41016\" y=\"427.67334\" width=\"11.13574\" height=\"10.63086\"/>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" x1=\"628.75684\" y1=\"459.05127\" x2=\"630.52441\" y2=\"398.62061\"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" stroke-width=\"4\" stroke-miterlimit=\"2\" points=\"662.16895,456.521 662.16895,437.28564 \r\n\t638.375,429.69287 \"/>\r\n<polygon stroke=\"#000000\" stroke-miterlimit=\"2\" points=\"412.08545,523.8501 399.42725,523.8501 400.55127,517.39014 \r\n\t412.08545,517.271 \"/>\r\n<polygon stroke=\"#000000\" stroke-miterlimit=\"2\" points=\"412.71826,561.72314 407.21826,554.39014 417.05127,545.22314 \r\n\t422.21826,551.05615 \"/>\r\n<polygon stroke=\"#000000\" stroke-miterlimit=\"2\" points=\"648.50195,538.02783 639.05176,537.72314 639.05176,530.22314 \r\n\t648.50195,529.92334 \"/>\r\n<polygon stroke=\"#000000\" stroke-miterlimit=\"2\" points=\"635.38477,569.22314 626.38477,561.39014 631.21777,556.05615 \r\n\t640.21777,562.72314 \"/>\r\n<path fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" d=\"M432.33252,547.64502c0-3.3584,2.71924-6.0752,6.0752-6.0752\r\n\tc3.354,0,6.07471,2.7168,6.07471,6.0752c0,3.35742-2.7207,6.0752-6.07471,6.0752\r\n\tC435.05176,553.72021,432.33252,551.00244,432.33252,547.64502z\"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" stroke-width=\"4\" stroke-miterlimit=\"2\" points=\"429.29443,443.35986 429.29443,433.73975 \r\n\t390.31543,419.56592 390.31543,437.78955 \"/>\r\n<polygon fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" points=\"574.58789,280.85791 565.47461,308.19482 601.92578,317.30713 \r\n\t610.5332,293.00635 \"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" stroke-width=\"4\" stroke-miterlimit=\"2\" points=\"601.92578,317.30713 617.1123,322.87354 \r\n\t621.66797,314.77393 \"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" points=\"492.57617,147.71436 492.57617,80.89111 527.50781,80.89111 \r\n\t527.50781,64.729 \"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" points=\"577.625,159.36035 576.10547,80.89111 541.17578,80.89111 \r\n\t541.17578,64.729 \"/>\r\n<path fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" d=\"M573.57324,153.78906\"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" points=\"580.63477,165.13916 579.64844,125.94775 \r\n\t598.38281,125.94775 598.38281,84.43555 636.85547,84.43555 636.85547,127.97119 658.11719,127.97119 658.11719,117.34033 \r\n\t664.19238,117.34033 665.07617,71.52637 605.71777,71.05566 \"/>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" x1=\"664.19238\" y1=\"94.55908\" x2=\"697.63477\" y2=\"94.55908\"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" points=\"487.51367,186.69727 558.89258,213.01953 \r\n\t547.75488,247.44531 580.66309,259.0874 593.31641,221.88037 \"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" points=\"317.41699,546.12549 350.32129,546.12549 \r\n\t350.32129,476.26416 \"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" points=\"350.21826,452.88916 352.85547,395.26514 \r\n\t318.88477,395.38916 \"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" points=\"324.50293,355.2749 324.50293,391.72412 318.93604,391.72412 \r\n\t318.93604,438.8042 \"/>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" x1=\"310.33105\" y1=\"322.3667\" x2=\"318.44287\" y2=\"322.3667\"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" points=\"310.83496,380.58447 310.83496,391.21631 306.65918,391.5957 \r\n\t\"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" points=\"700.1377,494.48975 700.1377,565.36475 730.13477,564.88916 \r\n\t\"/>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" x1=\"700.6416\" y1=\"137.58984\" x2=\"756.33008\" y2=\"137.58984\"/>\r\n<path stroke=\"#000000\" stroke-miterlimit=\"2\" d=\"M627.74316,328.94873h39.48633v-14.1748h-6.5791v-20.75488h6.5791v-12.15039\r\n\th-7.59277v-8.60498l-18.22559-8.10107c0,0,0.00586,6.07227-17.20996,16.19922v16.70605h-9.1123v10.12695h-9.11133l-0.51074,2.15039\r\n\tl16.20117,4.42871l1.51953-5.56787h4.05176L627.74316,328.94873z\"/>\r\n<polygon stroke=\"#000000\" stroke-miterlimit=\"2\" points=\"307.29004,435.25928 307.79688,457.02783 335.64209,457.02783 \r\n\t335.64209,460.5708 344.24756,460.5708 344.24756,454.49561 350.32129,454.49561 350.32129,440.32373 \"/>\r\n<polygon stroke=\"#000000\" stroke-miterlimit=\"2\" points=\"308.30518,467.15283 308.30518,498.03076 315.89795,498.03076 \r\n\t315.89795,486.89502 333.61621,486.89502 333.61621,497.02197 342.72852,497.02197 342.72852,487.90771 350.8291,487.90771 \r\n\t350.8291,474.23877 342.22412,474.23877 342.22412,467.15283 \"/>\r\n<path stroke=\"#000000\" stroke-miterlimit=\"2\" d=\"M454.10156,587.63623h29.36328v-17.20996l-12.4043-12.40625h-28.60059v15.44336\r\n\tC442.45996,573.46338,456.63184,572.95361,454.10156,587.63623z\"/>\r\n<polygon stroke=\"#000000\" stroke-miterlimit=\"2\" points=\"512.8252,613.96436 495.10645,613.96436 495.61523,601.81396 \r\n\t512.8252,601.81396 \"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" stroke-width=\"3\" stroke-miterlimit=\"2\" points=\"512.8252,601.81396 512.8252,594.22119 \r\n\t494.59961,585.10889 495.10645,613.96436 \"/>\r\n<polygon fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" points=\"389.80859,810.3833 389.80859,770.39111 396.89697,770.39111 \r\n\t396.89697,762.79834 408.54053,762.79834 408.54053,770.39111 505.23047,770.39111 505.23047,762.2876 519.91406,762.2876 \r\n\t519.91406,810.88721 \"/>\r\n<rect x=\"390.31543\" y=\"799.75146\" stroke=\"#000000\" stroke-miterlimit=\"2\" width=\"129.59863\" height=\"11.13574\"/>\r\n<rect x=\"396.89453\" y=\"787.60205\" fill=\"none\" stroke=\"#000000\" stroke-width=\"5\" stroke-miterlimit=\"2\" width=\"11.646\" height=\"10.63086\"/>\r\n<rect x=\"415.11963\" y=\"787.60205\" fill=\"none\" stroke=\"#000000\" stroke-width=\"5\" stroke-miterlimit=\"2\" width=\"11.64453\" height=\"10.63086\"/>\r\n<rect x=\"433.34375\" y=\"787.60205\" fill=\"none\" stroke=\"#000000\" stroke-width=\"5\" stroke-miterlimit=\"2\" width=\"11.64551\" height=\"10.63086\"/>\r\n<rect x=\"451.56836\" y=\"787.60205\" fill=\"none\" stroke=\"#000000\" stroke-width=\"5\" stroke-miterlimit=\"2\" width=\"11.64551\" height=\"10.63086\"/>\r\n<rect x=\"473.33789\" y=\"786.0835\" fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" width=\"13.16113\" height=\"14.17285\"/>\r\n<rect x=\"497.63672\" y=\"786.0835\" fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" width=\"13.16211\" height=\"14.17285\"/>\r\n<rect x=\"341.20898\" y=\"705.59131\" width=\"30.88232\" height=\"8.09863\"/>\r\n<path fill=\"none\" stroke=\"#000000\" stroke-width=\"5\" d=\"M481.43848,569.92041l5.56738-17.21582l-36.95605-11.63867\r\n\tc0,0-4.55566,20.25391-3.03711,21.26172\"/>\r\n<rect x=\"307.29004\" y=\"399.8208\" stroke=\"#000000\" width=\"11.1377\" height=\"7.59473\"/>\r\n<rect x=\"307.84521\" y=\"414.02393\" stroke=\"#000000\" width=\"10.5249\" height=\"5.51367\"/>\r\n<polygon stroke=\"#000000\" points=\"319.05127,429.88916 307.38477,429.72266 307.29004,424.12451 318.93604,424.12451 \"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"316.65723\" y1=\"499.04541\" x2=\"318.04932\" y2=\"563.21143\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"308.30518\" y1=\"499.04541\" x2=\"310.07568\" y2=\"562.57666\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"308.30518\" y1=\"505.62451\" x2=\"316.65723\" y2=\"505.12061\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"308.30518\" y1=\"523.8501\" x2=\"316.65723\" y2=\"523.34424\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"309.31592\" y1=\"551.18604\" x2=\"317.66992\" y2=\"550.68213\"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" points=\"289.95264,74.08252 289.95264,51.02393 300.96387,51.02393 300.96387,46.08789 \r\n\t309.6958,46.08789 309.6958,51.78271 327.9209,51.78271 327.9209,64.3125 319.94727,64.3125 319.94727,74.32275 \"/>\r\n<polygon stroke=\"#000000\" points=\"446.75977,29.76172 446.75977,22.92725 328.68066,22.92725 328.68066,64.3125 405.23584,64.3125 \r\n\t405.23584,58.99707 336.27344,58.99707 336.27344,29.00195 \"/>\r\n<rect x=\"309.31592\" y=\"92.02881\" stroke=\"#000000\" width=\"4.55615\" height=\"23.54102\"/>\r\n<rect x=\"326.78174\" y=\"92.40869\" stroke=\"#000000\" width=\"4.93555\" height=\"23.54102\"/>\r\n<rect x=\"326.02197\" y=\"120.12549\" stroke=\"#000000\" width=\"5.69531\" height=\"11.77051\"/>\r\n<rect x=\"309.31592\" y=\"120.12549\" stroke=\"#000000\" width=\"5.31543\" height=\"11.01074\"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" points=\"263.375,142.52686 263.375,128.85791 288.81348,128.85791 288.81348,109.49463 \r\n\t273.24658,109.49463 273.24658,103.03955 288.81348,103.03955 288.81348,74.18408 405.23584,74.18408 \"/>\r\n<path fill=\"none\" stroke=\"#000000\" d=\"M288.81348,128.85791h9.87158V84.43555h87.32715v12.5293c0,0,0.76807,4.30127,4.55566,4.55664\r\n\tc2.9834,0.20117,3.03711-4.17725,3.03711-4.17725V85.95361l-5.05371-11.56445\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"382.38477\" y1=\"74.55615\" x2=\"382.21436\" y2=\"84.81494\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"370.06543\" y1=\"73.94385\" x2=\"370.06543\" y2=\"84.81494\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"345.76514\" y1=\"73.94385\" x2=\"345.76514\" y2=\"84.81494\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"327.54102\" y1=\"73.94385\" x2=\"327.54102\" y2=\"84.81494\"/>\r\n<polygon stroke=\"#000000\" points=\"343.10791,93.16846 343.10791,133.03418 348.80322,133.03418 348.80322,121.64355 \r\n\t354.49854,121.64355 354.49854,116.70752 349.18311,116.70752 349.18311,92.78857 \"/>\r\n<path stroke=\"#000000\" d=\"M346.14502,254.53125h5.31543v-99.0957h42.52393v8.73193h17.8457v-3.03662h44.80176v7.97266h29.99512\r\n\tv-5.31445h8.35254c0,0,7.97363-28.85596,37.96875-28.85596c29.99414,0,33.41016,30.75342,33.41016,30.75342h5.69531v11.01123\r\n\th31.89355v-3.79688h43.2832v6.45508h16.32715v-4.93701h16.70605v-7.97266h-7.97461v-29.61475h-8.73145v28.47559h-15.94727v-4.55615\r\n\th-8.35156l-7.02539,7.02393h-7.4043v-3.98584h-11.38867v-5.31689h-9.49316v4.55762h-23.16016c0,0-8.35352-16.32666-18.22461-23.9209\r\n\tv-12.1499h-56.95215v8.35352l-19.36328,14.80713v6.83496H463.8457v-6.83496H448.2793v4.93604h-17.08594v-4.93604h-6.83447v-4.55566\r\n\th-10.25146v3.79639h-18.9834v-41.38477h-8.35254v8.35352h-4.17725v4.55615h3.41797v23.91895h-35.69092v-7.21436h-6.45361v4.93701\r\n\th-11.01074v-5.69531h-6.45508v5.31592h-64.92578c0,0,9.87158,4.55566,13.66943,10.63086h68.72217v18.9834h-6.83447v15.56689h7.59277\r\n\tL346.14502,254.53125z\"/>\r\n<rect x=\"365.50928\" y=\"146.70313\" fill=\"#FFFFFF\" stroke=\"#000000\" width=\"11.00977\" height=\"6.45508\"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" points=\"405.375,151.63916 405.375,58.99707 437.64844,58.61768 438.02783,27.104 \"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" points=\"405.375,69.62793 447.51953,69.62793 447.51953,37.35498 \"/>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-linejoin=\"bevel\" x1=\"447.51953\" y1=\"64.69189\" x2=\"594.07617\" y2=\"64.69189\"/>\r\n<g>\r\n\t<path d=\"M539.90918,37.53613l-94.09766,0.00879c0,0,3.16113-5.75732,5.125-6.07471\r\n\t\tc19.93359-3.22754,90.61133-0.00586,90.61133-0.00586l65.33691,39.09131l-1.66699,1.16699L539.90918,37.53613L539.90918,37.53613z\"\r\n\t\t/>\r\n</g>\r\n<polygon stroke=\"#000000\" stroke-miterlimit=\"2\" points=\"664.19238,117.34033 664.19238,130.75684 671.15137,130.75684 \r\n\t671.15137,121.64355 676.4668,121.64355 676.4668,115.94971 664.31641,115.94971 \"/>\r\n<polygon stroke=\"#000000\" stroke-miterlimit=\"2\" points=\"613.06055,210.48975 613.44043,197.2002 603.94727,197.2002 \r\n\t603.94727,188.46777 573.95313,187.7085 573.95313,213.52637 563.70117,242.00293 574.33301,243.52051 584.58398,220.36084 \r\n\t584.2041,213.14648 593.31641,221.88037 599.3916,210.10986 \"/>\r\n<path stroke=\"#000000\" stroke-miterlimit=\"2\" d=\"M458.15039,174.22949h31.32422v23.72998l-4.74609,4.74658\r\n\tc0,0-5.69531,4.17627-5.69531,7.40381c0,0-11.01074-11.20166-29.0459-7.78369l-0.56836-9.11328h8.9209L458.15039,174.22949z\"/>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-miterlimit=\"2\" x1=\"430.71826\" y1=\"193.72314\" x2=\"435.21826\" y2=\"208.38965\"/>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-miterlimit=\"2\" x1=\"419.38477\" y1=\"199.05664\" x2=\"426.71826\" y2=\"211.55664\"/>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-miterlimit=\"2\" x1=\"398.88477\" y1=\"229.22314\" x2=\"411.38477\" y2=\"230.05664\"/>\r\n<rect x=\"336.14648\" y=\"384.63428\" fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-miterlimit=\"2\" width=\"8.60791\" height=\"10.12695\"/>\r\n<polygon fill=\"none\" stroke=\"#000000\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-miterlimit=\"2\" points=\"538.26367,591.30811 \r\n\t538.26367,613.7085 555.34961,613.7085 555.34961,597.00244 \"/>\r\n<rect x=\"538.26367\" y=\"605.35596\" stroke=\"#000000\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-miterlimit=\"2\" width=\"15.56641\" height=\"7.21484\"/>\r\n<path stroke=\"#000000\" stroke-linecap=\"round\" stroke-miterlimit=\"2\" d=\"M607.74512,559.79541l-38.72754-15.56836v47.08105h28.85547\r\n\tl-0.37891-8.35352h10.25098V559.79541z M603.1875,566.62842h-28.0957v-12.9082l28.0957,8.73145V566.62842z\"/>\r\n<line stroke=\"#000000\" stroke-linecap=\"round\" stroke-miterlimit=\"2\" x1=\"631.28418\" y1=\"216.56348\" x2=\"637.35938\" y2=\"207.63916\"/>\r\n<line stroke=\"#000000\" stroke-linecap=\"round\" stroke-miterlimit=\"2\" x1=\"646.88477\" y1=\"240.104\" x2=\"657.63477\" y2=\"239.34424\"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-miterlimit=\"2\" points=\"661.27832,715.0835 \r\n\t661.27832,796.33545 674.56836,796.33545 674.56836,715.0835 \"/>\r\n<path fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-miterlimit=\"2\" d=\"M670.3916,797.09521\r\n\tc-0.75879,1.1377,0,4.17578,0,4.17578h32.65332v-4.93555h11.01074v-4.55664h-4.9375l1.89941-22.78125h-10.25195v21.64258\r\n\tl-26.19727-0.75977H661.6582\"/>\r\n<polygon stroke=\"#000000\" stroke-linecap=\"round\" stroke-miterlimit=\"2\" points=\"702.28516,653.95557 702.28516,666.48389 \r\n\t697.91797,670.85107 693.55176,670.85107 693.55176,680.15283 699.24707,680.15283 699.24707,708.24854 693.17188,708.24854 \r\n\t693.17188,717.36182 700.38574,717.36182 700.38574,768.99756 711.01758,768.99756 711.01758,654.33545 \"/>\r\n<path fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-miterlimit=\"2\" d=\"M711.01758,766.33936h53.91406v-15.18652\r\n\th-23.91992c0,0,3.37305,5.98633-3.37695,6.23633c-6.58594,0.24414-3.83594-6.99609-3.83594-6.99609h-23.54102\"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-miterlimit=\"2\" points=\"710.25781,742.80029 \r\n\t764.93164,742.80029 764.93164,695.34033 746.32715,695.34033 \"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-miterlimit=\"2\" points=\"709.11816,725.71436 \r\n\t745.56836,725.71436 745.56836,693.06201 741.01172,688.12549 709.11816,688.12549 \"/>\r\n<path fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-miterlimit=\"2\" d=\"M709.87793,671.79932h83.53027\r\n\tc0,0,11.38965,1.89941,11.38965-6.45313c0,0-0.75781-3.03809-4.93555-4.17773v-8.35254h-6.4541v10.63086h-83.15039\"/>\r\n<path stroke=\"#000000\" stroke-linecap=\"round\" stroke-miterlimit=\"2\" d=\"M908.83105,579.91748v-22.40137h-5.31543\r\n\tc-2.6582,7.59473-8.92285,14.61816-8.92285,14.61816l3.9873,3.98535v12.15039c-5.31543,4.55566-9.87305,4.55566-9.87305,4.55566\r\n\tc-5.69434-0.37891-10.63086-6.07422-10.63086-6.07422c-1.89746,0-10.25195,7.21387-10.25195,7.21387v6.83496h31.51367v15.18652\r\n\th-33.41113v7.21484h-12.5293v-7.21484h-34.1709v-15.18652h34.1709v-6.0752c-0.37988-5.31543-12.5293-9.1123-12.5293-9.1123\r\n\tc-1.51855,1.51855-6.4541,3.03711-6.4541,3.03711c-8.73438,0.37988-12.53027-6.0752-12.53027-6.0752\r\n\tc-3.79688-2.27734-7.97266,0.75977-7.97266,0.75977v37.20898h-75.93652v-11.01074h-7.59375v2.6582h-4.55664v7.59277h4.93555v6.83496\r\n\th-2.65625v8.35156h37.58789v-6.0752h6.83301v5.31641h20.88379v18.60449h7.97266v-21.6416h106.69043v-45.56152h-4.93555v-5.69531\r\n\tH908.83105z\"/>\r\n<path stroke=\"#000000\" stroke-linecap=\"round\" stroke-miterlimit=\"2\" d=\"M814.6709,555.99756v20.50195\r\n\tc0,0,5.69336,1.51953,12.52832-4.93555c0,0-5.31543-14.04785-7.21484-15.18652L814.6709,555.99756z\"/>\r\n<polygon stroke=\"#000000\" stroke-linecap=\"round\" stroke-miterlimit=\"2\" points=\"814.6709,526.38232 814.6709,544.22705 \r\n\t819.22656,544.22705 828.33887,532.45752 828.33887,530.55908 822.64355,526.00342 \"/>\r\n<path stroke=\"#000000\" stroke-linecap=\"round\" stroke-miterlimit=\"2\" d=\"M903.13574,551.06104h6.0752v-21.6416h-7.59473\r\n\tl-5.88379,5.88574C895.73242,535.30518,902.75586,544.60693,903.13574,551.06104z\"/>\r\n<path stroke=\"#000000\" stroke-linecap=\"round\" stroke-miterlimit=\"2\" d=\"M903.13574,551.06104\"/>\r\n<path stroke=\"#000000\" stroke-linecap=\"round\" stroke-miterlimit=\"2\" d=\"M908.45117,524.48389v-18.22363h-14.42871v9.49121\r\n\tc0,0,5.31543,1.89941,7.59375,7.21289L908.45117,524.48389z\"/>\r\n<path stroke=\"#000000\" stroke-linecap=\"round\" stroke-miterlimit=\"2\" d=\"M882.63281,519.54834c0,0-2.27832-3.79688-9.11328-5.31543\r\n\tc0,0-3.41602-12.5293-10.25098-11.77051c0,0-7.59277-1.89746-11.76855,11.01074c0,0-4.17773,4.55566-9.11328,2.27832\r\n\tc0,0-2.65723-3.41602-9.87207-2.27832c-7.21387,1.13965-1.51855,0-1.51855,0s-5.69531,0.37988-7.59375,5.69531h-8.35352v-17.84375\r\n\th34.93164l3.60742-3.60742h18.79395v4.74512h14.42773v12.53027C886.80957,514.99268,882.25293,517.271,882.63281,519.54834z\"/>\r\n<rect x=\"831.375\" y=\"505.88037\" fill=\"#FFFFFF\" width=\"6.0752\" height=\"4.93555\"/>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-miterlimit=\"2\" x1=\"885.66992\" y1=\"508.15771\" x2=\"894.78223\" y2=\"508.15771\"/>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-miterlimit=\"2\" x1=\"885.66992\" y1=\"514.23291\" x2=\"894.78223\" y2=\"514.23291\"/>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-miterlimit=\"2\" x1=\"810.49316\" y1=\"544.98682\" x2=\"810.49316\" y2=\"554.47998\"/>\r\n<path d=\"M849.2207,458.80029v41.76465h25.05859v-41.76465H849.2207z M861.75098,499.23486\r\n\tc-3.04395,0-5.50586-7.56348-5.50586-16.89551c0-9.33105,2.46191-16.89551,5.50586-16.89551\r\n\tc3.04199,0,5.50488,7.56445,5.50488,16.89551C867.25586,491.67139,864.79297,499.23486,861.75098,499.23486z\"/>\r\n<polygon fill=\"none\" stroke=\"#000000\" points=\"854.15625,458.80029 802.52051,458.80029 802.52051,466.01318 819.98438,466.01318 \r\n\t819.98438,500.94482 814.6709,500.94482 814.6709,473.98682 777.84082,473.98682 777.84082,461.07764 782.77734,461.07764 \r\n\t782.77734,465.6333 796.06543,465.6333 796.06543,449.68701 851.5,449.68701 \"/>\r\n<polygon fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" points=\"700.76563,458.80029 700.76563,468.67139 \r\n\t709.49805,468.67139 709.49805,477.40381 728.8623,477.40381 735.69629,470.56885 735.69629,459.18018 \"/>\r\n<polygon stroke=\"#000000\" stroke-linecap=\"round\" points=\"693.93164,164.92725 693.93164,177.45703 710.25781,177.45703 \r\n\t710.25781,181.6333 722.78711,181.6333 722.78711,177.07715 730.75977,177.07715 730.75977,190.74512 724.68652,190.74512 \r\n\t724.68652,203.2749 730.75977,203.2749 730.75977,270.85791 726.58398,270.85791 726.58398,278.83203 720.50879,278.83203 \r\n\t720.50879,271.99707 712.15625,271.99707 712.15625,282.62842 703.80273,282.62842 703.80273,297.43555 710.25781,297.43555 \r\n\t710.25781,305.02979 732.65918,305.02979 732.65918,311.86279 713.67578,311.86279 713.67578,319.45703 699.24707,319.45703 \r\n\t699.24707,331.22754 731.51953,331.22754 731.51953,375.64893 726.96387,375.64893 726.96387,386.65967 732.65918,386.65967 \r\n\t732.65918,391.59619 744.42969,391.59619 744.42969,310.7251 737.59473,310.7251 737.59473,305.78906 745.56836,305.78906 \r\n\t745.56836,221.12061 741.77148,221.12061 741.77148,216.18506 746.32715,216.18506 746.32715,191.88428 741.01172,191.88428 \r\n\t741.01172,187.32861 746.70703,187.32861 746.70703,166.06641 733.79883,166.06641 733.79883,171.38184 729.62207,171.38184 \r\n\t729.62207,166.06641 \"/>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" x1=\"800.24219\" y1=\"247.69824\" x2=\"800.24219\" y2=\"252.63379\"/>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" x1=\"806.31641\" y1=\"247.69824\" x2=\"806.31641\" y2=\"252.63379\"/>\r\n<polygon fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" points=\"699.24707,331.22754 699.24707,384.76221 \r\n\t714.05566,384.76221 714.05566,410.96045 700.76563,410.96045 700.76563,454.24365 704.18262,454.24365 704.18262,415.51611 \r\n\t718.61133,415.51611 718.61133,377.16846 706.46094,377.16846 706.46094,331.22754 \"/>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" x1=\"708.88477\" y1=\"377.22266\" x2=\"708.74023\" y2=\"384.00342\"/>\r\n<rect x=\"710.6377\" y=\"404.36572\" fill=\"#FFFFFF\" stroke=\"#000000\" stroke-linecap=\"round\" width=\"7.21387\" height=\"11.01172\"/>\r\n<path stroke=\"#000000\" stroke-linecap=\"round\" d=\"M708.36035,492.59033v-4.17578h25.43848V474.3667h-4.93652l5.125-5.12598\r\n\tv-52.96484h-6.26367v-13.66895l3.60645-3.60742v-7.40332h4.36621v6.83398h10.25195v21.64258c0,0-0.75879,2.08789-2.08887,2.08789\r\n\tc-1.3291,0,0,38.53711,0,38.53711l-2.75293,2.75391v13.57227l-3.84473,3.84473v42.65332l-7.26074,0.20215l0.37988-3.41602\r\n\tl-2.46875-2.46777c0,0,2.46875-13.85938,0-13.85938c-2.46777,0-10.44043,0-10.44043,0v9.49219h-8.35352v-9.1123h-9.49121v-11.77051\r\n\tH708.36035z\"/>\r\n<rect x=\"734.17773\" y=\"424.62842\" fill=\"#FFFFFF\" width=\"8.35254\" height=\"9.11133\"/>\r\n<rect x=\"734.17773\" y=\"439.81494\" fill=\"#FFFFFF\" width=\"7.97266\" height=\"9.11328\"/>\r\n<rect x=\"730.00098\" y=\"547.64502\" stroke=\"#000000\" width=\"7.21387\" height=\"9.87109\"/>\r\n<rect x=\"730.75977\" y=\"573.0835\" stroke=\"#000000\" width=\"6.0752\" height=\"9.11133\"/>\r\n<rect x=\"730.88086\" y=\"593.50244\" stroke=\"#000000\" width=\"6.4541\" height=\"11.39063\"/>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" x1=\"737.97461\" y1=\"609.53271\" x2=\"737.05176\" y2=\"522.05615\"/>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" x1=\"730.00098\" y1=\"523.72412\" x2=\"730.55176\" y2=\"610.22217\"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" points=\"736.83496,518.02881 782.01758,518.02881 782.01758,525.24365 804.41797,525.24365 \r\n\t804.41797,513.85303 779.73926,513.85303 779.73926,504.36084 746.32715,504.36084 736.38477,514.63916 \"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" points=\"746.32715,504.36084 733.9873,492.02197 806.31641,492.02197 806.31641,499.80518 \r\n\t752.78223,499.80518 752.78223,491.83154 \"/>\r\n<circle fill=\"#FFFFFF\" stroke=\"#000000\" cx=\"780.49902\" cy=\"520.30811\" r=\"3.9873\"/>\r\n<line fill=\"#FFFFFF\" stroke=\"#000000\" x1=\"782.01758\" y1=\"525.24365\" x2=\"782.01758\" y2=\"543.46826\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"777.08203\" y1=\"542.32959\" x2=\"785.81445\" y2=\"542.32959\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"776.70215\" y1=\"555.99756\" x2=\"785.81445\" y2=\"555.99756\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"781.25879\" y1=\"555.23779\" x2=\"781.25879\" y2=\"574.22217\"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" points=\"738.35449,595.86475 797.96484,595.86475 797.96484,625.09912 \"/>\r\n<rect x=\"744.80957\" y=\"608.01318\" stroke=\"#000000\" width=\"40.625\" height=\"4.55762\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"780.87891\" y1=\"572.70361\" x2=\"780.87891\" y2=\"595.10498\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"791.88965\" y1=\"595.48486\" x2=\"791.88965\" y2=\"626.23877\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"792.26953\" y1=\"604.97607\" x2=\"797.58496\" y2=\"604.97607\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"791.88965\" y1=\"613.7085\" x2=\"797.58496\" y2=\"613.7085\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"777.84082\" y1=\"473.98682\" x2=\"738.73438\" y2=\"473.98682\"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" points=\"769.1084,473.98682 769.1084,461.45752 762.65332,461.45752 762.65332,474.3667 \"/>\r\n<polyline fill=\"none\" stroke=\"#000000\" points=\"753.9209,473.98682 753.9209,460.69775 741.01172,460.69775 \"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"822.64355\" y1=\"516.51123\" x2=\"822.64355\" y2=\"529.41943\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"821.12402\" y1=\"572.70361\" x2=\"821.12402\" y2=\"586.37158\"/>\r\n<rect x=\"723.16699\" y=\"588.6499\" stroke=\"#000000\" width=\"6.83398\" height=\"6.83496\"/>\r\n<polygon stroke=\"#000000\" points=\"1062.20898,882.90869 1061.20117,842.18799 1038.7168,863.11182 \"/>\r\n<polygon stroke=\"#000000\" points=\"1099.80859,691.54346 1098.81836,650.81104 1120.71582,670.66748 \"/>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" x1=\"437.64844\" y1=\"58.61768\" x2=\"447.55127\" y2=\"58.72266\"/>\r\n<path stroke=\"#000000\" stroke-width=\"5\" stroke-miterlimit=\"2\" d=\"M203.87354,203.38818\r\n\tc-2.04932-3.89502-3.51514-8.14502-4.25293-12.64307h-4.61523c0.8291,5.62842,2.68555,10.9165,5.34521,15.69678\r\n\tC201.55371,205.45703,202.73438,204.4458,203.87354,203.38818z\"/>\r\n<path stroke=\"#000000\" stroke-width=\"5\" stroke-miterlimit=\"2\" d=\"M212.1709,214.3374\r\n\tc-1.09326,1.09863-2.25439,2.09912-3.53369,2.93652c6.08008,5.8916,13.76807,10.12695,22.34082,12.00684\r\n\tc0.1001-1.52832,0.26172-3.05127,0.42627-4.57422C224.0625,222.98975,217.46436,219.34863,212.1709,214.3374z\"/>\r\n<path stroke=\"#000000\" stroke-width=\"5\" stroke-miterlimit=\"2\" d=\"M242.46387,230.33789\r\n\tc7.11523-0.22607,13.82617-2.03906,19.78662-5.11475c-1.0459-1.17822-2.1001-2.35156-3.17969-3.49561\r\n\tc-5.06201,2.42676-10.69092,3.85303-16.62939,4.05811C242.32373,227.30176,242.31885,228.82178,242.46387,230.33789z\"/>\r\n<path stroke=\"#000000\" stroke-width=\"5\" stroke-miterlimit=\"2\" d=\"M279.10693,201.29834\r\n\tc-2.55664,5.5835-6.30518,10.50293-10.91602,14.44824c1.16748,1.0083,2.3584,1.98486,3.59863,2.90039\r\n\tc4.69482-4.1709,8.54736-9.26611,11.25146-15.01318C281.69238,202.92773,280.38037,202.14697,279.10693,201.29834z\"/>\r\n<path stroke=\"#000000\" stroke-width=\"5\" stroke-miterlimit=\"2\" d=\"M255.16455,139.66406\r\n\tc-0.16455,1.53076-0.39893,3.05225-0.64355,4.57324c7.11279,2.4292,13.36328,6.71777,18.17529,12.28516\r\n\tc1.18066-0.95459,2.354-1.91846,3.53955-2.86719C270.70361,147.21826,263.43896,142.31543,255.16455,139.66406z\"/>\r\n<path stroke=\"#000000\" stroke-width=\"5\" stroke-miterlimit=\"2\" d=\"M279.28418,166.89746\r\n\tc2.31494,5.19971,3.60596,10.95557,3.60596,17.01465c0,2.98535-0.32959,5.89063-0.92383,8.69873\r\n\tc1.41895,0.62598,2.82813,1.28467,4.24072,1.94287c0.80176-3.41846,1.23926-6.97803,1.23926-10.6416\r\n\tc0-6.70654-1.43945-13.06885-3.99805-18.82422C282.07568,165.72949,280.69434,166.34912,279.28418,166.89746z\"/>\r\n<path stroke=\"#000000\" stroke-width=\"5\" stroke-miterlimit=\"2\" d=\"M210.05127,149.26318\r\n\tc-1.73926,1.55518-3.37451,3.22363-4.86377,5.021c1.3833,0.72607,2.75781,1.46875,4.15186,2.1665\r\n\tc1.30176-1.50195,2.71729-2.89941,4.21582-4.20459C212.39111,151.24658,211.22852,150.24609,210.05127,149.26318z\"/>\r\n<path stroke=\"#000000\" stroke-width=\"5\" stroke-miterlimit=\"2\" d=\"M199.22998,163.48242\r\n\tc-2.06641,4.21191-3.51465,8.78271-4.22412,13.59473h4.61523c0.68555-4.17627,1.98975-8.14307,3.8125-11.80713\r\n\tC202.05371,164.62354,200.65576,164.01953,199.22998,163.48242z\"/>\r\n<path stroke=\"#000000\" stroke-width=\"5\" stroke-miterlimit=\"2\" d=\"M241.27295,142.00293\r\n\tc0.06006-1.5166,0.09277-3.03467,0.10254-4.55371c-0.13428-0.00146-0.26709-0.00977-0.40186-0.00977\r\n\tc-5.90234,0-11.5376,1.11914-16.72949,3.12793c0.74219,1.33789,1.46582,2.68652,2.19043,4.03467\r\n\tc4.53027-1.67773,9.42432-2.60645,14.53906-2.60645C241.07422,141.99561,241.17285,142.00195,241.27295,142.00293z\"/>\r\n<path fill=\"none\" stroke=\"#000000\" stroke-width=\"2\" stroke-miterlimit=\"2\" d=\"M1121.83008,883.28076v41.00684\r\n\tc0,16.77637-13.59766,30.37402-30.37402,30.37402H49.61816\"/>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-width=\"2\" stroke-miterlimit=\"2\" x1=\"1121.83008\" y1=\"822.87158\" x2=\"1121.83008\" y2=\"845.31299\"/>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" x1=\"660.65039\" y1=\"778.99365\" x2=\"674.82324\" y2=\"778.99365\"/>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" x1=\"660.65039\" y1=\"766.84521\" x2=\"674.82324\" y2=\"766.84521\"/>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" x1=\"660.65039\" y1=\"754.69482\" x2=\"674.82324\" y2=\"754.69482\"/>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" x1=\"660.65039\" y1=\"742.54443\" x2=\"674.82324\" y2=\"742.54443\"/>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" x1=\"660.65039\" y1=\"730.39502\" x2=\"674.82324\" y2=\"730.39502\"/>\r\n<g>\r\n\t<path d=\"M174.75,710.08838h-0.05957l-3.43848,1.85742l-0.51514-2.04102l4.31543-2.30762h2.28027v19.76074H174.75V710.08838z\"/>\r\n\t<path d=\"M188.17188,716.9585c-2.18896-1.0332-3.12939-2.73535-3.12939-4.43848c0-3.13184,2.64355-5.26172,6.10986-5.26172\r\n\t\tc3.82959,0,5.74609,2.40332,5.74609,4.86523c0,1.67285-0.82129,3.4707-3.25342,4.62109v0.0957\r\n\t\tc2.46094,0.97168,3.98291,2.70508,3.98291,5.10645c0,3.43652-2.94873,5.74414-6.71875,5.74414\r\n\t\tc-4.13477,0-6.62891-2.46289-6.62891-5.35156c0-2.49121,1.4917-4.25391,3.92334-5.28711L188.17188,716.9585z M194.92236,722.22021\r\n\t\tc0-2.40332-1.67236-3.56055-4.34717-4.31836c-2.31201,0.66992-3.55762,2.18848-3.55762,4.0752\r\n\t\tc-0.09131,2.00586,1.43066,3.76758,3.95117,3.76758C193.37158,725.74463,194.92236,724.2251,194.92236,722.22021z\r\n\t\t M187.56299,712.33643c0,1.97656,1.49023,3.04395,3.77002,3.64844c1.70313-0.57617,3.01074-1.79102,3.01074-3.58887\r\n\t\tc0-1.57715-0.94336-3.2207-3.34473-3.2207C188.77979,709.17529,187.56299,710.6333,187.56299,712.33643z\"/>\r\n</g>\r\n<g>\r\n\t<path d=\"M297.25537,676.17139h-0.05908l-3.4375,1.85742l-0.5166-2.04102l4.31592-2.30762h2.28125v19.76074h-2.58398V676.17139z\"/>\r\n\t<path d=\"M318.82568,675.92822h-7.54053l-0.75928,5.07813c0.45703-0.05859,0.88086-0.12402,1.61133-0.12402\r\n\t\tc1.52197,0,3.04004,0.33887,4.25635,1.06738c1.55078,0.87891,2.83008,2.58105,2.83008,5.08008\r\n\t\tc0,3.85547-3.07324,6.74414-7.35986,6.74414c-2.1582,0-3.98242-0.60449-4.92578-1.2168l0.66992-2.03418\r\n\t\tc0.82129,0.48633,2.43164,1.09668,4.22705,1.09668c2.52441,0,4.68018-1.6416,4.68018-4.28809\r\n\t\tc-0.02881-2.55762-1.73193-4.37891-5.68555-4.37891c-1.12402,0-2.00537,0.11914-2.73584,0.21387l1.27637-9.48633h9.45557V675.92822\r\n\t\tz\"/>\r\n</g>\r\n<g>\r\n\t<path d=\"M202.34668,590.16943v-1.64355l2.09766-2.03613c5.04932-4.80469,7.3291-7.35449,7.35938-10.33887\r\n\t\tc0-2.00586-0.97363-3.85645-3.92188-3.85645c-1.79395,0-3.28271,0.90723-4.19678,1.66699l-0.85059-1.88086\r\n\t\tc1.36719-1.15723,3.31299-2.01074,5.59424-2.01074c4.25635,0,6.05029,2.91797,6.05029,5.74805\r\n\t\tc0,3.64844-2.646,6.59668-6.81006,10.61328l-1.58105,1.45898v0.05957h8.87842v2.21973H202.34668z\"/>\r\n\t<path d=\"M221.57715,579.76904c-2.18848-1.03223-3.13184-2.73438-3.13184-4.4375c0-3.13184,2.646-5.26172,6.11377-5.26172\r\n\t\tc3.82959,0,5.74512,2.40332,5.74512,4.86426c0,1.67383-0.82178,3.46973-3.25391,4.62207v0.09375\r\n\t\tc2.46533,0.97363,3.98438,2.70508,3.98438,5.1084c0,3.43457-2.94873,5.74219-6.71875,5.74219\r\n\t\tc-4.13623,0-6.63037-2.46094-6.63037-5.34961c0-2.49316,1.48877-4.25391,3.92236-5.28711L221.57715,579.76904z M228.3291,585.03174\r\n\t\tc0-2.40332-1.67383-3.56055-4.34863-4.32031c-2.31055,0.67188-3.55615,2.19043-3.55615,4.07715\r\n\t\tc-0.09277,2.00488,1.42627,3.7666,3.95117,3.7666C226.77686,588.55518,228.3291,587.03662,228.3291,585.03174z\r\n\t\t M220.96973,575.14795c0,1.97461,1.4917,3.04395,3.77002,3.64844c1.70313-0.57617,3.01074-1.79102,3.01074-3.58398\r\n\t\tc0-1.58398-0.94336-3.22754-3.34326-3.22754C222.18506,571.98486,220.96973,573.44482,220.96973,575.14795z\"/>\r\n</g>\r\n<g>\r\n\t<path d=\"M242.58105,449.37646h-0.05908l-3.4375,1.85254l-0.5166-2.03711l4.31592-2.30762h2.28125V466.646h-2.58398V449.37646z\"/>\r\n\t<path d=\"M258.16309,449.37646h-0.06201l-3.43457,1.85254l-0.5166-2.03711l4.31836-2.30762h2.27881V466.646h-2.58398V449.37646z\"/>\r\n</g>\r\n<g>\r\n\t<path d=\"M99.82227,366.354h-0.06299l-3.43457,1.85254l-0.51611-2.03418l4.31885-2.3125h2.27783v19.76367h-2.58301V366.354z\"/>\r\n\t<path d=\"M111.14746,381.73975c0.57764,0.05957,1.24561,0,2.15918-0.09277c1.55127-0.21289,3.01074-0.85059,4.13477-1.91504\r\n\t\tc1.30859-1.18652,2.24902-2.91992,2.61328-5.25977h-0.08887c-1.09717,1.33691-2.67578,2.12695-4.6543,2.12695\r\n\t\tc-3.55664,0-5.8374-2.67578-5.8374-6.04883c0-3.73926,2.7085-7.02344,6.75098-7.02344c4.04297,0,6.53516,3.28418,6.53516,8.3291\r\n\t\tc0,4.34863-1.45996,7.38965-3.40576,9.27344c-1.51807,1.49121-3.61523,2.40137-5.74561,2.64453\r\n\t\tc-0.97266,0.1543-1.82422,0.18457-2.46143,0.1543V381.73975z M115.98242,365.56104c-2.25195,0-3.8623,2.00879-3.8623,4.80566\r\n\t\tc0,2.46289,1.48877,4.19434,3.7998,4.19434c1.79492,0,3.19189-0.88086,3.89209-2.06445\r\n\t\tc0.15381-0.24316,0.24268-0.54883,0.24268-0.97266c0-3.37598-1.24561-5.96289-4.04297-5.96289H115.98242z\"/>\r\n</g>\r\n<g>\r\n\t<path d=\"M228.67285,192.26416v-1.64307l2.10059-2.03467c5.04492-4.80566,7.32617-7.35938,7.35547-10.33789\r\n\t\tc0-2.0083-0.97217-3.86133-3.9209-3.86133c-1.79541,0-3.28369,0.91016-4.19678,1.67236l-0.85205-1.88672\r\n\t\tc1.37012-1.15283,3.31592-2.00488,5.59424-2.00488c4.25635,0,6.05176,2.91943,6.05176,5.74609\r\n\t\tc0,3.64893-2.646,6.59717-6.81104,10.61035l-1.58154,1.4585v0.06201h8.87891v2.21924H228.67285z\"/>\r\n\t<path d=\"M245.80566,190.37793c0.5791,0.06201,1.24609,0,2.16016-0.08838c1.54834-0.21436,3.00781-0.85205,4.13477-1.91699\r\n\t\tc1.30518-1.18604,2.24805-2.91797,2.61279-5.25879h-0.09131c-1.09229,1.33789-2.67627,2.12646-4.65088,2.12646\r\n\t\tc-3.55762,0-5.83789-2.6748-5.83789-6.05127c0-3.7373,2.7041-7.021,6.75049-7.021c4.04395,0,6.5376,3.28369,6.5376,8.32861\r\n\t\tc0,4.34912-1.45947,7.38965-3.40527,9.27637c-1.52197,1.48877-3.61816,2.40039-5.74805,2.64307\r\n\t\tc-0.97363,0.15088-1.82422,0.18408-2.4624,0.15088V190.37793z M250.64063,174.20605c-2.25098,0-3.8623,2.00537-3.8623,4.80176\r\n\t\tc0,2.4624,1.48975,4.19824,3.80029,4.19824c1.79395,0,3.19434-0.88525,3.8916-2.07129\r\n\t\tc0.15186-0.24316,0.24316-0.54541,0.24316-0.97217c0-3.37256-1.24561-5.95654-4.04199-5.95654H250.64063z\"/>\r\n</g>\r\n<g>\r\n\t<path d=\"M135.52686,95.06348v-1.64063l2.1001-2.0376c5.04541-4.80518,7.32617-7.35938,7.35645-10.3374\r\n\t\tc0-2.0083-0.97363-3.8623-3.92188-3.8623c-1.79395,0-3.2832,0.91357-4.19678,1.67334l-0.85156-1.88672\r\n\t\tc1.37061-1.15381,3.31641-2.00488,5.59424-2.00488c4.25732,0,6.05127,2.91846,6.05127,5.74561\r\n\t\tc0,3.64844-2.646,6.59717-6.81055,10.61035l-1.58057,1.45898v0.06299h8.87695v2.21826H135.52686z\"/>\r\n\t<path d=\"M164.24316,84.96924c0,6.71875-2.49121,10.4292-6.87061,10.4292c-3.86133,0-6.47412-3.61865-6.5376-10.15576\r\n\t\tc0-6.62695,2.85742-10.27539,6.87305-10.27539C161.87354,74.96729,164.24316,78.67529,164.24316,84.96924z M153.51123,85.27148\r\n\t\tc0,5.14111,1.58154,8.05957,4.01318,8.05957c2.73438,0,4.04248-3.19434,4.04248-8.24023c0-4.86475-1.24561-8.05615-4.01318-8.05615\r\n\t\tC155.21387,77.03467,153.51123,79.89111,153.51123,85.27148z\"/>\r\n</g>\r\n<g>\r\n\t<path d=\"M455.47168,392.73486v-1.64355l2.09766-2.03418c5.04883-4.80566,7.3291-7.35938,7.35938-10.33789\r\n\t\tc0-2.00781-0.97363-3.86133-3.92188-3.86133c-1.79395,0-3.2832,0.91016-4.19727,1.67285l-0.85059-1.88672\r\n\t\tc1.36719-1.15332,3.31348-2.00586,5.59473-2.00586c4.25586,0,6.0498,2.91992,6.0498,5.74707\r\n\t\tc0,3.64844-2.64551,6.59668-6.80957,10.61035l-1.58105,1.45801v0.06348h8.87793v2.21777H455.47168z\"/>\r\n\t<path d=\"M482.85059,375.22217h-7.54102l-0.75781,5.07813c0.45605-0.06152,0.88086-0.12109,1.61035-0.12109\r\n\t\tc1.52148,0,3.03906,0.33496,4.25586,1.06445c1.55078,0.88086,2.82715,2.58398,2.82715,5.0752\r\n\t\tc0,3.86328-3.07031,6.75195-7.35645,6.75195c-2.15918,0-3.9834-0.60742-4.92383-1.2168l0.66699-2.03711\r\n\t\tc0.82227,0.48633,2.43262,1.09375,4.22754,1.09375c2.52051,0,4.68066-1.64063,4.68066-4.28516\r\n\t\tc-0.0293-2.55469-1.73242-4.37891-5.68359-4.37891c-1.12695,0-2.00781,0.12109-2.73828,0.21387l1.2793-9.48633h9.45313V375.22217z\"\r\n\t\t/>\r\n</g>\r\n<g>\r\n\t<path d=\"M524.05176,332.94141h-0.0625l-3.43457,1.85449l-0.5166-2.03564l4.31934-2.31299h2.27734v19.76367h-2.58301V332.94141z\"/>\r\n\t<path d=\"M545.10645,332.3335c-0.54883-0.03027-1.24609,0-2.00781,0.12158c-4.19434,0.7002-6.41406,3.77051-6.87109,7.02393h0.09277\r\n\t\tc0.94043-1.24854,2.58398-2.28125,4.77246-2.28125c3.49707,0,5.95898,2.52441,5.95898,6.38428\r\n\t\tc0,3.61816-2.46191,6.96436-6.56641,6.96436c-4.22754,0-6.99219-3.28418-6.99219-8.42383\r\n\t\tc0-3.89209,1.39746-6.96191,3.34375-8.90771c1.63867-1.61035,3.8291-2.61279,6.32324-2.91943\r\n\t\tc0.79199-0.12158,1.45996-0.15039,1.94629-0.15039V332.3335z M540.51465,348.479c2.28125,0,3.83203-1.9165,3.83203-4.74365\r\n\t\tc0-2.82959-1.61035-4.53271-4.0752-4.53271c-1.61035,0-3.10059,1.00684-3.83008,2.43359\r\n\t\tc-0.18359,0.30518-0.30469,0.7002-0.30469,1.18652c0.0625,3.25342,1.55078,5.65625,4.34863,5.65625H540.51465z\"/>\r\n</g>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-width=\"0.5\" stroke-miterlimit=\"2\" x1=\"304.25586\" y1=\"61.65479\" x2=\"279.95557\" y2=\"23.17969\"/>\r\n<g>\r\n\t<path d=\"M256.75439,1.86084h-0.05908l-3.43896,1.85449l-0.51514-2.03516l4.31592-2.31396h2.28125v19.76465h-2.58398V1.86084z\"/>\r\n\t<path d=\"M278.32471,1.61816h-7.54053L270.0249,6.6958c0.45703-0.06201,0.88086-0.12109,1.61133-0.12109\r\n\t\tc1.52197,0,3.03955,0.33203,4.25635,1.06152c1.55078,0.88428,2.82959,2.58691,2.82959,5.07813\r\n\t\tc0,3.8623-3.07275,6.75098-7.35938,6.75098c-2.15967,0-3.98291-0.60742-4.92725-1.21582l0.6709-2.0376\r\n\t\tc0.82178,0.48584,2.43213,1.09424,4.22754,1.09424c2.52295,0,4.68018-1.64307,4.68018-4.28662\r\n\t\tc-0.03027-2.55322-1.73193-4.37744-5.68701-4.37744c-1.12402,0-2.00391,0.12109-2.73438,0.21045l1.27588-9.48633h9.45605V1.61816z\"\r\n\t\t/>\r\n</g>\r\n<g>\r\n\t<path d=\"M520.26758,168.979v-1.64063l2.0957-2.03711c5.0498-4.80566,7.33105-7.35938,7.36035-10.33691\r\n\t\tc0-2.00928-0.97266-3.86279-3.9209-3.86279c-1.7959,0-3.28418,0.91455-4.19824,1.67285l-0.85059-1.88672\r\n\t\tc1.36719-1.15332,3.3125-2.00537,5.59375-2.00537c4.25684,0,6.05078,2.91943,6.05078,5.74658\r\n\t\tc0,3.64844-2.64453,6.59717-6.80957,10.61035l-1.58203,1.45947v0.0625h8.87891v2.21777H520.26758z\"/>\r\n\t<path d=\"M541.65625,151.70947h-0.05957l-3.43652,1.85449l-0.5166-2.03564l4.31543-2.31299h2.28125V168.979h-2.58398V151.70947z\"/>\r\n</g>\r\n<g>\r\n\t<path d=\"M602.27441,253.01367v-1.64355l2.10059-2.03564c5.04785-4.8042,7.33203-7.35938,7.35547-10.33643\r\n\t\tc0-2.0083-0.97168-3.86279-3.91504-3.86279c-1.79688,0-3.28711,0.91113-4.2002,1.67383l-0.85449-1.88672\r\n\t\tc1.37109-1.1543,3.31738-2.00488,5.60059-2.00488c4.25293,0,6.05078,2.91797,6.05078,5.74463\r\n\t\tc0,3.64893-2.64551,6.59717-6.80957,10.61035l-1.58398,1.45996v0.06201h8.87988v2.21924H602.27441z\"/>\r\n\t<path d=\"M618.5,249.94385c0.75977,0.48584,2.52246,1.24561,4.37793,1.24561c3.43457,0,4.49707-2.18896,4.46777-3.82959\r\n\t\tc-0.03027-2.76758-2.52148-3.95361-5.1084-3.95361h-1.48828v-2.0083h1.48828c1.94629,0,4.4082-1.00244,4.4082-3.34326\r\n\t\tc0-1.58154-1.00293-2.98193-3.46484-2.98193c-1.57715,0-3.10352,0.7002-3.95117,1.30811l-0.7002-1.9458\r\n\t\tc1.0332-0.7583,3.03809-1.51758,5.16797-1.51758c3.8916,0,5.65332,2.31006,5.65332,4.71289\r\n\t\tc0,2.03467-1.21094,3.76758-3.64258,4.65137v0.05957c2.43164,0.48633,4.40234,2.31055,4.40234,5.07813\r\n\t\tc0,3.16113-2.45703,5.92871-7.20215,5.92871c-2.21875,0-4.16504-0.7002-5.13672-1.33691L618.5,249.94385z\"/>\r\n</g>\r\n<g>\r\n\t<path d=\"M447.10352,747.0415h-0.06152l-3.43457,1.85742l-0.5166-2.04102l4.31836-2.30762h2.27832v19.76074h-2.58398V747.0415z\"/>\r\n\t<path d=\"M469.70996,744.55029v1.76172l-8.60547,17.99902h-2.76758l8.57617-17.48242v-0.05957h-9.66992v-2.21875H469.70996z\"/>\r\n</g>\r\n<g>\r\n\t<path d=\"M451.41699,232.7627v-1.64355l2.09766-2.03418c5.04883-4.80615,7.3291-7.35938,7.35938-10.33838\r\n\t\tc0-2.00781-0.97363-3.86133-3.92188-3.86133c-1.79395,0-3.2832,0.91016-4.19727,1.67236l-0.85059-1.88623\r\n\t\tc1.36719-1.15332,3.31348-2.00537,5.59277-2.00537c4.25781,0,6.05176,2.91943,6.05176,5.74658\r\n\t\tc0,3.64844-2.64551,6.59668-6.80957,10.61035l-1.58105,1.45801v0.0625h8.87695v2.21924H451.41699z\"/>\r\n\t<path d=\"M466.99902,232.7627v-1.64355l2.10059-2.03418c5.04492-4.80615,7.32617-7.35938,7.35547-10.33838\r\n\t\tc0-2.00781-0.97266-3.86133-3.9209-3.86133c-1.79395,0-3.28418,0.91016-4.19727,1.67236l-0.85156-1.88623\r\n\t\tc1.37109-1.15332,3.31641-2.00537,5.59375-2.00537c4.25684,0,6.05176,2.91943,6.05176,5.74658\r\n\t\tc0,3.64844-2.64551,6.59668-6.81055,10.61035l-1.58008,1.45801v0.0625h8.87695v2.21924H466.99902z\"/>\r\n</g>\r\n<g>\r\n\t<path d=\"M444.33105,528.40576v-1.64355l2.10059-2.03516c5.04492-4.80469,7.32617-7.3623,7.35547-10.33984\r\n\t\tc0-2.00488-0.97266-3.85547-3.9209-3.85547c-1.79395,0-3.28418,0.91309-4.19727,1.67188l-0.85156-1.88574\r\n\t\tc1.37109-1.15723,3.31641-2.00586,5.59375-2.00586c4.25684,0,6.05176,2.91992,6.05176,5.74219\r\n\t\tc0,3.64941-2.64551,6.59766-6.81055,10.60742l-1.58008,1.45996v0.06543h8.87695v2.21875H444.33105z\"/>\r\n\t<path d=\"M471.19336,510.53174c-0.5459-0.03613-1.24609,0-2.00586,0.11816c-4.19629,0.69922-6.41602,3.77344-6.87207,7.02441h0.0918\r\n\t\tc0.94336-1.24609,2.58398-2.2793,4.77246-2.2793c3.49707,0,5.95898,2.52246,5.95898,6.38379\r\n\t\tc0,3.61914-2.46191,6.96582-6.56641,6.96582c-4.22754,0-6.99512-3.28711-6.99512-8.4248c0-3.8916,1.40039-6.96582,3.34668-8.91113\r\n\t\tc1.64258-1.61328,3.83203-2.61035,6.32324-2.91797c0.78906-0.11914,1.45996-0.15527,1.94629-0.15527V510.53174z\r\n\t\t M466.60156,526.67236c2.28125,0,3.83203-1.91504,3.83203-4.73926c0-2.83496-1.61328-4.53223-4.0752-4.53223\r\n\t\tc-1.61035,0-3.09961,1.00195-3.83008,2.43164c-0.18359,0.30273-0.30469,0.7002-0.30469,1.1875\r\n\t\tc0.06152,3.25098,1.55078,5.65234,4.34863,5.65234H466.60156z\"/>\r\n</g>\r\n<g>\r\n\t<path d=\"M578.99512,526.38232v-1.6377l2.09473-2.04102c5.04883-4.80469,7.32617-7.35547,7.3623-10.33398\r\n\t\tc0-2.00488-0.97363-3.86133-3.92773-3.86133c-1.79102,0-3.2793,0.91309-4.19434,1.67285l-0.84766-1.88672\r\n\t\tc1.36426-1.15723,3.31055-2.00586,5.58789-2.00586c4.25977,0,6.05176,2.91992,6.05176,5.75\r\n\t\tc0,3.6416-2.64648,6.59668-6.81152,10.60742l-1.57715,1.45801v0.05957h8.87402v2.21875H578.99512z\"/>\r\n\t<path d=\"M605.8584,508.5083c-0.55273-0.03027-1.24512,0-2.01172,0.12402c-4.19434,0.7002-6.41211,3.76758-6.86914,7.02441h0.08789\r\n\t\tc0.94336-1.25195,2.58691-2.28418,4.77539-2.28418c3.49609,0,5.96387,2.52148,5.96387,6.38379\r\n\t\tc0,3.61816-2.46777,6.96484-6.57422,6.96484c-4.22461,0-6.98926-3.28125-6.98926-8.42383\r\n\t\tc0-3.89258,1.40039-6.95898,3.34668-8.90527c1.6377-1.61426,3.82617-2.61719,6.3252-2.91895\r\n\t\tc0.78809-0.125,1.45801-0.15332,1.94531-0.15332V508.5083z M601.2666,524.65088c2.27734,0,3.83203-1.91113,3.83203-4.74121\r\n\t\tc0-2.8291-1.61426-4.53223-4.08203-4.53223c-1.60742,0-3.09668,1.00293-3.8252,2.43164\r\n\t\tc-0.18555,0.30469-0.30371,0.7002-0.30371,1.18848c0.05957,3.25586,1.54883,5.65332,4.34277,5.65332H601.2666z\"/>\r\n</g>\r\n<g>\r\n\t<path d=\"M721.48828,144.61768h-0.05957l-3.43457,1.85352l-0.52246-2.03418l4.31934-2.31445h2.27832v19.76514h-2.58105V144.61768z\"\r\n\t\t/>\r\n\t<path d=\"M743.05859,144.375h-7.53906l-0.75977,5.07764c0.45605-0.06201,0.87793-0.12109,1.61328-0.12109\r\n\t\tc1.51855,0,3.03809,0.33105,4.25293,1.06152c1.54785,0.88428,2.83008,2.58691,2.83008,5.07813\r\n\t\tc0,3.86133-3.07324,6.75049-7.35547,6.75049c-2.16016,0-3.9873-0.60742-4.93066-1.21533l0.66992-2.03809\r\n\t\tc0.81934,0.48584,2.43262,1.09473,4.22461,1.09473c2.52734,0,4.68555-1.64307,4.68555-4.28662\r\n\t\tc-0.03418-2.55322-1.73145-4.37744-5.6875-4.37744c-1.12207,0-2.00586,0.12109-2.73633,0.20947l1.27637-9.48584h9.45605V144.375z\"\r\n\t\t/>\r\n</g>\r\n<g>\r\n\t<path d=\"M1036.37305,721.73389h-0.06445l-3.43457,1.85645l-0.5166-2.04004l4.31836-2.30859h2.27832v19.76172h-2.58105V721.73389z\"\r\n\t\t/>\r\n</g>\r\n<g>\r\n\t<path d=\"M942.47363,751.15283v-1.64355l2.09375-2.03418c5.04883-4.80566,7.32617-7.35645,7.3623-10.34082\r\n\t\tc0-2.00586-0.97266-3.86133-3.92773-3.86133c-1.79102,0-3.2793,0.91211-4.19434,1.67188l-0.84766-1.87988\r\n\t\tc1.36426-1.15723,3.31055-2.01172,5.59473-2.01172c4.25293,0,6.04492,2.91992,6.04492,5.74902\r\n\t\tc0,3.64844-2.63965,6.59766-6.81055,10.61328l-1.57813,1.45996v0.05957h8.87598v2.21777H942.47363z\"/>\r\n</g>\r\n<g>\r\n\t<path d=\"M1138.79785,599.83936c0.75879,0.48535,2.52734,1.25098,4.37793,1.25098c3.43555,0,4.50293-2.19434,4.47266-3.83203\r\n\t\tc-0.03418-2.77051-2.52734-3.95117-5.10742-3.95117h-1.48926v-2.01074h1.48926c1.94629,0,4.40723-1.00293,4.40723-3.34082\r\n\t\tc0-1.58398-1.00293-2.9834-3.46387-2.9834c-1.58398,0-3.10254,0.7002-3.95801,1.31055l-0.69824-1.94531\r\n\t\tc1.03711-0.75977,3.04199-1.52539,5.17285-1.52539c3.8916,0,5.65234,2.31348,5.65234,4.7168\r\n\t\tc0,2.03516-1.21484,3.76758-3.64648,4.65137v0.05859c2.43164,0.48633,4.40625,2.31348,4.40625,5.07813\r\n\t\tc0,3.16309-2.46191,5.92773-7.20703,5.92773c-2.21973,0-4.16504-0.69434-5.1377-1.33594L1138.79785,599.83936z\"/>\r\n</g>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-width=\"0.5\" stroke-miterlimit=\"2\" x1=\"1098.04102\" y1=\"601.3042\" x2=\"1136.51367\" y2=\"596.24463\"/>\r\n<g>\r\n\t<path d=\"M954.79004,620.54346v-5.38086h-9.18359v-1.76172l8.81445-12.61914h2.88965v12.28027h2.76465v2.10059h-2.76465v5.38086\r\n\t\tH954.79004z M954.79004,613.06201v-6.59668c0-1.03223,0.02832-2.06445,0.08789-3.10156h-0.08789\r\n\t\tc-0.6123,1.15527-1.09863,2.01074-1.64355,2.91797l-4.83496,6.7207v0.05957H954.79004z\"/>\r\n</g>\r\n<g>\r\n\t<path d=\"M819.69531,733.8833h-0.06543l-3.43457,1.85742l-0.5166-2.04102l4.31836-2.30762h2.2793v19.76074h-2.58105V733.8833z\"/>\r\n\t<path d=\"M837.73535,751.15283v-5.38086h-9.18262v-1.76172l8.81445-12.61816h2.88965v12.2793h2.76465v2.10059h-2.76465v5.38086\r\n\t\tH837.73535z M837.73535,743.67139v-6.59668c0-1.03223,0.03027-2.06348,0.08984-3.10156h-0.08984\r\n\t\tc-0.61035,1.15527-1.09668,2.01074-1.64355,2.91797l-4.83496,6.7207v0.05957H837.73535z\"/>\r\n</g>\r\n<g>\r\n\t<path d=\"M719.45898,699.4624h-0.06445l-3.43555,1.85742l-0.51563-2.04102l4.31836-2.30762h2.27832v19.76074h-2.58105V699.4624z\"/>\r\n\t<path d=\"M741.02344,699.21924h-7.54004l-0.75977,5.07813c0.45801-0.05957,0.88379-0.12402,1.61523-0.12402\r\n\t\tc1.51758,0,3.03613,0.33789,4.25293,1.06738c1.54785,0.87793,2.83008,2.58105,2.83008,5.0791\r\n\t\tc0,3.86133-3.07324,6.74512-7.35645,6.74512c-2.16016,0-3.9873-0.60449-4.93066-1.2168l0.6709-2.03418\r\n\t\tc0.81934,0.48633,2.43262,1.09082,4.22363,1.09082c2.52734,0,4.68652-1.63574,4.68652-4.28223\r\n\t\tc-0.03516-2.55762-1.73145-4.37891-5.68945-4.37891c-1.12109,0-2.00488,0.11816-2.73438,0.21387l1.27637-9.48633h9.45508V699.21924\r\n\t\tz\"/>\r\n</g>\r\n<g>\r\n\t<path d=\"M852.0918,542.52588h-0.05957l-3.43457,1.85547l-0.51563-2.04102l4.31836-2.30762h2.27832v19.7627h-2.58691V542.52588z\"/>\r\n\t<path d=\"M862.50391,556.72119c0.75879,0.4873,2.52734,1.25195,4.37695,1.25195c3.43652,0,4.50391-2.19531,4.47363-3.83203\r\n\t\tc-0.0293-2.77051-2.52734-3.95117-5.10742-3.95117h-1.49512v-2.01172h1.49512c1.94629,0,4.40723-1.00293,4.40723-3.33984\r\n\t\tc0-1.58398-1.00293-2.98438-3.4707-2.98438c-1.57715,0-3.0957,0.7002-3.95117,1.3125l-0.69824-1.94629\r\n\t\tc1.03711-0.75977,3.04199-1.52441,5.17285-1.52441c3.8916,0,5.65234,2.31348,5.65234,4.71582\r\n\t\tc0,2.03418-1.21484,3.7666-3.64844,4.65137v0.05859c2.43359,0.4873,4.4082,2.31445,4.4082,5.0791\r\n\t\tc0,3.16113-2.46191,5.92578-7.20703,5.92578c-2.21973,0-4.16602-0.69434-5.1377-1.33398L862.50391,556.72119z\"/>\r\n</g>\r\n<g>\r\n\t<path d=\"M1062.09082,419.40771c-0.5459-0.03027-1.24609,0-2.00586,0.12207c-4.19922,0.7002-6.41895,3.76953-6.86914,7.02344\r\n\t\th0.08887c0.94336-1.24512,2.58105-2.28125,4.77539-2.28125c3.49414,0,5.95605,2.52441,5.95605,6.38672\r\n\t\tc0,3.61621-2.46191,6.96191-6.56641,6.96191c-4.22461,0-6.99512-3.28418-6.99512-8.4209c0-3.8916,1.40039-6.96484,3.34668-8.91016\r\n\t\tc1.64355-1.6123,3.83203-2.61426,6.32324-2.91992c0.78906-0.12109,1.45996-0.15039,1.94629-0.15039V419.40771z\r\n\t\t M1057.49902,435.55322c2.27832,0,3.83203-1.91699,3.83203-4.74316c0-2.82715-1.61328-4.53027-4.0752-4.53027\r\n\t\tc-1.60742,0-3.10352,1.00293-3.83301,2.43359c-0.17773,0.30273-0.30176,0.69629-0.30176,1.18359\r\n\t\tc0.05859,3.25391,1.55371,5.65625,4.34863,5.65625H1057.49902z\"/>\r\n</g>\r\n<g>\r\n\t<path d=\"M984.66504,308.17432v1.76074l-8.60254,18h-2.7627l8.57129-17.4834v-0.05957h-9.66992v-2.21777H984.66504z\"/>\r\n</g>\r\n<g>\r\n\t<path d=\"M1004.84766,183.89941c-2.18945-1.03564-3.13281-2.7373-3.13281-4.43994c0-3.13184,2.64648-5.25879,6.11133-5.25879\r\n\t\tc3.83203,0,5.74219,2.40137,5.74219,4.86377c0,1.67236-0.81836,3.46533-3.25098,4.62109v0.08984\r\n\t\tc2.46289,0.97217,3.9873,2.70801,3.9873,5.1084c0,3.43701-2.95508,5.74756-6.72168,5.74756\r\n\t\tc-4.13477,0-6.62695-2.4624-6.62695-5.35156c0-2.49414,1.49023-4.25635,3.92188-5.29053L1004.84766,183.89941z\r\n\t\t M1011.59375,189.1582c0-2.40283-1.66699-3.55615-4.34863-4.31836c-2.30762,0.66992-3.55371,2.18896-3.55371,4.07568\r\n\t\tc-0.08984,2.00488,1.42969,3.77002,3.95117,3.77002C1010.04395,192.68555,1011.59375,191.16357,1011.59375,189.1582z\r\n\t\t M1004.2373,179.27881c0,1.97461,1.48828,3.03662,3.77246,3.64844c1.70313-0.57861,3.00781-1.79541,3.00781-3.58936\r\n\t\tc0-1.58105-0.94336-3.22168-3.3457-3.22168C1005.4541,176.11621,1004.2373,177.57568,1004.2373,179.27881z\"/>\r\n</g>\r\n<g>\r\n\t<path d=\"M1089.37402,159.99414c0.5752,0.05957,1.24512,0,2.15918-0.09131c1.54883-0.21387,3.00781-0.85205,4.13477-1.9165\r\n\t\tc1.30566-1.18652,2.24902-2.91846,2.61621-5.25928h-0.09375c-1.09277,1.33838-2.67676,2.12695-4.65137,2.12695\r\n\t\tc-3.56055,0-5.83789-2.6748-5.83789-6.04736c0-3.74121,2.70605-7.02539,6.75098-7.02539c4.0459,0,6.53711,3.28418,6.53711,8.33057\r\n\t\tc0,4.34717-1.45801,7.38818-3.4043,9.27197c-1.51855,1.49121-3.61914,2.40283-5.74902,2.646\r\n\t\tc-0.97363,0.15332-1.82129,0.18359-2.46191,0.15332V159.99414z M1094.20898,143.81689c-2.24805,0-3.86133,2.00781-3.86133,4.80469\r\n\t\tc0,2.4624,1.48828,4.19385,3.80176,4.19385c1.79199,0,3.19238-0.87939,3.8916-2.06299\r\n\t\tc0.14941-0.24463,0.24316-0.5498,0.24316-0.97363c0-3.375-1.24609-5.96191-4.04492-5.96191H1094.20898z\"/>\r\n</g>\r\n<g>\r\n\t<path d=\"M774.06152,346.95703h-0.06445l-3.43457,1.85352l-0.5166-2.03711l4.31836-2.30762h2.27832v19.76123h-2.58105V346.95703z\"/>\r\n\t<path d=\"M783.83301,364.22705v-1.64355l2.09473-2.03418c5.04785-4.80615,7.32617-7.35938,7.35547-10.33838\r\n\t\tc0-2.00781-0.97266-3.86133-3.9209-3.86133c-1.79297,0-3.28125,0.91016-4.19434,1.67236l-0.84961-1.88623\r\n\t\tc1.36523-1.15479,3.31055-2.00537,5.59473-2.00537c4.25391,0,6.05176,2.91943,6.05176,5.74512\r\n\t\tc0,3.64844-2.64648,6.59717-6.81152,10.61035l-1.58398,1.45996v0.06152h8.88184v2.21973H783.83301z\"/>\r\n</g>\r\n<g>\r\n\t<path d=\"M852.67871,222.00732h-0.04688l-2.74707,1.48291l-0.4082-1.62793l3.44531-1.84521h1.82129v15.78662h-2.06445V222.00732z\"/>\r\n\t<path d=\"M871,227.74121c0,5.36523-1.99512,8.32861-5.48828,8.32861c-3.08594,0-5.17383-2.88867-5.22656-8.11328\r\n\t\tc0-5.29053,2.2832-8.20752,5.49316-8.20752C869.10059,219.74902,871,222.71289,871,227.74121z M862.42578,227.98438\r\n\t\tc0,4.10156,1.25879,6.43408,3.2041,6.43408c2.18359,0,3.22754-2.54785,3.22754-6.5791c0-3.88623-0.99023-6.43701-3.2041-6.43701\r\n\t\tC863.78516,221.40234,862.42578,223.68213,862.42578,227.98438z\"/>\r\n</g>\r\n<g>\r\n\t<path d=\"M1043.64746,505.86768h-7.54102l-0.75977,5.07813c0.45801-0.05957,0.88379-0.11914,1.61328-0.11914\r\n\t\tc1.51953,0,3.03809,0.33301,4.25391,1.0625c1.54785,0.88379,2.8291,2.58105,2.8291,5.07227\r\n\t\tc0,3.86816-3.07227,6.75195-7.35449,6.75195c-2.16016,0-3.9873-0.60449-4.93066-1.21094l0.66992-2.04004\r\n\t\tc0.81836,0.48633,2.43359,1.09082,4.22461,1.09082c2.52734,0,4.6875-1.6377,4.6875-4.28223\r\n\t\tc-0.03613-2.55176-1.7334-4.37891-5.69043-4.37891c-1.12109,0-2.00488,0.11816-2.73438,0.21387l1.27441-9.48633h9.45801V505.86768z\r\n\t\t\"/>\r\n</g>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-width=\"0.5\" stroke-miterlimit=\"2\" x1=\"1029.18945\" y1=\"505.12061\" x2=\"1001.34766\" y2=\"483.85889\"/>\r\n<g>\r\n\t<path d=\"M254.22461,273.7124h-0.06201l-3.43604,1.85352l-0.51514-2.03857l4.31836-2.30762h2.27734v19.76074h-2.58252V273.7124z\"/>\r\n\t<path d=\"M269.80518,273.7124h-0.05811l-3.43848,1.85352l-0.5166-2.03857l4.31689-2.30762h2.28027v19.76074h-2.58398V273.7124z\"/>\r\n</g>\r\n<g>\r\n\t<path d=\"M445.58203,105.13428h-0.0625l-3.43457,1.85352l-0.5166-2.03809l4.32031-2.30762h2.27734v19.76074h-2.58398V105.13428z\"/>\r\n\t<path d=\"M461.16406,105.13428h-0.05957l-3.4375,1.85352l-0.5166-2.03809l4.31641-2.30762h2.28125v19.76074h-2.58398V105.13428z\"/>\r\n</g>\r\n<g>\r\n\t<path d=\"M787.29785,193.22021h-0.06543l-3.43555,1.85303l-0.51563-2.03711l4.31836-2.30908h2.2793v19.7627h-2.58105V193.22021z\"/>\r\n\t<path d=\"M802.87695,193.22021h-0.05957l-3.44141,1.85303l-0.50977-2.03711l4.31348-2.30908h2.28223v19.7627h-2.58496V193.22021z\"/>\r\n</g>\r\n<g>\r\n\t<path d=\"M773.62793,389.13525h-0.06445l-3.43457,1.85254l-0.5166-2.03809l4.31934-2.30762h2.27734v19.7627h-2.58105V389.13525z\"/>\r\n\t<path d=\"M789.20703,389.13525h-0.05859l-3.44043,1.85254l-0.51074-2.03809l4.3125-2.30762h2.28418v19.7627h-2.58691V389.13525z\"/>\r\n</g>\r\n<g>\r\n\t<path d=\"M773.62793,299.53027h-0.06445l-3.43457,1.85352l-0.5166-2.03857l4.31934-2.30762h2.27734v19.7627h-2.58105V299.53027z\"/>\r\n\t<path d=\"M789.20703,299.53027h-0.05859l-3.44043,1.85352l-0.51074-2.03857l4.3125-2.30762h2.28418v19.7627h-2.58691V299.53027z\"/>\r\n</g>\r\n<g>\r\n\t<path d=\"M354.40869,581.05713v-1.64355l2.09814-2.03516c5.04736-4.80469,7.3291-7.35742,7.35938-10.33398\r\n\t\tc0-2.01074-0.97363-3.86816-3.92236-3.86816c-1.79395,0-3.28369,0.91406-4.19678,1.67285l-0.85205-1.8877\r\n\t\tc1.36865-1.15039,3.31445-2.00391,5.59424-2.00391c4.25781,0,6.05176,2.91797,6.05176,5.74805\r\n\t\tc0,3.64844-2.646,6.59766-6.80957,10.61328l-1.58154,1.45996v0.05859h8.87744v2.21973H354.40869z\"/>\r\n\t<path d=\"M382.82324,561.29443v1.7627l-8.60498,18h-2.76758l8.57471-17.4834v-0.05957h-9.66992v-2.21973H382.82324z\"/>\r\n</g>\r\n<g>\r\n\t<path d=\"M573.08691,310.00977v-1.64307l2.10059-2.03564c5.04199-4.80469,7.32617-7.35791,7.35547-10.33691\r\n\t\tc0-2.00781-0.97266-3.86279-3.9209-3.86279c-1.79785,0-3.28125,0.91162-4.19434,1.67383l-0.85449-1.88623\r\n\t\tc1.36426-1.15479,3.31055-2.00537,5.59473-2.00537c4.25293,0,6.05078,2.91797,6.05078,5.74512\r\n\t\tc0,3.64844-2.64551,6.59717-6.81055,10.61035l-1.58398,1.45947v0.06201h8.88086v2.21924H573.08691z\"/>\r\n\t<path d=\"M596.93555,310.00977v-5.38037h-9.17773v-1.76465l8.81641-12.61572h2.88867v12.28027h2.76465v2.1001h-2.76465v5.38037\r\n\t\tH596.93555z M596.93555,302.5293v-6.59717c0-1.0332,0.03613-2.06738,0.0957-3.10059h-0.0957\r\n\t\tc-0.60449,1.15479-1.0918,2.00537-1.6377,2.91943l-4.83496,6.71875v0.05957H596.93555z\"/>\r\n</g>\r\n<g>\r\n\t<path d=\"M1030.61328,640.46436c0.75977,0.48633,2.52734,1.24512,4.37793,1.24512c3.43457,0,4.50293-2.18262,4.47266-3.8252\r\n\t\tc-0.03613-2.77148-2.52734-3.95801-5.10645-3.95801h-1.49023v-2.00488h1.49023c1.94434,0,4.40625-1.00293,4.40625-3.34668\r\n\t\tc0-1.57715-1.00293-2.97754-3.46484-2.97754c-1.58301,0-3.10156,0.7002-3.95703,1.31152l-0.7002-1.94629\r\n\t\tc1.03906-0.76465,3.04395-1.52441,5.17383-1.52441c3.8916,0,5.65332,2.31445,5.65332,4.71582\r\n\t\tc0,2.03613-1.21582,3.76758-3.64844,4.65137v0.05957c2.43262,0.4873,4.4082,2.31445,4.4082,5.07813\r\n\t\tc0,3.16211-2.46191,5.92676-7.20703,5.92676c-2.21973,0-4.16504-0.7002-5.13867-1.33496L1030.61328,640.46436z\"/>\r\n\t<path d=\"M1058.69141,633.43994c0,6.72168-2.49805,10.42969-6.87598,10.42969c-3.85547,0-6.47266-3.61816-6.53711-10.15039\r\n\t\tc0-6.63281,2.8584-10.28125,6.87598-10.28125C1056.31738,623.43799,1058.69141,627.15088,1058.69141,633.43994z\r\n\t\t M1047.95996,633.74854c0,5.1377,1.57715,8.05664,4.01074,8.05664c2.73438,0,4.04492-3.19141,4.04492-8.24023\r\n\t\tc0-4.86426-1.24609-8.05566-4.0166-8.05566C1049.65625,625.50928,1047.95996,628.36768,1047.95996,633.74854z\"/>\r\n</g>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-miterlimit=\"2\" x1=\"335.55127\" y1=\"354.88916\" x2=\"347.55127\" y2=\"354.88916\"/>\r\n<line fill=\"none\" stroke=\"#000000\" x1=\"307.29004\" y1=\"424.12451\" x2=\"307.29004\" y2=\"435.25928\"/>\r\n<line fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"2\" x1=\"337.0332\" y1=\"171.76172\" x2=\"324.38477\" y2=\"171.76172\"/>\r\n<use xlink:href=\"#Compass_Rose\"  width=\"51.15146\" height=\"60.64022\" x=\"-25.5759\" y=\"-30.32089\" transform=\"matrix(-1.6166 -0.93237 -0.93236 1.61659 1046.12891 64.1626)\" overflow=\"visible\"/>\r\n</svg>\r\n",
+        "targets": [
+          {
+            "columns": [
+              {
+                "selector": "locationid",
+                "text": "",
+                "type": "number"
+              },
+              {
+                "selector": "signalstrength",
+                "text": "",
+                "type": "number"
+              }
+            ],
+            "data": "locationid,signalstrength\n20,45.5\n11,23.7",
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "9DfwD8R4k"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "refId": "A",
+            "root_selector": "",
+            "source": "inline",
+            "type": "csv",
+            "url": "https://jsonplaceholder.typicode.com/users",
+            "url_options": {
+              "data": "",
+              "method": "GET"
+            }
+          }
+        ],
+        "title": "Floor Plan",
+        "type": "marcuscalidus-svg-panel",
+        "useSVGBuilder": false
+      }
+    ],
+    "schemaVersion": 36,
+    "style": "dark",
+    "tags": [],
+    "templating": {
+      "list": []
+    },
+    "time": {
+      "from": "now-6h",
+      "to": "now"
+    },
+    "timepicker": {},
+    "timezone": "",
+    "title": "Signal  Strength",
+    "uid": "J8hX5Ug4k",
+    "version": 5,
+    "weekStart": ""
+  }
