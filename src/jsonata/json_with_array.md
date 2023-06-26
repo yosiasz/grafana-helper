@@ -21,6 +21,30 @@
 
 ```
 (
+   
+    $A := $map($, function($v, $i, $a) {
+       { 
+           'incidentName': $v.incidentName,
+            'priority': $v.priority,
+            'time': $v.startTime
+       }
+    });
+   $B := 
+   $map($, function($v, $i, $a) {
+       { 
+           'incidentName': $v.incidentName,
+            'priority': $v.priority,            
+            'time':   $exists($v.endTime) ? $substring($v.endTime,0,10) : $substring($v.startTime,0,10)
+       }
+    });
+    $final := $append($A, $B);
+    $final^(incidentName, time);
+
+)
+```
+
+```
+(
     $value := $.value;
     $time := $.timestamp;
     $map($.car_brands, function($v, $i, $a) {
