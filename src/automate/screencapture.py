@@ -1,5 +1,5 @@
 #coding=utf-8                                                                                                                                                                              
-import time
+""" import time
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
@@ -16,6 +16,8 @@ driver.get(URL)
 driver.get_screenshot_as_file("./web_screenshot.png")
 driver.quit()
 print("end...")
+ """
+
 
 """ try:
   driver.get(URL)
