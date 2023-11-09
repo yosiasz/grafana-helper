@@ -108,7 +108,46 @@ app.get("/provinces", (req, res) => {
   return res.send(properties);
 });
 
+app.get('/rosa/clusters', (req, res) => {
+  const json =
+    [
+      {
+      "clusterid":  1,
+      "name": "cluster1"
+      },
+      {
+        "clusterid":  2,
+        "name": "cluster2"
+      },      
+  ];
 
+  return res.json(json)
+});
+
+app.get('/rosa/:cluster_id/nodes', (req, res) => {
+  
+  const json =
+    [
+      {
+      "clusterid": 1,
+      "nodeid":  1,
+      "nodename": "node1",
+      "cpu": 13,
+      "disk": 355
+      },
+      {
+        "clusterid": 1,
+        "nodeid":  2,
+        "name": "node2",
+        "cpu": 33,
+        "disk": 123        
+      },      
+  ];
+
+  let data = json.filter((n) => n.clusterid == req.params.cluster_id);
+  
+  return res.json(data)
+});
 
 
 app.get('/metrics', (req, res) => {
