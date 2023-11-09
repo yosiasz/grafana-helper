@@ -98,7 +98,31 @@ app.post("/datasource", async (req, res) => {
 
 })
 
-app.get("/provinces", (req, res) => {
+app.get("/api/v2/organizations", (req, res) => {
+  let raw = [
+    {
+    "name": "string",
+    "description": "string",
+    "userData": {
+    "additionalProp1": {}
+    },
+    "nodeApprovalMode": "AUTOMATIC",
+    "tags": [
+    "string"
+    ],
+    "fields": {
+    "additionalProp1": {},
+    "additionalProp2": {},
+    "additionalProp3": {}
+    },
+    "id": 0
+    }
+    ]
+
+  return res.send(raw);
+});
+
+app.get("/api/v2/activities", (req, res) => {
   let raw = fs.readFileSync(
     "./data/limits_IT_provinces.geojson"
   );
@@ -148,7 +172,25 @@ app.get('/rosa/:cluster_id/nodes', (req, res) => {
   
   return res.json(data)
 });
+app.get("/api/v2/devices", (req, res) => {
+  let raw = fs.readFileSync(
+    "./data/limits_IT_provinces.geojson"
+  );
+  let geojson = JSON.parse(raw);
+  let properties = geojson.features.map((p) => p.properties);
 
+  return res.send(properties);
+});
+
+app.get("/provinces", (req, res) => {
+  let raw = fs.readFileSync(
+    "./data/limits_IT_provinces.geojson"
+  );
+  let geojson = JSON.parse(raw);
+  let properties = geojson.features.map((p) => p.properties);
+
+  return res.send(properties);
+});
 
 app.get('/metrics', (req, res) => {
 
