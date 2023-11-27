@@ -55,4 +55,109 @@
        }
     })
 )
+{
+  "c": [
+    170.29,
+    170.77,
+    173.97
+  ],
+  "h": [
+    171.17,
+    170.9,
+    174.23
+  ],
+  "l": [
+    168.87,
+    167.9,
+    170.12
+  ],
+  "o": [
+    169.02,
+    169.35,
+    171
+  ],
+  "s": "ok",
+  "t": [
+    1698638400,
+    1698724800,
+    1698811200
+  ],
+  "v": [
+    51130955,
+    44846017,
+    56934906
+  ]
+}
+
+(
+  $map($.t, function($v, $i, $a) {
+       {
+            "date": $v,
+            "opening" : $.o[$i],
+            "high": $.h[$i] ,
+            "low": $.l[$i] ,
+            "close": $.c[$i],
+            "volume": $.v[$i]
+       }
+    })
+)    
+
+if it is an array of things.
+
+(
+    $bysymbol := $filter($, function($v, $i, $a) {
+        $v.s = "ok"
+    });
+  $map($bysymbol.t, function($v, $i, $a) {
+       {
+            "date": $v,
+            "opening" : $bysymbol.o[$i],
+            "high": $bysymbol.h[$i] ,
+            "low": $bysymbol.l[$i] ,
+            "close": $bysymbol.c[$i],
+            "volume": $bysymbol.v[$i],
+            "symbol": $bysymbol.s
+       }
+    })	
+)    
+```
+```
+{
+  "nextPageKey": null,
+  "resolution": "1m",
+  "result": [
+    {
+      "data": [
+        {
+          "dimensionMap": {
+            "dt.entity.host.name": "hostxxx@yyy.com"
+          },
+          "dimensions": [
+            "hostxxx@yyy.com"
+          ],
+          "timestamps": [
+            1701090120000,
+            1701090180000,
+            1701090240000,
+            1701090300000,
+            1701090360000
+          ],
+          "values": [
+            90.19648106892903,
+            90.06653912862141,
+            91.63350741068523,
+            91.0315596262614,
+            92.09268697102864
+          ]
+        }
+      ],
+      "dataPointCountRatio": 0.00006,
+      "dimensionCountRatio": 0.0001
+    }
+  ],
+  "totalCount": 10
+}```
+
+```
+( $map($.result.data.timestamps, function($v, $i, $a) { { 'timestamp': $fromMillis($v), 'value': $.result.data.values[$i] } }) )
 ```

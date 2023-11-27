@@ -123,24 +123,174 @@ app.get("/api/v2/organizations", (req, res) => {
 });
 
 app.get("/api/v2/activities", (req, res) => {
-  let raw = fs.readFileSync(
-    "./data/limits_IT_provinces.geojson"
-  );
-  let geojson = JSON.parse(raw);
-  let properties = geojson.features.map((p) => p.properties);
-
-  return res.send(properties);
+  let raw = {
+    "lastActivityId": 0,
+    "activities": [
+      {
+        "id": 0,
+        "activityTime": 0,
+        "deviceId": 0,
+        "severity": "NONE",
+        "priority": "NONE",
+        "seriesUid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "activityType": "ACTIONSET",
+        "statusCode": "START_REQUESTED",
+        "status": "string",
+        "activityResult": "SUCCESS",
+        "sourceConfigUid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "sourceName": "string",
+        "subject": "string",
+        "userId": 0,
+        "message": "string",
+        "type": "string",
+        "data": {
+          "additionalProp1": {}
+        }
+      }
+    ]
+  }
+  return res.send(raw);
 });
 
 
 app.get("/api/v2/devices", (req, res) => {
-  let raw = fs.readFileSync(
-    "./data/limits_IT_provinces.geojson"
-  );
-  let geojson = JSON.parse(raw);
-  let properties = geojson.features.map((p) => p.properties);
-
-  return res.send(properties);
+  let raw = [
+    {
+      "id": 0,
+      "parentDeviceId": 0,
+      "organizationId": 0,
+      "locationId": 0,
+      "nodeClass": "WINDOWS_SERVER",
+      "nodeRoleId": 0,
+      "rolePolicyId": 0,
+      "policyId": 0,
+      "approvalStatus": "PENDING",
+      "offline": true,
+      "displayName": "string",
+      "systemName": "string",
+      "dnsName": "string",
+      "netbiosName": "string",
+      "created": 0,
+      "lastContact": 0,
+      "lastUpdate": 0,
+      "userData": {
+        "additionalProp1": {}
+      },
+      "tags": [
+        "string"
+      ],
+      "fields": {
+        "additionalProp1": {},
+        "additionalProp2": {},
+        "additionalProp3": {}
+      },
+      "maintenance": {
+        "status": "PENDING",
+        "start": 0,
+        "end": 0
+      },
+      "references": {
+        "organization": {
+          "name": "string",
+          "description": "string",
+          "userData": {
+            "additionalProp1": {}
+          },
+          "nodeApprovalMode": "AUTOMATIC",
+          "tags": [
+            "string"
+          ],
+          "fields": {
+            "additionalProp1": {},
+            "additionalProp2": {},
+            "additionalProp3": {}
+          },
+          "id": 0
+        },
+        "location": {
+          "name": "string",
+          "address": "string",
+          "description": "string",
+          "userData": {
+            "additionalProp1": {}
+          },
+          "tags": [
+            "string"
+          ],
+          "fields": {
+            "additionalProp1": {},
+            "additionalProp2": {},
+            "additionalProp3": {}
+          },
+          "id": 0
+        },
+        "rolePolicy": {
+          "id": 0,
+          "parentPolicyId": 0,
+          "name": "string",
+          "description": "string",
+          "nodeClass": "WINDOWS_SERVER",
+          "updated": 0,
+          "nodeClassDefault": true,
+          "tags": [
+            "string"
+          ],
+          "fields": {
+            "additionalProp1": {},
+            "additionalProp2": {},
+            "additionalProp3": {}
+          }
+        },
+        "policy": {
+          "id": 0,
+          "parentPolicyId": 0,
+          "name": "string",
+          "description": "string",
+          "nodeClass": "WINDOWS_SERVER",
+          "updated": 0,
+          "nodeClassDefault": true,
+          "tags": [
+            "string"
+          ],
+          "fields": {
+            "additionalProp1": {},
+            "additionalProp2": {},
+            "additionalProp3": {}
+          }
+        },
+        "role": {
+          "id": 0,
+          "name": "string",
+          "description": "string",
+          "nodeClass": "WINDOWS_SERVER",
+          "custom": true,
+          "chassisType": "UNKNOWN",
+          "created": 0,
+          "tags": [
+            "string"
+          ],
+          "fields": {
+            "additionalProp1": {},
+            "additionalProp2": {},
+            "additionalProp3": {}
+          }
+        },
+        "backupUsage": {
+          "revisionsCurrentSize": 0,
+          "revisionsPreviousSize": 0,
+          "revisionsDeletedSize": 0,
+          "localFileFolderSize": 0,
+          "localImageSize": 0,
+          "cloudFileFolderSize": 0,
+          "cloudImageSize": 0,
+          "revisionsTotalSize": 0,
+          "cloudTotalSize": 0,
+          "localTotalSize": 0
+        }
+      }
+    }
+  ]
+  return res.send(raw);
 });
 
 app.get("/provinces", (req, res) => {

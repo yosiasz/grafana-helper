@@ -1,0 +1,5 @@
+Red,Green,Blue,Temperature
+114, 150,224,5085
+
+
+spectrum,type=wave Blue=224i,Green=150i,Red=114i,Temperature=5085i 1698854699442396000
