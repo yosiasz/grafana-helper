@@ -1,0 +1,3861 @@
+{
+	"type": "FeatureCollection",
+	"metadata": {
+		"generated": 1655487609000,
+		"url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson",
+		"title": "USGS Magnitude 4.5+ Earthquakes, Past Week",
+		"status": 200,
+		"api": "1.10.3",
+		"count": 96
+	},
+	"features": [
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 5.1,
+				"place": "Kepulauan Babar, Indonesia",
+				"time": 1655484301880,
+				"updated": 1655485364040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hi6l",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hi6l.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 400,
+				"net": "us",
+				"code": "7000hi6l",
+				"ids": ",us7000hi6l,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 2.094,
+				"rms": 0.86,
+				"gap": 71,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 5.1 - Kepulauan Babar, Indonesia"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					129.3538,
+					-7.1598,
+					149.33
+				]
+			},
+			"id": "us7000hi6l"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.9,
+				"place": "61 km ENE of Namie, Japan",
+				"time": 1655476538204,
+				"updated": 1655484010547,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hi4y",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hi4y.geojson",
+				"felt": 1,
+				"cdi": 3.4,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 370,
+				"net": "us",
+				"code": "7000hi4y",
+				"ids": ",us7000hi4y,",
+				"sources": ",us,",
+				"types": ",dyfi,origin,phase-data,",
+				"nst": null,
+				"dmin": 2.973,
+				"rms": 0.86,
+				"gap": 117,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.9 - 61 km ENE of Namie, Japan"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					141.6834,
+					37.6012,
+					54.64
+				]
+			},
+			"id": "us7000hi4y"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.8,
+				"place": "51 km SW of Ashkāsham, Afghanistan",
+				"time": 1655468715026,
+				"updated": 1655469983040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hi3k",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hi3k.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 354,
+				"net": "us",
+				"code": "7000hi3k",
+				"ids": ",us7000hi3k,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 0.871,
+				"rms": 0.7,
+				"gap": 60,
+				"magType": "mww",
+				"type": "earthquake",
+				"title": "M 4.8 - 51 km SW of Ashkāsham, Afghanistan"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					71.1136,
+					36.3669,
+					86.07
+				]
+			},
+			"id": "us7000hi3k"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.8,
+				"place": "79 km SSE of Panguna, Papua New Guinea",
+				"time": 1655467836054,
+				"updated": 1655469005040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hi3h",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hi3h.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 354,
+				"net": "us",
+				"code": "7000hi3h",
+				"ids": ",us7000hi3h,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 4.506,
+				"rms": 0.62,
+				"gap": 51,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.8 - 79 km SSE of Panguna, Papua New Guinea"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					155.7287,
+					-6.9888,
+					95.19
+				]
+			},
+			"id": "us7000hi3h"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.8,
+				"place": "31 km NNE of The Valley, Anguilla",
+				"time": 1655462891270,
+				"updated": 1655485791765,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hi2s",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hi2s.geojson",
+				"felt": 81,
+				"cdi": 4.1,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 388,
+				"net": "us",
+				"code": "7000hi2s",
+				"ids": ",pt22168001,us7000hi2s,",
+				"sources": ",pt,us,",
+				"types": ",dyfi,moment-tensor,origin,phase-data,",
+				"nst": null,
+				"dmin": 0.452,
+				"rms": 0.54,
+				"gap": 32,
+				"magType": "mww",
+				"type": "earthquake",
+				"title": "M 4.8 - 31 km NNE of The Valley, Anguilla"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-62.9751,
+					18.4946,
+					29.4
+				]
+			},
+			"id": "us7000hi2s"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 5.1,
+				"place": "33 km WSW of Ashkāsham, Afghanistan",
+				"time": 1655457778817,
+				"updated": 1655476359226,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hi2g",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hi2g.geojson",
+				"felt": 9,
+				"cdi": 2.7,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 403,
+				"net": "us",
+				"code": "7000hi2g",
+				"ids": ",us7000hi2g,",
+				"sources": ",us,",
+				"types": ",dyfi,origin,phase-data,",
+				"nst": null,
+				"dmin": 0.788,
+				"rms": 0.9,
+				"gap": 36,
+				"magType": "mww",
+				"type": "earthquake",
+				"title": "M 5.1 - 33 km WSW of Ashkāsham, Afghanistan"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					71.2156,
+					36.5258,
+					221.25
+				]
+			},
+			"id": "us7000hi2g"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.7,
+				"place": "148 km WSW of Haveluloto, Tonga",
+				"time": 1655457118732,
+				"updated": 1655458373040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hi2f",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hi2f.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 340,
+				"net": "us",
+				"code": "7000hi2f",
+				"ids": ",us7000hi2f,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 6.263,
+				"rms": 0.69,
+				"gap": 93,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.7 - 148 km WSW of Haveluloto, Tonga"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-176.5989,
+					-21.4831,
+					224.58
+				]
+			},
+			"id": "us7000hi2f"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.7,
+				"place": "25 km WNW of Golfito, Costa Rica",
+				"time": 1655450785298,
+				"updated": 1655472661914,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hi25",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hi25.geojson",
+				"felt": 2,
+				"cdi": 3.4,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 341,
+				"net": "us",
+				"code": "7000hi25",
+				"ids": ",us7000hi25,",
+				"sources": ",us,",
+				"types": ",dyfi,origin,phase-data,",
+				"nst": null,
+				"dmin": 0.585,
+				"rms": 1.19,
+				"gap": 135,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.7 - 25 km WNW of Golfito, Costa Rica"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-83.3281,
+					8.6795,
+					10
+				]
+			},
+			"id": "us7000hi25"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 5,
+				"place": "107 km WSW of Turpan, China",
+				"time": 1655407146872,
+				"updated": 1655483132040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hhxq",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hhxq.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 385,
+				"net": "us",
+				"code": "7000hhxq",
+				"ids": ",us7000hhxq,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 5.866,
+				"rms": 0.84,
+				"gap": 48,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 5.0 - 107 km WSW of Turpan, China"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					87.9771,
+					42.5522,
+					10
+				]
+			},
+			"id": "us7000hhxq"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.5,
+				"place": "96 km SSW of George Town, Cayman Islands",
+				"time": 1655406066135,
+				"updated": 1655482963040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hhxl",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hhxl.geojson",
+				"felt": 2,
+				"cdi": 3.8,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 312,
+				"net": "us",
+				"code": "7000hhxl",
+				"ids": ",us7000hhxl,",
+				"sources": ",us,",
+				"types": ",dyfi,origin,phase-data,",
+				"nst": null,
+				"dmin": 3.946,
+				"rms": 1.09,
+				"gap": 45,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.5 - 96 km SSW of George Town, Cayman Islands"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-81.6818,
+					18.4643,
+					10
+				]
+			},
+			"id": "us7000hhxl"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 5,
+				"place": "103 km SSW of George Town, Cayman Islands",
+				"time": 1655404161179,
+				"updated": 1655482920567,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hhxe",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hhxe.geojson",
+				"felt": 7,
+				"cdi": 6.6,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 389,
+				"net": "us",
+				"code": "7000hhxe",
+				"ids": ",us7000hhxe,",
+				"sources": ",us,",
+				"types": ",dyfi,origin,phase-data,",
+				"nst": null,
+				"dmin": 4.005,
+				"rms": 0.99,
+				"gap": 33,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 5.0 - 103 km SSW of George Town, Cayman Islands"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-81.7462,
+					18.4222,
+					10
+				]
+			},
+			"id": "us7000hhxe"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 5,
+				"place": "5 km SW of Komatsushimachō, Japan",
+				"time": 1655394685789,
+				"updated": 1655444381885,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hhvk",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hhvk.geojson",
+				"felt": 9,
+				"cdi": 4.1,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 388,
+				"net": "us",
+				"code": "7000hhvk",
+				"ids": ",us7000hhvk,",
+				"sources": ",us,",
+				"types": ",dyfi,origin,phase-data,",
+				"nst": null,
+				"dmin": 0.605,
+				"rms": 0.78,
+				"gap": 70,
+				"magType": "mww",
+				"type": "earthquake",
+				"title": "M 5.0 - 5 km SW of Komatsushimachō, Japan"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					134.5466,
+					33.9664,
+					33.3
+				]
+			},
+			"id": "us7000hhvk"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.8,
+				"place": "66 km SSE of Gorontalo, Indonesia",
+				"time": 1655370906480,
+				"updated": 1655373185040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hhr8",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hhr8.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 354,
+				"net": "us",
+				"code": "7000hhr8",
+				"ids": ",us7000hhr8,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 1.204,
+				"rms": 0.83,
+				"gap": 47,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.8 - 66 km SSE of Gorontalo, Indonesia"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					123.3554,
+					0.0184,
+					135.72
+				]
+			},
+			"id": "us7000hhr8"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.6,
+				"place": "south of the Fiji Islands",
+				"time": 1655365481160,
+				"updated": 1655366877040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hhqt",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hhqt.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 326,
+				"net": "us",
+				"code": "7000hhqt",
+				"ids": ",us7000hhqt,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 4.848,
+				"rms": 0.69,
+				"gap": 174,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.6 - south of the Fiji Islands"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-179.7676,
+					-24.6836,
+					513.41
+				]
+			},
+			"id": "us7000hhqt"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.7,
+				"place": "western Indian-Antarctic Ridge",
+				"time": 1655365075850,
+				"updated": 1655367444040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hhqs",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hhqs.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 340,
+				"net": "us",
+				"code": "7000hhqs",
+				"ids": ",us7000hhqs,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 16.203,
+				"rms": 0.39,
+				"gap": 88,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.7 - western Indian-Antarctic Ridge"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					124.5556,
+					-49.0545,
+					10
+				]
+			},
+			"id": "us7000hhqs"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 5.1,
+				"place": "49 km W of Darapidap, Philippines",
+				"time": 1655359732700,
+				"updated": 1655383504040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hhqh",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hhqh.geojson",
+				"felt": 3,
+				"cdi": 3.4,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 401,
+				"net": "us",
+				"code": "7000hhqh",
+				"ids": ",us7000hhqh,",
+				"sources": ",us,",
+				"types": ",dyfi,moment-tensor,origin,phase-data,",
+				"nst": null,
+				"dmin": 5.707,
+				"rms": 0.95,
+				"gap": 72,
+				"magType": "mww",
+				"type": "earthquake",
+				"title": "M 5.1 - 49 km W of Darapidap, Philippines"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					119.9525,
+					17.1803,
+					14.23
+				]
+			},
+			"id": "us7000hhqh"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.9,
+				"place": "southern Mid-Atlantic Ridge",
+				"time": 1655340493390,
+				"updated": 1655342083040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hhpa",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hhpa.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 369,
+				"net": "us",
+				"code": "7000hhpa",
+				"ids": ",us7000hhpa,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 29.264,
+				"rms": 0.6,
+				"gap": 82,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.9 - southern Mid-Atlantic Ridge"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-13.4356,
+					-24.8886,
+					10
+				]
+			},
+			"id": "us7000hhpa"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.6,
+				"place": "southern Iran",
+				"time": 1655340047792,
+				"updated": 1655340954040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hhp7",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hhp7.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 326,
+				"net": "us",
+				"code": "7000hhp7",
+				"ids": ",us7000hhp7,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 2.355,
+				"rms": 0.65,
+				"gap": 75,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.6 - southern Iran"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					54.3497,
+					26.6111,
+					10
+				]
+			},
+			"id": "us7000hhp7"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 5,
+				"place": "Volcano Islands, Japan region",
+				"time": 1655331824855,
+				"updated": 1655332887040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hhng",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hhng.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 385,
+				"net": "us",
+				"code": "7000hhng",
+				"ids": ",us7000hhng,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 12.673,
+				"rms": 0.91,
+				"gap": 85,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 5.0 - Volcano Islands, Japan region"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					143.2625,
+					23.8505,
+					10
+				]
+			},
+			"id": "us7000hhng"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.5,
+				"place": "south of the Fiji Islands",
+				"time": 1655331449586,
+				"updated": 1655332539040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hhn7",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hhn7.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 312,
+				"net": "us",
+				"code": "7000hhn7",
+				"ids": ",us7000hhn7,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 5.779,
+				"rms": 0.96,
+				"gap": 132,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.5 - south of the Fiji Islands"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-179.0682,
+					-22.8803,
+					531.95
+				]
+			},
+			"id": "us7000hhn7"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.5,
+				"place": "56 km NW of Ende, Indonesia",
+				"time": 1655320432136,
+				"updated": 1655410555040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hhlf",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hhlf.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 312,
+				"net": "us",
+				"code": "7000hhlf",
+				"ids": ",us7000hhlf,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 0.911,
+				"rms": 0.6,
+				"gap": 89,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.5 - 56 km NW of Ende, Indonesia"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					121.3351,
+					-8.4517,
+					197.74
+				]
+			},
+			"id": "us7000hhlf"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 5.6,
+				"place": "off the coast of Oregon",
+				"time": 1655294192639,
+				"updated": 1655467606619,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hhik",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hhik.geojson",
+				"felt": 15,
+				"cdi": 2.7,
+				"mmi": 0,
+				"alert": "green",
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 487,
+				"net": "us",
+				"code": "7000hhik",
+				"ids": ",us7000hhik,",
+				"sources": ",us,",
+				"types": ",dyfi,losspager,moment-tensor,oaf,origin,phase-data,shakemap,",
+				"nst": null,
+				"dmin": 4.496,
+				"rms": 1.04,
+				"gap": 176,
+				"magType": "mww",
+				"type": "earthquake",
+				"title": "M 5.6 - off the coast of Oregon"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-130.2121,
+					44.4743,
+					10
+				]
+			},
+			"id": "us7000hhik"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.9,
+				"place": "southern Iran",
+				"time": 1655275734090,
+				"updated": 1655278652928,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hhhk",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hhhk.geojson",
+				"felt": 1,
+				"cdi": 2,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 370,
+				"net": "us",
+				"code": "7000hhhk",
+				"ids": ",us7000hhhk,",
+				"sources": ",us,",
+				"types": ",dyfi,origin,phase-data,",
+				"nst": null,
+				"dmin": 2.452,
+				"rms": 0.72,
+				"gap": 76,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.9 - southern Iran"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					54.2431,
+					26.6526,
+					10
+				]
+			},
+			"id": "us7000hhhk"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 5.5,
+				"place": "21 km NE of Kīsh, Iran",
+				"time": 1655273163165,
+				"updated": 1655401335040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hhhc",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hhhc.geojson",
+				"felt": 38,
+				"cdi": 6.4,
+				"mmi": 6.571,
+				"alert": "green",
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 490,
+				"net": "us",
+				"code": "7000hhhc",
+				"ids": ",us7000hhhc,",
+				"sources": ",us,",
+				"types": ",dyfi,losspager,moment-tensor,origin,phase-data,shakemap,",
+				"nst": null,
+				"dmin": 2.512,
+				"rms": 0.97,
+				"gap": 56,
+				"magType": "mww",
+				"type": "earthquake",
+				"title": "M 5.5 - 21 km NE of Kīsh, Iran"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					54.1869,
+					26.6859,
+					10
+				]
+			},
+			"id": "us7000hhhc"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.7,
+				"place": "20 km NE of Kīsh, Iran",
+				"time": 1655273079664,
+				"updated": 1655274628040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hhhb",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hhhb.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 340,
+				"net": "us",
+				"code": "7000hhhb",
+				"ids": ",us7000hhhb,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 2.507,
+				"rms": 0.92,
+				"gap": 78,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.7 - 20 km NE of Kīsh, Iran"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					54.1822,
+					26.674,
+					10
+				]
+			},
+			"id": "us7000hhhb"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.6,
+				"place": "25 km ENE of Kīsh, Iran",
+				"time": 1655272761953,
+				"updated": 1655276110040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hhha",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hhha.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 326,
+				"net": "us",
+				"code": "7000hhha",
+				"ids": ",us7000hhha,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 2.427,
+				"rms": 1,
+				"gap": 75,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.6 - 25 km ENE of Kīsh, Iran"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					54.2647,
+					26.6363,
+					10
+				]
+			},
+			"id": "us7000hhha"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.7,
+				"place": "14 km E of Kīsh, Iran",
+				"time": 1655272501691,
+				"updated": 1655276324983,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hhh9",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hhh9.geojson",
+				"felt": 24,
+				"cdi": 4.8,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 351,
+				"net": "us",
+				"code": "7000hhh9",
+				"ids": ",us7000hhh9,",
+				"sources": ",us,",
+				"types": ",dyfi,origin,phase-data,",
+				"nst": null,
+				"dmin": 2.444,
+				"rms": 1.34,
+				"gap": 80,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.7 - 14 km E of Kīsh, Iran"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					54.1625,
+					26.5607,
+					10
+				]
+			},
+			"id": "us7000hhh9"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.7,
+				"place": "125 km NE of San Pedro de Atacama, Chile",
+				"time": 1655247166653,
+				"updated": 1655248157040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hhfw",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hhfw.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 340,
+				"net": "us",
+				"code": "7000hhfw",
+				"ids": ",us7000hhfw,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 1.141,
+				"rms": 0.89,
+				"gap": 91,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.7 - 125 km NE of San Pedro de Atacama, Chile"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-67.3112,
+					-22.1358,
+					193.86
+				]
+			},
+			"id": "us7000hhfw"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.6,
+				"place": "104 km NNW of Neiafu, Tonga",
+				"time": 1655245059670,
+				"updated": 1655246308040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hhfs",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hhfs.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 326,
+				"net": "us",
+				"code": "7000hhfs",
+				"ids": ",us7000hhfs,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 4.648,
+				"rms": 0.51,
+				"gap": 94,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.6 - 104 km NNW of Neiafu, Tonga"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-174.4389,
+					-17.8132,
+					83.39
+				]
+			},
+			"id": "us7000hhfs"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.6,
+				"place": "34 km E of Pādegān-e Manjīl, Iran",
+				"time": 1655220620639,
+				"updated": 1655278739646,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hhd7",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hhd7.geojson",
+				"felt": 1,
+				"cdi": 2.5,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 326,
+				"net": "us",
+				"code": "7000hhd7",
+				"ids": ",us7000hhd7,",
+				"sources": ",us,",
+				"types": ",dyfi,origin,phase-data,",
+				"nst": null,
+				"dmin": 3.665,
+				"rms": 0.48,
+				"gap": 92,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.6 - 34 km E of Pādegān-e Manjīl, Iran"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					49.8017,
+					36.706,
+					10
+				]
+			},
+			"id": "us7000hhd7"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.5,
+				"place": "261 km E of Levuka, Fiji",
+				"time": 1655219875850,
+				"updated": 1655221432040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hhd5",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hhd5.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 312,
+				"net": "us",
+				"code": "7000hhd5",
+				"ids": ",us7000hhd5,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 3.556,
+				"rms": 0.57,
+				"gap": 115,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.5 - 261 km E of Levuka, Fiji"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-178.2193,
+					-17.9565,
+					592.19
+				]
+			},
+			"id": "us7000hhd5"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.5,
+				"place": "98 km SSW of Masachapa, Nicaragua",
+				"time": 1655217461163,
+				"updated": 1655219765040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hhbg",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hhbg.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 312,
+				"net": "us",
+				"code": "7000hhbg",
+				"ids": ",us7000hhbg,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 1.323,
+				"rms": 0.39,
+				"gap": 178,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.5 - 98 km SSW of Masachapa, Nicaragua"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-86.8449,
+					10.9542,
+					10
+				]
+			},
+			"id": "us7000hhbg"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.7,
+				"place": "16 km E of Kīsh, Iran",
+				"time": 1655215783154,
+				"updated": 1655274144851,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hhbb",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hhbb.geojson",
+				"felt": 0,
+				"cdi": 1,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 340,
+				"net": "us",
+				"code": "7000hhbb",
+				"ids": ",us7000hhbb,",
+				"sources": ",us,",
+				"types": ",dyfi,origin,phase-data,",
+				"nst": null,
+				"dmin": 2.42,
+				"rms": 0.79,
+				"gap": 78,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.7 - 16 km E of Kīsh, Iran"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					54.1791,
+					26.5404,
+					10
+				]
+			},
+			"id": "us7000hhbb"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.5,
+				"place": "114 km NE of Kainantu, Papua New Guinea",
+				"time": 1655202367744,
+				"updated": 1655203983040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hh9z",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hh9z.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 312,
+				"net": "us",
+				"code": "7000hh9z",
+				"ids": ",us7000hh9z,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 5.622,
+				"rms": 0.6,
+				"gap": 51,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.5 - 114 km NE of Kainantu, Papua New Guinea"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					146.7277,
+					-5.7122,
+					92.51
+				]
+			},
+			"id": "us7000hh9z"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.6,
+				"place": "267 km NW of Tianpeng, China",
+				"time": 1655201471925,
+				"updated": 1655203272040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hh9y",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hh9y.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 326,
+				"net": "us",
+				"code": "7000hh9y",
+				"ids": ",us7000hh9y,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 11.278,
+				"rms": 0.47,
+				"gap": 55,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.6 - 267 km NW of Tianpeng, China"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					101.7276,
+					32.4798,
+					10
+				]
+			},
+			"id": "us7000hh9y"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 5.6,
+				"place": "135 km N of Lae, Papua New Guinea",
+				"time": 1655197773432,
+				"updated": 1655284386348,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hh98",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hh98.geojson",
+				"felt": 1,
+				"cdi": 5.8,
+				"mmi": 3.679,
+				"alert": "green",
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 483,
+				"net": "us",
+				"code": "7000hh98",
+				"ids": ",us7000hh98,",
+				"sources": ",us,",
+				"types": ",dyfi,losspager,origin,phase-data,shakemap,",
+				"nst": null,
+				"dmin": 5.186,
+				"rms": 0.71,
+				"gap": 14,
+				"magType": "mww",
+				"type": "earthquake",
+				"title": "M 5.6 - 135 km N of Lae, Papua New Guinea"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					147.1267,
+					-5.5073,
+					186.31
+				]
+			},
+			"id": "us7000hh98"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.9,
+				"place": "39 km SW of Ashkāsham, Afghanistan",
+				"time": 1655192144771,
+				"updated": 1655197429574,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hh92",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hh92.geojson",
+				"felt": 3,
+				"cdi": 2,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 370,
+				"net": "us",
+				"code": "7000hh92",
+				"ids": ",us7000hh92,",
+				"sources": ",us,",
+				"types": ",dyfi,origin,phase-data,",
+				"nst": null,
+				"dmin": 0.797,
+				"rms": 1,
+				"gap": 72,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.9 - 39 km SW of Ashkāsham, Afghanistan"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					71.1634,
+					36.4812,
+					207.9
+				]
+			},
+			"id": "us7000hh92"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.8,
+				"place": "130 km N of Manatutu, Timor Leste",
+				"time": 1655184218145,
+				"updated": 1655186215040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hh8j",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hh8j.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 354,
+				"net": "us",
+				"code": "7000hh8j",
+				"ids": ",us7000hh8j,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 2.86,
+				"rms": 0.76,
+				"gap": 38,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.8 - 130 km N of Manatutu, Timor Leste"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					125.8495,
+					-7.3457,
+					490.4
+				]
+			},
+			"id": "us7000hh8j"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.7,
+				"place": "188 km SE of Al Ghayz̧ah, Yemen",
+				"time": 1655174322298,
+				"updated": 1655176628040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hh7y",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hh7y.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 340,
+				"net": "us",
+				"code": "7000hh7y",
+				"ids": ",us7000hh7y,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 10.117,
+				"rms": 0.69,
+				"gap": 119,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.7 - 188 km SE of Al Ghayz̧ah, Yemen"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					53.5127,
+					15.0983,
+					10
+				]
+			},
+			"id": "us7000hh7y"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.5,
+				"place": "258 km SE of Katsuura, Japan",
+				"time": 1655173070383,
+				"updated": 1655177283040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hh7v",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hh7v.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 312,
+				"net": "us",
+				"code": "7000hh7v",
+				"ids": ",us7000hh7v,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 2.017,
+				"rms": 0.85,
+				"gap": 153,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.5 - 258 km SE of Katsuura, Japan"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					142.1941,
+					33.4202,
+					10
+				]
+			},
+			"id": "us7000hh7v"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 5.1,
+				"place": "93 km ENE of Georgetown, Saint Helena",
+				"time": 1655165901942,
+				"updated": 1655252483513,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hh76",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hh76.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": 3.075,
+				"alert": "green",
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 400,
+				"net": "us",
+				"code": "7000hh76",
+				"ids": ",us7000hh76,",
+				"sources": ",us,",
+				"types": ",losspager,origin,phase-data,shakemap,",
+				"nst": null,
+				"dmin": 0.795,
+				"rms": 0.49,
+				"gap": 117,
+				"magType": "mww",
+				"type": "earthquake",
+				"title": "M 5.1 - 93 km ENE of Georgetown, Saint Helena"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-13.586,
+					-7.72,
+					10
+				]
+			},
+			"id": "us7000hh76"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 5,
+				"place": "83 km ENE of Georgetown, Saint Helena",
+				"time": 1655165827580,
+				"updated": 1655168894040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hh75",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hh75.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 385,
+				"net": "us",
+				"code": "7000hh75",
+				"ids": ",us7000hh75,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 0.708,
+				"rms": 0.47,
+				"gap": 71,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 5.0 - 83 km ENE of Georgetown, Saint Helena"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-13.7007,
+					-7.6579,
+					10
+				]
+			},
+			"id": "us7000hh75"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 5.1,
+				"place": "94 km ENE of Georgetown, Saint Helena",
+				"time": 1655162424170,
+				"updated": 1655163594040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hh6v",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hh6v.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 400,
+				"net": "us",
+				"code": "7000hh6v",
+				"ids": ",us7000hh6v,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 0.8,
+				"rms": 0.79,
+				"gap": 67,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 5.1 - 94 km ENE of Georgetown, Saint Helena"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-13.5742,
+					-7.7481,
+					10
+				]
+			},
+			"id": "us7000hh6v"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 5.2,
+				"place": "91 km ENE of Georgetown, Saint Helena",
+				"time": 1655153839176,
+				"updated": 1655222203040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hh61",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hh61.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 416,
+				"net": "us",
+				"code": "7000hh61",
+				"ids": ",us7000hh61,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 0.776,
+				"rms": 0.79,
+				"gap": 63,
+				"magType": "mww",
+				"type": "earthquake",
+				"title": "M 5.2 - 91 km ENE of Georgetown, Saint Helena"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-13.5941,
+					-7.7651,
+					10
+				]
+			},
+			"id": "us7000hh61"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.8,
+				"place": "Prince Edward Islands region",
+				"time": 1655143794214,
+				"updated": 1655487255040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hh4m",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hh4m.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 354,
+				"net": "us",
+				"code": "7000hh4m",
+				"ids": ",us7000hh4m,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 18.907,
+				"rms": 0.52,
+				"gap": 47,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.8 - Prince Edward Islands region"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					35.1373,
+					-45.958,
+					10
+				]
+			},
+			"id": "us7000hh4m"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.6,
+				"place": "217 km W of Port McNeill, Canada",
+				"time": 1655141681889,
+				"updated": 1655486480426,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hh4b",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hh4b.geojson",
+				"felt": 3,
+				"cdi": 2.2,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 1,
+				"sig": 326,
+				"net": "us",
+				"code": "7000hh4b",
+				"ids": ",at00rdffi1,us7000hh4b,",
+				"sources": ",at,us,",
+				"types": ",dyfi,impact-link,origin,phase-data,",
+				"nst": null,
+				"dmin": 1.294,
+				"rms": 1.31,
+				"gap": 148,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.6 - 217 km W of Port McNeill, Canada"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-130.1389,
+					50.8714,
+					8.07
+				]
+			},
+			"id": "us7000hh4b"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.9,
+				"place": "69 km ENE of Luganville, Vanuatu",
+				"time": 1655141215760,
+				"updated": 1655486203040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hh4a",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hh4a.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 369,
+				"net": "us",
+				"code": "7000hh4a",
+				"ids": ",us7000hh4a,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 0.574,
+				"rms": 0.84,
+				"gap": 109,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.9 - 69 km ENE of Luganville, Vanuatu"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					167.7949,
+					-15.3807,
+					223.7
+				]
+			},
+			"id": "us7000hh4a"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.6,
+				"place": "51 km WSW of Ishigaki, Japan",
+				"time": 1655119115105,
+				"updated": 1655120758040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hh2r",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hh2r.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 326,
+				"net": "us",
+				"code": "7000hh2r",
+				"ids": ",us7000hh2r,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 0.668,
+				"rms": 0.36,
+				"gap": 107,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.6 - 51 km WSW of Ishigaki, Japan"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					123.6782,
+					24.188,
+					23.13
+				]
+			},
+			"id": "us7000hh2r"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.9,
+				"place": "southern Mid-Atlantic Ridge",
+				"time": 1655103857982,
+				"updated": 1655105033040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hh1u",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hh1u.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 369,
+				"net": "us",
+				"code": "7000hh1u",
+				"ids": ",us7000hh1u,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 18.008,
+				"rms": 0.32,
+				"gap": 104,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.9 - southern Mid-Atlantic Ridge"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-10.5529,
+					-46.8408,
+					10
+				]
+			},
+			"id": "us7000hh1u"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.9,
+				"place": "187 km SSE of ‘Ohonua, Tonga",
+				"time": 1655097952959,
+				"updated": 1655099147040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hh1e",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hh1e.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 369,
+				"net": "us",
+				"code": "7000hh1e",
+				"ids": ",us7000hh1e,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 7.205,
+				"rms": 0.71,
+				"gap": 94,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.9 - 187 km SSE of ‘Ohonua, Tonga"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-174.1796,
+					-22.8628,
+					10
+				]
+			},
+			"id": "us7000hh1e"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.9,
+				"place": "84 km ENE of Georgetown, Saint Helena",
+				"time": 1655074010205,
+				"updated": 1655438160040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hgzv",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hgzv.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 369,
+				"net": "us",
+				"code": "7000hgzv",
+				"ids": ",us7000hgzv,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 0.71,
+				"rms": 0.52,
+				"gap": 39,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.9 - 84 km ENE of Georgetown, Saint Helena"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-13.6728,
+					-7.7307,
+					10
+				]
+			},
+			"id": "us7000hgzv"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.8,
+				"place": "134 km NNE of Labuan Bajo, Indonesia",
+				"time": 1655073244175,
+				"updated": 1655436392040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hgzp",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hgzp.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 354,
+				"net": "us",
+				"code": "7000hgzp",
+				"ids": ",us7000hgzp,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 2.315,
+				"rms": 0.79,
+				"gap": 37,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.8 - 134 km NNE of Labuan Bajo, Indonesia"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					120.1483,
+					-7.3104,
+					562.2
+				]
+			},
+			"id": "us7000hgzp"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.6,
+				"place": "South Sandwich Islands region",
+				"time": 1655069503298,
+				"updated": 1655433363040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hhwg",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hhwg.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 326,
+				"net": "us",
+				"code": "7000hhwg",
+				"ids": ",us7000hhwg,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 7.536,
+				"rms": 0.47,
+				"gap": 82,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.6 - South Sandwich Islands region"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-27.948,
+					-60.2208,
+					81.57
+				]
+			},
+			"id": "us7000hhwg"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.5,
+				"place": "21 km SSE of Monjarás, Honduras",
+				"time": 1655068571911,
+				"updated": 1655419993040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hgzk",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hgzk.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 312,
+				"net": "us",
+				"code": "7000hgzk",
+				"ids": ",us7000hgzk,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 0.426,
+				"rms": 0.61,
+				"gap": 148,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.5 - 21 km SSE of Monjarás, Honduras"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-87.3088,
+					13.0189,
+					10
+				]
+			},
+			"id": "us7000hgzk"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 5.2,
+				"place": "26 km SSE of Erciş, Turkey",
+				"time": 1655058921397,
+				"updated": 1655127682465,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hgyu",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hgyu.geojson",
+				"felt": 3,
+				"cdi": 8,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 418,
+				"net": "us",
+				"code": "7000hgyu",
+				"ids": ",us7000hgyu,",
+				"sources": ",us,",
+				"types": ",dyfi,origin,phase-data,",
+				"nst": null,
+				"dmin": 0.625,
+				"rms": 0.8,
+				"gap": 42,
+				"magType": "mww",
+				"type": "earthquake",
+				"title": "M 5.2 - 26 km SSE of Erciş, Turkey"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					43.5221,
+					38.8216,
+					10
+				]
+			},
+			"id": "us7000hgyu"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.5,
+				"place": "192 km WSW of Bandar Lampung, Indonesia",
+				"time": 1655056870943,
+				"updated": 1655062350040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hgyn",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hgyn.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 312,
+				"net": "us",
+				"code": "7000hgyn",
+				"ids": ",us7000hgyn,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 2.07,
+				"rms": 0.82,
+				"gap": 157,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.5 - 192 km WSW of Bandar Lampung, Indonesia"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					103.7455,
+					-6.2881,
+					46
+				]
+			},
+			"id": "us7000hgyn"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.7,
+				"place": "42 km SE of Banda Aceh, Indonesia",
+				"time": 1655055925925,
+				"updated": 1655061609040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hgyj",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hgyj.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 340,
+				"net": "us",
+				"code": "7000hgyj",
+				"ids": ",us7000hgyj,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 1.37,
+				"rms": 0.99,
+				"gap": 174,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.7 - 42 km SE of Banda Aceh, Indonesia"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					95.5713,
+					5.2437,
+					113.91
+				]
+			},
+			"id": "us7000hgyj"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.6,
+				"place": "81 km ENE of Georgetown, Saint Helena",
+				"time": 1655052901810,
+				"updated": 1655412976040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hhvz",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hhvz.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 326,
+				"net": "us",
+				"code": "7000hhvz",
+				"ids": ",us7000hhvz,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 0.684,
+				"rms": 0.62,
+				"gap": 70,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.6 - 81 km ENE of Georgetown, Saint Helena"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-13.7112,
+					-7.6977,
+					10
+				]
+			},
+			"id": "us7000hhvz"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.6,
+				"place": "Kermadec Islands region",
+				"time": 1655052104436,
+				"updated": 1655410743040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hhvx",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hhvx.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 326,
+				"net": "us",
+				"code": "7000hhvx",
+				"ids": ",us7000hhvx,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 11.316,
+				"rms": 0.81,
+				"gap": 138,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.6 - Kermadec Islands region"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-176.4787,
+					-28.2624,
+					10
+				]
+			},
+			"id": "us7000hhvx"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.6,
+				"place": "85 km NNW of San Antonio de los Cobres, Argentina",
+				"time": 1655051540151,
+				"updated": 1655409531040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hgyd",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hgyd.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 326,
+				"net": "us",
+				"code": "7000hgyd",
+				"ids": ",us7000hgyd,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 1.559,
+				"rms": 0.41,
+				"gap": 43,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.6 - 85 km NNW of San Antonio de los Cobres, Argentina"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-66.5843,
+					-23.4838,
+					207.14
+				]
+			},
+			"id": "us7000hgyd"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.5,
+				"place": "southeast of the Loyalty Islands",
+				"time": 1655050578184,
+				"updated": 1655409129040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hgyf",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hgyf.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 312,
+				"net": "us",
+				"code": "7000hgyf",
+				"ids": ",us7000hgyf,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 4.007,
+				"rms": 0.87,
+				"gap": 126,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.5 - southeast of the Loyalty Islands"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					171.732,
+					-23.2924,
+					10
+				]
+			},
+			"id": "us7000hgyf"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.7,
+				"place": "89 km ENE of Georgetown, Saint Helena",
+				"time": 1655043178716,
+				"updated": 1655408332040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hhvv",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hhvv.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 340,
+				"net": "us",
+				"code": "7000hhvv",
+				"ids": ",us7000hhvv,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 0.762,
+				"rms": 0.92,
+				"gap": 74,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.7 - 89 km ENE of Georgetown, Saint Helena"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-13.6782,
+					-7.5777,
+					10
+				]
+			},
+			"id": "us7000hhvv"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.6,
+				"place": "126 km NW of Tobelo, Indonesia",
+				"time": 1655039540450,
+				"updated": 1655406950040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hhvu",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hhvu.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 326,
+				"net": "us",
+				"code": "7000hhvu",
+				"ids": ",us7000hhvu,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 1.785,
+				"rms": 0.46,
+				"gap": 50,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.6 - 126 km NW of Tobelo, Indonesia"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					127.2297,
+					2.5639,
+					69.06
+				]
+			},
+			"id": "us7000hhvu"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.9,
+				"place": "67 km ENE of Namie, Japan",
+				"time": 1655037951249,
+				"updated": 1655233446260,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hgx3",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hgx3.geojson",
+				"felt": 13,
+				"cdi": 3.8,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 374,
+				"net": "us",
+				"code": "7000hgx3",
+				"ids": ",us7000hgx3,",
+				"sources": ",us,",
+				"types": ",dyfi,moment-tensor,origin,phase-data,",
+				"nst": null,
+				"dmin": 3.024,
+				"rms": 0.55,
+				"gap": 60,
+				"magType": "mww",
+				"type": "earthquake",
+				"title": "M 4.9 - 67 km ENE of Namie, Japan"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					141.7452,
+					37.6164,
+					49.26
+				]
+			},
+			"id": "us7000hgx3"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.9,
+				"place": "104 km ENE of Georgetown, Saint Helena",
+				"time": 1655034274628,
+				"updated": 1655035717040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hgwy",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hgwy.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 369,
+				"net": "us",
+				"code": "7000hgwy",
+				"ids": ",us7000hgwy,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 0.89,
+				"rms": 0.53,
+				"gap": 67,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.9 - 104 km ENE of Georgetown, Saint Helena"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-13.5029,
+					-7.6629,
+					10
+				]
+			},
+			"id": "us7000hgwy"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.5,
+				"place": "southern Mid-Atlantic Ridge",
+				"time": 1655034093734,
+				"updated": 1655452124040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hhvr",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hhvr.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 312,
+				"net": "us",
+				"code": "7000hhvr",
+				"ids": ",us7000hhvr,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 8.232,
+				"rms": 0.65,
+				"gap": 56,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.5 - southern Mid-Atlantic Ridge"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-14.2776,
+					-16.8078,
+					10
+				]
+			},
+			"id": "us7000hhvr"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.6,
+				"place": "27 km WNW of Sumbawa Besar, Indonesia",
+				"time": 1655029214994,
+				"updated": 1655451275040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hhvq",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hhvq.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 326,
+				"net": "us",
+				"code": "7000hhvq",
+				"ids": ",us7000hhvq,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 3.025,
+				"rms": 0.73,
+				"gap": 68,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.6 - 27 km WNW of Sumbawa Besar, Indonesia"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					117.2083,
+					-8.3572,
+					26.05
+				]
+			},
+			"id": "us7000hhvq"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.5,
+				"place": "86 km ENE of Georgetown, Saint Helena",
+				"time": 1655025522943,
+				"updated": 1655449992040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hhvp",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hhvp.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 312,
+				"net": "us",
+				"code": "7000hhvp",
+				"ids": ",us7000hhvp,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 0.729,
+				"rms": 0.41,
+				"gap": 78,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.5 - 86 km ENE of Georgetown, Saint Helena"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-13.6602,
+					-7.7043,
+					10
+				]
+			},
+			"id": "us7000hhvp"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 5,
+				"place": "South Sandwich Islands region",
+				"time": 1655022800009,
+				"updated": 1655024009040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hgw1",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hgw1.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 385,
+				"net": "us",
+				"code": "7000hgw1",
+				"ids": ",us7000hgw1,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 4.022,
+				"rms": 0.96,
+				"gap": 76,
+				"magType": "mww",
+				"type": "earthquake",
+				"title": "M 5.0 - South Sandwich Islands region"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-29.9235,
+					-55.6448,
+					10
+				]
+			},
+			"id": "us7000hgw1"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.5,
+				"place": "72 km N of Wabag, Papua New Guinea",
+				"time": 1655020970385,
+				"updated": 1655022291040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hgvx",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hgvx.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 312,
+				"net": "us",
+				"code": "7000hgvx",
+				"ids": ",us7000hgvx,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 8.546,
+				"rms": 0.48,
+				"gap": 75,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.5 - 72 km N of Wabag, Papua New Guinea"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					143.6154,
+					-4.8444,
+					135.25
+				]
+			},
+			"id": "us7000hgvx"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.5,
+				"place": "34 km NW of Archidona, Ecuador",
+				"time": 1655001463758,
+				"updated": 1655041015535,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hgui",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hgui.geojson",
+				"felt": 3,
+				"cdi": 3.6,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 313,
+				"net": "us",
+				"code": "7000hgui",
+				"ids": ",us7000hgui,",
+				"sources": ",us,",
+				"types": ",dyfi,origin,phase-data,",
+				"nst": null,
+				"dmin": 0.245,
+				"rms": 0.94,
+				"gap": 105,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.5 - 34 km NW of Archidona, Ecuador"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-78.0479,
+					-0.7109,
+					10
+				]
+			},
+			"id": "us7000hgui"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 5.1,
+				"place": "86 km ENE of Georgetown, Saint Helena",
+				"time": 1655000784724,
+				"updated": 1655003232040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hguh",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hguh.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 400,
+				"net": "us",
+				"code": "7000hguh",
+				"ids": ",us7000hguh,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 0.731,
+				"rms": 0.77,
+				"gap": 107,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 5.1 - 86 km ENE of Georgetown, Saint Helena"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-13.6551,
+					-7.7143,
+					10
+				]
+			},
+			"id": "us7000hguh"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.8,
+				"place": "78 km ENE of Georgetown, Saint Helena",
+				"time": 1655000652261,
+				"updated": 1655002902040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hguj",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hguj.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 354,
+				"net": "us",
+				"code": "7000hguj",
+				"ids": ",us7000hguj,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 0.658,
+				"rms": 1.38,
+				"gap": 125,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.8 - 78 km ENE of Georgetown, Saint Helena"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-13.7227,
+					-7.7446,
+					10
+				]
+			},
+			"id": "us7000hguj"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.6,
+				"place": "92 km SSW of Masachapa, Nicaragua",
+				"time": 1654999066833,
+				"updated": 1654999988040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hguc",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hguc.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 326,
+				"net": "us",
+				"code": "7000hguc",
+				"ids": ",us7000hguc,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 1.256,
+				"rms": 0.6,
+				"gap": 175,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.6 - 92 km SSW of Masachapa, Nicaragua"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-86.7441,
+					10.9827,
+					36.73
+				]
+			},
+			"id": "us7000hguc"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.6,
+				"place": "1 km E of Uramita, Colombia",
+				"time": 1654995006784,
+				"updated": 1654996697885,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hgu3",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hgu3.geojson",
+				"felt": 1,
+				"cdi": 2,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 326,
+				"net": "us",
+				"code": "7000hgu3",
+				"ids": ",us7000hgu3,",
+				"sources": ",us,",
+				"types": ",dyfi,origin,phase-data,",
+				"nst": null,
+				"dmin": 0.942,
+				"rms": 1.02,
+				"gap": 136,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.6 - 1 km E of Uramita, Colombia"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-76.1565,
+					6.9021,
+					10
+				]
+			},
+			"id": "us7000hgu3"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 5,
+				"place": "40 km SW of Trenggalek, Indonesia",
+				"time": 1654991732350,
+				"updated": 1654997241185,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hgtm",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hgtm.geojson",
+				"felt": 1,
+				"cdi": 2,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 385,
+				"net": "us",
+				"code": "7000hgtm",
+				"ids": ",us7000hgtm,",
+				"sources": ",us,",
+				"types": ",dyfi,origin,phase-data,",
+				"nst": null,
+				"dmin": 1.023,
+				"rms": 0.95,
+				"gap": 73,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 5.0 - 40 km SW of Trenggalek, Indonesia"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					111.4605,
+					-8.3459,
+					111.51
+				]
+			},
+			"id": "us7000hgtm"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 5.4,
+				"place": "western Indian-Antarctic Ridge",
+				"time": 1654980985785,
+				"updated": 1655067554152,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hgsw",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hgsw.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": 0,
+				"alert": "green",
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 449,
+				"net": "us",
+				"code": "7000hgsw",
+				"ids": ",us7000hgsw,",
+				"sources": ",us,",
+				"types": ",losspager,origin,phase-data,shakemap,",
+				"nst": null,
+				"dmin": 9.373,
+				"rms": 0.94,
+				"gap": 68,
+				"magType": "mww",
+				"type": "earthquake",
+				"title": "M 5.4 - western Indian-Antarctic Ridge"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					139.3833,
+					-50.5399,
+					10
+				]
+			},
+			"id": "us7000hgsw"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.6,
+				"place": "201 km NNE of Opotiki, New Zealand",
+				"time": 1654971982951,
+				"updated": 1654975229040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hgs5",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hgs5.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 326,
+				"net": "us",
+				"code": "7000hgs5",
+				"ids": ",us7000hgs5,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 1.11,
+				"rms": 1.08,
+				"gap": 139,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.6 - 201 km NNE of Opotiki, New Zealand"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					178.4601,
+					-36.4565,
+					114.73
+				]
+			},
+			"id": "us7000hgs5"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 5.4,
+				"place": "southern Mid-Atlantic Ridge",
+				"time": 1654970101930,
+				"updated": 1655217631175,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hgrz",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hgrz.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": 0,
+				"alert": "green",
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 449,
+				"net": "us",
+				"code": "7000hgrz",
+				"ids": ",us7000hgrz,",
+				"sources": ",us,",
+				"types": ",losspager,moment-tensor,origin,phase-data,shakemap,",
+				"nst": null,
+				"dmin": 6.955,
+				"rms": 0.78,
+				"gap": 20,
+				"magType": "mww",
+				"type": "earthquake",
+				"title": "M 5.4 - southern Mid-Atlantic Ridge"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-12.3164,
+					-18.9857,
+					10
+				]
+			},
+			"id": "us7000hgrz"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.7,
+				"place": "73 km ENE of Georgetown, Saint Helena",
+				"time": 1654965670882,
+				"updated": 1654967153040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hgrr",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hgrr.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 340,
+				"net": "us",
+				"code": "7000hgrr",
+				"ids": ",us7000hgrr,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 0.613,
+				"rms": 0.72,
+				"gap": 123,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.7 - 73 km ENE of Georgetown, Saint Helena"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-13.7872,
+					-7.6981,
+					10
+				]
+			},
+			"id": "us7000hgrr"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.9,
+				"place": "140 km W of Neiafu, Tonga",
+				"time": 1654965431966,
+				"updated": 1654966489040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hgrq",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hgrq.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 369,
+				"net": "us",
+				"code": "7000hgrq",
+				"ids": ",us7000hgrq,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 5.714,
+				"rms": 0.98,
+				"gap": 44,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.9 - 140 km W of Neiafu, Tonga"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-175.3078,
+					-18.5379,
+					184.62
+				]
+			},
+			"id": "us7000hgrq"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.9,
+				"place": "Reykjanes Ridge",
+				"time": 1654962052624,
+				"updated": 1654963796040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hgrg",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hgrg.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 369,
+				"net": "us",
+				"code": "7000hgrg",
+				"ids": ",us7000hgrg,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 8.897,
+				"rms": 0.75,
+				"gap": 74,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.9 - Reykjanes Ridge"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-35.1483,
+					54.1733,
+					10
+				]
+			},
+			"id": "us7000hgrg"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 5.1,
+				"place": "91 km ENE of Georgetown, Saint Helena",
+				"time": 1654960300074,
+				"updated": 1654961383040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hgre",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hgre.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 400,
+				"net": "us",
+				"code": "7000hgre",
+				"ids": ",us7000hgre,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 0.779,
+				"rms": 0.92,
+				"gap": 71,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 5.1 - 91 km ENE of Georgetown, Saint Helena"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-13.6372,
+					-7.6244,
+					10
+				]
+			},
+			"id": "us7000hgre"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 5.1,
+				"place": "Mauritius - Reunion region",
+				"time": 1654956699511,
+				"updated": 1655224148864,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hgr1",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hgr1.geojson",
+				"felt": 1,
+				"cdi": 4.6,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 401,
+				"net": "us",
+				"code": "7000hgr1",
+				"ids": ",us7000hgr1,",
+				"sources": ",us,",
+				"types": ",dyfi,origin,phase-data,",
+				"nst": null,
+				"dmin": 2.811,
+				"rms": 1,
+				"gap": 56,
+				"magType": "mww",
+				"type": "earthquake",
+				"title": "M 5.1 - Mauritius - Reunion region"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					66.3356,
+					-20.1069,
+					10
+				]
+			},
+			"id": "us7000hgr1"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.6,
+				"place": "San Luis, Argentina",
+				"time": 1654954810773,
+				"updated": 1654991449805,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hgqu",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hgqu.geojson",
+				"felt": 1,
+				"cdi": 2,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 326,
+				"net": "us",
+				"code": "7000hgqu",
+				"ids": ",us7000hgqu,",
+				"sources": ",us,",
+				"types": ",dyfi,origin,phase-data,",
+				"nst": null,
+				"dmin": 1.522,
+				"rms": 1.06,
+				"gap": 81,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.6 - San Luis, Argentina"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-67.1501,
+					-32.3323,
+					27.74
+				]
+			},
+			"id": "us7000hgqu"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.8,
+				"place": "157 km NNE of Calama, Chile",
+				"time": 1654950434426,
+				"updated": 1654976359400,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hgqi",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hgqi.geojson",
+				"felt": 2,
+				"cdi": 2.5,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 355,
+				"net": "us",
+				"code": "7000hgqi",
+				"ids": ",us7000hgqi,",
+				"sources": ",us,",
+				"types": ",dyfi,origin,phase-data,",
+				"nst": null,
+				"dmin": 1.139,
+				"rms": 1.33,
+				"gap": 60,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.8 - 157 km NNE of Calama, Chile"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-68.2746,
+					-21.1679,
+					124.5
+				]
+			},
+			"id": "us7000hgqi"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 5.7,
+				"place": "Balleny Islands region",
+				"time": 1654940575311,
+				"updated": 1655027206046,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hgq1",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hgq1.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": 3.36,
+				"alert": "green",
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 500,
+				"net": "us",
+				"code": "7000hgq1",
+				"ids": ",us7000hgq1,",
+				"sources": ",us,",
+				"types": ",losspager,origin,phase-data,shakemap,",
+				"nst": null,
+				"dmin": 13.15,
+				"rms": 0.67,
+				"gap": 112,
+				"magType": "mww",
+				"type": "earthquake",
+				"title": "M 5.7 - Balleny Islands region"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					177.8779,
+					-65.1963,
+					10
+				]
+			},
+			"id": "us7000hgq1"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.6,
+				"place": "35 km NE of Puyca, Peru",
+				"time": 1654939433433,
+				"updated": 1654941714040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hgpu",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hgpu.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 326,
+				"net": "us",
+				"code": "7000hgpu",
+				"ids": ",us7000hgpu,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 3.99,
+				"rms": 0.72,
+				"gap": 124,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.6 - 35 km NE of Puyca, Peru"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-72.4821,
+					-14.8166,
+					102.3
+				]
+			},
+			"id": "us7000hgpu"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.8,
+				"place": "81 km E of Georgetown, Saint Helena",
+				"time": 1654934813501,
+				"updated": 1654936231040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hgpe",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hgpe.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 354,
+				"net": "us",
+				"code": "7000hgpe",
+				"ids": ",us7000hgpe,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 0.68,
+				"rms": 0.67,
+				"gap": 138,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.8 - 81 km E of Georgetown, Saint Helena"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-13.675,
+					-7.9872,
+					10
+				]
+			},
+			"id": "us7000hgpe"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 5.6,
+				"place": "87 km E of Georgetown, Saint Helena",
+				"time": 1654932594296,
+				"updated": 1655348269097,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hgp6",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hgp6.geojson",
+				"felt": 1,
+				"cdi": 4.1,
+				"mmi": 3.732,
+				"alert": "green",
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 483,
+				"net": "us",
+				"code": "7000hgp6",
+				"ids": ",us7000hgp6,",
+				"sources": ",us,",
+				"types": ",dyfi,losspager,moment-tensor,origin,phase-data,shakemap,",
+				"nst": null,
+				"dmin": 0.737,
+				"rms": 0.65,
+				"gap": 45,
+				"magType": "mww",
+				"type": "earthquake",
+				"title": "M 5.6 - 87 km E of Georgetown, Saint Helena"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-13.6183,
+					-7.992,
+					10
+				]
+			},
+			"id": "us7000hgp6"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 5.2,
+				"place": "80 km E of Georgetown, Saint Helena",
+				"time": 1654929329966,
+				"updated": 1654931984040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hgp0",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hgp0.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 416,
+				"net": "us",
+				"code": "7000hgp0",
+				"ids": ",us7000hgp0,",
+				"sources": ",us,",
+				"types": ",moment-tensor,origin,phase-data,",
+				"nst": null,
+				"dmin": 0.675,
+				"rms": 0.57,
+				"gap": 45,
+				"magType": "mww",
+				"type": "earthquake",
+				"title": "M 5.2 - 80 km E of Georgetown, Saint Helena"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-13.6782,
+					-7.9201,
+					10
+				]
+			},
+			"id": "us7000hgp0"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.8,
+				"place": "82 km E of Georgetown, Saint Helena",
+				"time": 1654927901924,
+				"updated": 1655007944040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hgqw",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hgqw.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 354,
+				"net": "us",
+				"code": "7000hgqw",
+				"ids": ",us7000hgqw,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 0.687,
+				"rms": 0.6,
+				"gap": 114,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.8 - 82 km E of Georgetown, Saint Helena"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-13.6692,
+					-7.8666,
+					10
+				]
+			},
+			"id": "us7000hgqw"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.9,
+				"place": "128 km ESE of Vao, New Caledonia",
+				"time": 1654922799739,
+				"updated": 1654923780040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hgnn",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hgnn.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 369,
+				"net": "us",
+				"code": "7000hgnn",
+				"ids": ",us7000hgnn,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 1.218,
+				"rms": 0.91,
+				"gap": 115,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.9 - 128 km ESE of Vao, New Caledonia"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					168.5545,
+					-23.2801,
+					10
+				]
+			},
+			"id": "us7000hgnn"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 5.6,
+				"place": "east of the North Island of New Zealand",
+				"time": 1654902442203,
+				"updated": 1655156927040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hgm3",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hgm3.geojson",
+				"felt": 1,
+				"cdi": 1,
+				"mmi": 5.939,
+				"alert": "green",
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 483,
+				"net": "us",
+				"code": "7000hgm3",
+				"ids": ",us7000hgm3,",
+				"sources": ",us,",
+				"types": ",dyfi,losspager,moment-tensor,origin,phase-data,shakemap,",
+				"nst": null,
+				"dmin": 2.991,
+				"rms": 0.72,
+				"gap": 44,
+				"magType": "mww",
+				"type": "earthquake",
+				"title": "M 5.6 - east of the North Island of New Zealand"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-179.6133,
+					-35.0822,
+					10
+				]
+			},
+			"id": "us7000hgm3"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.5,
+				"place": "134 km WNW of Corral, Chile",
+				"time": 1654893790200,
+				"updated": 1654898411040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hgli",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hgli.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 312,
+				"net": "us",
+				"code": "7000hgli",
+				"ids": ",us7000hgli,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 1.206,
+				"rms": 0.94,
+				"gap": 152,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.5 - 134 km WNW of Corral, Chile"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-74.7988,
+					-39.3049,
+					10
+				]
+			},
+			"id": "us7000hgli"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"mag": 4.8,
+				"place": "58 km WNW of Haveluloto, Tonga",
+				"time": 1654892299741,
+				"updated": 1654894545040,
+				"tz": null,
+				"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hglc",
+				"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000hglc.geojson",
+				"felt": null,
+				"cdi": null,
+				"mmi": null,
+				"alert": null,
+				"status": "reviewed",
+				"tsunami": 0,
+				"sig": 354,
+				"net": "us",
+				"code": "7000hglc",
+				"ids": ",us7000hglc,",
+				"sources": ",us,",
+				"types": ",origin,phase-data,",
+				"nst": null,
+				"dmin": 6.676,
+				"rms": 0.91,
+				"gap": 124,
+				"magType": "mb",
+				"type": "earthquake",
+				"title": "M 4.8 - 58 km WNW of Haveluloto, Tonga"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					-175.6983,
+					-20.8852,
+					135.4
+				]
+			},
+			"id": "us7000hglc"
+		}
+	],
+	"bbox": [
+		-179.7676,
+		-65.1963,
+		8.07,
+		178.4601,
+		54.1733,
+		592.19
+	]
+}

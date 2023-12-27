@@ -1,0 +1,121 @@
+{
+    "request": {
+      "url": "api/datasources/proxy/135/_msearch?max_concurrent_shard_requests=5",
+      "method": "POST",
+      "data": "{\"search_type\":\"query_then_fetch\",\"ignore_unavailable\":true,\"index\":[\"2022-07-04-data\",\"2022-07-05-data\"]}\n{\"size\":0,\"query\":{\"bool\":{\"filter\":[{\"range\":{\"timestamp\":{\"gte\":1656925423740,\"lte\":1657011823740,\"format\":\"epoch_millis\"}}},{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"data.iterator:<=10\"}}],\"must\":[{\"match_phrase\":{\"data.event_type\":{\"query\":\"event_type_name\"}}}]}},\"aggs\":{\"2\":{\"histogram\":{\"interval\":1,\"field\":\"data.iterator\",\"min_doc_count\":1},\"aggs\":{\"1\":{\"avg\":{\"field\":\"data.FrameTime\"}}}}}}\n",
+      "hideFromInspector": false
+    },
+    "response": {
+      "took": 3402,
+      "responses": [
+        {
+          "took": 3402,
+          "timed_out": false,
+          "_shards": {
+            "total": 2,
+            "successful": 2,
+            "skipped": 0,
+            "failed": 0
+          },
+          "hits": {
+            "total": {
+              "value": 66,
+              "relation": "eq"
+            },
+            "max_score": null,
+            "hits": []
+          },
+          "aggregations": {
+            "2": {
+              "buckets": [
+                {
+                  "1": {
+                    "value": 10.75475001335144
+                  },
+                  "key": 0,
+                  "doc_count": 6
+                },
+                {
+                  "1": {
+                    "value": 74.81934833526611
+                  },
+                  "key": 1,
+                  "doc_count": 6
+                },
+                {
+                  "1": {
+                    "value": 21.918816248575848
+                  },
+                  "key": 2,
+                  "doc_count": 6
+                },
+                {
+                  "1": {
+                    "value": 21.583483060201008
+                  },
+                  "key": 3,
+                  "doc_count": 6
+                },
+                {
+                  "1": {
+                    "value": 18.708183606465656
+                  },
+                  "key": 4,
+                  "doc_count": 6
+                },
+                {
+                  "1": {
+                    "value": 17.885199864705402
+                  },
+                  "key": 5,
+                  "doc_count": 6
+                },
+                {
+                  "1": {
+                    "value": 18.15591637293498
+                  },
+                  "key": 6,
+                  "doc_count": 6
+                },
+                {
+                  "1": {
+                    "value": 18.47748343149821
+                  },
+                  "key": 7,
+                  "doc_count": 6
+                },
+                {
+                  "1": {
+                    "value": 18.19325002034505
+                  },
+                  "key": 8,
+                  "doc_count": 6
+                },
+                {
+                  "1": {
+                    "value": 24.496050357818604
+                  },
+                  "key": 9,
+                  "doc_count": 6
+                },
+                {
+                  "1": {
+                    "value": 22.333066781361897
+                  },
+                  "key": 10,
+                  "doc_count": 6
+                }
+              ]
+            }
+          },
+          "status": 200
+        }
+      ],
+      "$$config": {
+        "url": "api/datasources/proxy/135/_msearch?max_concurrent_shard_requests=5",
+        "method": "POST",
+        "data": "{\"search_type\":\"query_then_fetch\",\"ignore_unavailable\":true,\"index\":[\"2022-07-04-data\",\"2022-07-05-data\"]}\n{\"size\":0,\"query\":{\"bool\":{\"filter\":[{\"range\":{\"timestamp\":{\"gte\":1656925423740,\"lte\":1657011823740,\"format\":\"epoch_millis\"}}},{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"data.iterator:<=10\"}}],\"must\":[{\"match_phrase\":{\"data.event_type\":{\"query\":\"event_type_name\"}}}]}},\"aggs\":{\"2\":{\"histogram\":{\"interval\":1,\"field\":\"data.iterator\",\"min_doc_count\":1},\"aggs\":{\"1\":{\"avg\":{\"field\":\"data.FrameTime\"}}}}}}\n",
+        "hideFromInspector": false
+      }
+    }
+  }
