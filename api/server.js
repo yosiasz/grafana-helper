@@ -1,5 +1,6 @@
 const express = require('express')
 const winston = require('winston');
+const PNG = require("pngjs").PNG;
 //const prom_client = require('prom-client');
 //const collectDefaultMetrics = prom_client.collectDefaultMetrics;
 //const register = new prom_client.Registry();
@@ -57,6 +58,12 @@ app.use(express.static('public'))
 app.use(cors());
 
 app.options("*", cors());
+
+app.get("/image", async (req, res) => {
+  
+  var data = fs.readFileSync('../src/assets/profile.png');
+  return res.send(data);
+});
 
 app.get("/provinces", (req, res) => {
   let raw = fs.readFileSync(
