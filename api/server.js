@@ -1,6 +1,6 @@
 const express = require('express')
 const winston = require('winston');
-const PNG = require("pngjs").PNG;
+//const PNG = require("pngjs").PNG;
 //const prom_client = require('prom-client');
 //const collectDefaultMetrics = prom_client.collectDefaultMetrics;
 //const register = new prom_client.Registry();
@@ -395,6 +395,49 @@ app.get('/', (req, res) => {
 
 })
 
+app.get('/rogelio',  (req, res) => {
+
+  const json = {
+    "took": 5,
+    "timed_out": false,
+    "_shards": {
+      "total": 1,
+      "successful": 1,
+      "skipped": 0,
+      "failed": 0
+    },
+    "hits": {
+      "total": {
+        "value": 533,
+        "relation": "eq"
+      },
+      "max_score": 9.712725,
+      "hits": [
+        {
+          "_index": "device.metrics-2024.07.22",
+          "_id": "REDACTED",
+          "_score": 8.780424,
+          "_source": {
+            "values": [
+              11
+            ],
+            "serialNumber": "REDACTED",
+            "timestamp": "2024-07-22T04:55:09.331",
+            "event": {
+              "hash": 2491677931
+            },
+            "@version": "1",
+            "companyId": 1129,
+            "@timestamp": "2024-07-22T05:00:48.736Z",
+            "name": "REDACTED"
+          }
+        }
+      ]
+    }
+  }
+
+  return res.json(json)
+})
 app.get("/hosts", async (req, res) => {
   //https://docs-api.centreon.com/api/centreon-web/
   a = await authenticate();
