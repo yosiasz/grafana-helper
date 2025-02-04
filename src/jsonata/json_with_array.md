@@ -1,39 +1,39 @@
-```
+```consolecode
 {
     "value" : 45000,
     "timestamp" : 1678709584000,
     "car_brands":[
-    	{
-    		"name": "BMW",
-    		"perc": 10
-    	},
-    	{
-    		"name": "MERCEDES",
-    		"perc": 10
-    	},
+      {
+        "name": "BMW",
+        "perc": 10
+      },
+      {
+        "name": "MERCEDES",
+        "perc": 10
+      },
         {
-    		"name": "AUDI",
-    		"perc": 80
-    	}
+        "name": "AUDI",
+        "perc": 80
+      }
     ]
 }
 ```
 
 ```
 (
-   
+
     $A := $map($, function($v, $i, $a) {
-       { 
+       {
            'incidentName': $v.incidentName,
             'priority': $v.priority,
             'time': $v.startTime
        }
     });
-   $B := 
+   $B :=
    $map($, function($v, $i, $a) {
-       { 
+       {
            'incidentName': $v.incidentName,
-            'priority': $v.priority,            
+            'priority': $v.priority,
             'time':   $exists($v.endTime) ? $substring($v.endTime,0,10) : $substring($v.startTime,0,10)
        }
     });
@@ -48,7 +48,7 @@
     $value := $.value;
     $time := $.timestamp;
     $map($.car_brands, function($v, $i, $a) {
-       { 
+       {
            "value": $value,
             "name": $v.name,
             "time": $time
@@ -88,7 +88,9 @@
     56934906
   ]
 }
+```
 
+```console
 (
   $map($.t, function($v, $i, $a) {
        {
@@ -100,10 +102,12 @@
             "volume": $.v[$i]
        }
     })
-)    
+)
+```
 
 if it is an array of things.
 
+```console
 (
     $bysymbol := $filter($, function($v, $i, $a) {
         $v.s = "ok"
@@ -118,10 +122,11 @@ if it is an array of things.
             "volume": $bysymbol.v[$i],
             "symbol": $bysymbol.s
        }
-    })	
-)    
+    })
+)
 ```
-```
+
+```json
 {
   "nextPageKey": null,
   "resolution": "1m",
@@ -132,22 +137,14 @@ if it is an array of things.
           "dimensionMap": {
             "dt.entity.host.name": "hostxxx@yyy.com"
           },
-          "dimensions": [
-            "hostxxx@yyy.com"
-          ],
+          "dimensions": ["hostxxx@yyy.com"],
           "timestamps": [
-            1701090120000,
-            1701090180000,
-            1701090240000,
-            1701090300000,
+            1701090120000, 1701090180000, 1701090240000, 1701090300000,
             1701090360000
           ],
           "values": [
-            90.19648106892903,
-            90.06653912862141,
-            91.63350741068523,
-            91.0315596262614,
-            92.09268697102864
+            90.19648106892903, 90.06653912862141, 91.63350741068523,
+            91.0315596262614, 92.09268697102864
           ]
         }
       ],
@@ -156,8 +153,35 @@ if it is an array of things.
     }
   ],
   "totalCount": 10
-}```
-
+}
 ```
+
+```console
 ( $map($.result.data.timestamps, function($v, $i, $a) { { 'timestamp': $fromMillis($v), 'value': $.result.data.values[$i] } }) )
+```
+
+Add an extra field to array
+
+```json
+[
+  {
+    "balance": 55,
+    "credit": 0,
+    "prepayment": 10.04,
+    "pending_costs": 4.58
+  },
+  {
+    "balance": 7,
+    "credit": 0,
+    "prepayment": 11.04,
+    "pending_costs": 14.58
+  }
+]
+```
+
+```console
+$ ~> |$|{ "transation_date": $now() }|
+
+$map($, function($v, $i, $a) {  {  'timestamp': $fromMillis($toMillis($now()) + $i*100000) ,   'balance': $v.balance   } })
+
 ```
