@@ -43,6 +43,7 @@
     "node-fetch": "^2.6.7",
     "nodemon": "^2.0.16",
     "pg-promise": "^10.11.1",
+    "pngjs": "^7.0.0",
     "prom-client": "^15.1.0",
     "winston": "^3.11.0"
   }

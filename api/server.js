@@ -75,6 +75,16 @@ app.get("/provinces", (req, res) => {
   return res.send(properties);
 });
 
+app.get("/counties", (req, res) => {
+  let raw = fs.readFileSync(
+    "./data/wa_counties.geojson"
+  );
+  let geojson = JSON.parse(raw);
+  let properties = geojson.features.map((p) => p.properties.NAME);
+  console.log('we have properties', properties)
+  return res.send(properties);
+});
+//http://localhost:5000/wa/${county}
 
 /* app.get('/metrics', function(req, res)
 {
