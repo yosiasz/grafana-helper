@@ -185,3 +185,11 @@ $ ~> |$|{ "transation_date": $now() }|
 $map($, function($v, $i, $a) {  {  'timestamp': $fromMillis($toMillis($now()) + $i*100000) ,   'balance': $v.balance   } })
 
 ```
+
+Loop by key: keys.json
+
+```console
+(
+  $data := $map($keys($), function($v) {$lookup($, $v).data})[0];$map($data, function($v, $i, $a) {{'time': $v[0],'uno': $v[1],'dos': $v[2],'tres': $v[3]}})
+)
+```
