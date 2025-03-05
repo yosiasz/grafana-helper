@@ -193,3 +193,17 @@ Loop by key: keys.json
   $data := $map($keys($), function($v) {$lookup($, $v).data})[0];$map($data, function($v, $i, $a) {{'time': $v[0],'uno': $v[1],'dos': $v[2],'tres': $v[3]}})
 )
 ```
+
+github workflow usage
+
+```json
+{
+  "UBUNTU": { "total_ms": 180000 },
+  "MACOS": { "total_ms": 240000 },
+  "WINDOWS": { "total_ms": 300000 }
+}
+```
+
+```console
+$map($keys($), function($v, $i, $a) { {'os': $v, 'total_ms': $lookup($, $v).total_ms }});
+```
