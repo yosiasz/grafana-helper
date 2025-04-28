@@ -110,18 +110,46 @@ app.get('/metric', (req, res) => {
 })
 
 
-app.get("/countries", (req, res) => {
+app.get("/countries/:country_name?", (req, res) => {
 
-  
+  let country_name = req.params.country_name;
+  let feature;
   let geojson = fs.readFileSync(
     "./data/countries.geojson"
   );
   
-  let featureCollection = JSON.parse(geojson);
+  let full_data = JSON.parse(geojson);
 
   logger.log('info', "This is the countries route.");
+  //console.log('geometry',featureCollection.features.geometry)
+  //$.features.properties.name
 
-  return res.send(featureCollection);
+  if (req.params.country_name) {
+    feature = full_data.features.filter(function (feature) {
+      return feature.properties.name === country_name;
+    })[0];
+  } else {
+    feature = full_data
+  }
+  //
+
+  const data = feature.geometry
+  
+  console.log('feature',feature[0])
+
+  return res.send(feature);
+});
+
+app.get("/hagers", (req, res) => {
+
+  let geojson = fs.readFileSync(
+    "./data/countries.geojson"
+  );
+  
+  let data = JSON.parse(geojson);
+
+  
+  return res.send(data.features[0]);
 });
 
 app.get("/wa/:county_name", (req, res) => {
