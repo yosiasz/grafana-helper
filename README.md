@@ -4,3 +4,6 @@
 
 - uses nodejs 18.19.1
 - uses express.js
+
+## running api
+`node ./api/server.js`
