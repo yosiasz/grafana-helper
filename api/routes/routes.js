@@ -101,31 +101,28 @@ router.get('/metric', (req, res) => {
 router.get("/countries/:country_name?", (req, res) => {
 
   let country_name = req.params.country_name;
-  let feature;
-  let geojson = fs.readFileSync(
+  let filteredFeatures;
+  let data;
+
+  let rawData = fs.readFileSync(
     "../data/countries.geojson"
   );
   
-  let full_data = JSON.parse(geojson);
-
-  logger.log('info', "This is the countries route.");
-  //console.log('geometry',featureCollection.features.geometry)
-  //$.features.properties.name
+  let geojson = JSON.parse(rawData);
 
   if (req.params.country_name) {
-    feature = full_data.features.filter(function (feature) {
-      return feature.properties.name === country_name;
-    })[0];
+    filteredFeatures = geojson.features.filter(
+      feature => feature .properties.name === country_name
+    );  
+    data = {
+      ...geojson,
+      features: filteredFeatures
+    };
   } else {
-    feature = full_data
+    data = geojson
   }
-  //
 
-  const data = feature.geometry
-  
-  console.log('feature',feature[0])
-
-  return res.send(feature);
+  return res.send(data);
 });
 
 router.get("/hagers", (req, res) => {
