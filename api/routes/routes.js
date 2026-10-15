@@ -72,11 +72,30 @@ router.get("/counties", (req, res) => {
   );
   let geojson = JSON.parse(raw);
   let properties = geojson.features.map((p) => p.properties.NAME);
-  console.log('we have properties', properties)
   return res.send(properties);
 });
 
 router.get("/status", (req, res) => {
+  
+  return res.send(properties);
+});
+
+router.get("/sangle", (req, res) => {
+  const properties = {"type":"FeatureCollection","features":[
+                     {"type":"Feature","id":"MRS","properties":{"name":"Mars"},"geometry":
+                        {
+                        "type": "Polygon",
+                        "coordinates": [
+                          [
+                            [98.069248, 3.274112],
+                            [98.069248, 5.39584],
+                            [96.004864, 5.39584],
+                            [96.004864, 3.274112],
+                            [98.069248, 3.274112]
+                          ]
+                        ]
+                      }
+                    }]}
   
   return res.send(properties);
 });
@@ -109,8 +128,6 @@ router.get("/countries/:country_name?", (req, res) => {
   let full_data = JSON.parse(geojson);
 
   logger.log('info', "This is the countries route.");
-  //console.log('geometry',featureCollection.features.geometry)
-  //$.features.properties.name
 
   if (req.params.country_name) {
     feature = full_data.features.filter(function (feature) {
@@ -121,9 +138,7 @@ router.get("/countries/:country_name?", (req, res) => {
   }
   //
 
-  const data = feature.geometry
-  
-  console.log('feature',feature[0])
+  const data = feature.geometry;
 
   return res.send(feature);
 });
@@ -176,14 +191,9 @@ router.get("/provinces/:prov_istat_code_num", (req, res) => {
   let prov_istat_code_num = req.params.prov_istat_code_num;
   let feature;
 
-  //if (!prov_istat_code_num === '-1')
-  //{
-    console.log('We are in!')
     feature = featureCollection.features.filter(function (feature) {
       return feature.properties.prov_istat_code_num === parseInt(prov_istat_code_num);
     });
-  //}
-  console.log('feature', feature)
 
   province = {};
   province.type = "FeatureCollection";
